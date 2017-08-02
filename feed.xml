@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-02T21:31:55+07:00</updated><id>http://localhost:4000/</id><title type="html">Samuel Hsiang</title><subtitle>TJ '16, H '20
+</subtitle><entry><title type="html">Skinny Repeal</title><link href="http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal/" rel="alternate" type="text/html" title="Skinny Repeal" /><published>2017-07-28T11:00:00+07:00</published><updated>2017-07-28T11:00:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal/">&lt;p&gt;Today, Republicans announced the Health Care Freedom Act, notably removing the
+individual and employer mandates from the Affordable Care Act. By removing the
+requirement for people to have insurance, Republicans tout this bill as
+restoring choice to the American consumer, thereby reducing healthcare prices.
+This sounds like music in a speech: health insurance providers still can't
+discriminate against people with pre-existing conditions, but now consumers are
+not forced to pay for insurance they don't want! This seems like a double-win
+for the American people.&lt;/p&gt;
+
+&lt;p&gt;Here's the catch: not only will a skinny repeal not lower costs, it's actually
+much worse than having Obamacare repealed entirely.
+&lt;!--more--&gt;
+I wish I had more time to do more research and flesh out all the statistics and
+details, since health care is such a crucial topic in today's age, but our
+government, so insistent on pushing repeal through as a political move,
+compelled a quick response.&lt;/p&gt;
+
+&lt;p&gt;Obamacare's monumental achievement was to lower healh care costs to the most
+vulnerable. Some people are at greater risk of disease than others: this has
+held true in the past and will continue to be true for the foreseeable future.
+People with different genetics, different lifestyles, and different previous
+illnesses face different likelihoods of falling ill in the future. We can get a
+sense of consumer behavior through a simple model: at period 1, say one half of
+the population has a 20% chance and the other half of the population has an 80%
+chance of falling ill in period 2. Let's also suppose that, without insurance,
+a consumer pays $0 when healthy and $1000 when ill in period 2.&lt;/p&gt;
+
+&lt;p&gt;Pre-Obamacare, people with the highest risk faced the highest insurance
+premiums, and people with the lowest risk faced the lowest. Insurance is not
+inherently a transfer from the low-risk to the high-risk; it is a means for
+each individual person to hedge their bets. Almost everyone is risk-averse to
+some degree: given a choice between $500 guaranteed or a 50% chance at $1000, I
+think most people would choose the guaranteed money. Insurance is precisely
+this. An insurance company, by aggregating independent probabilities, can
+stabilize risk for everyone. Before the Affordable Care Act, the fair insurance
+rate for low-risk individuals is to pay $200 and for high-risk individuals to
+pay $800 in period 1. Because individuals are risk-averse, both low- and
+high-risk individuals are happy with this plan. By discrimination, insurance
+companies can set fair prices.&lt;/p&gt;
+
+&lt;p&gt;The problem here is that oftentimes individuals find themselves at a high risk
+of disease at no fault of their own because of bad luck previously in life or
+even before birth. A core idea behind Obamacare is to share health care costs
+across all individuals, irrespective of high or low risk levels. Democrats
+justified this with a plea for fairness: it's largely not a high-risk
+individual's fault that they are more likely to fall ill. Republicans oppose
+this also on the grounds of fairness: it's not the responsibility of the
+low-risk individual to have to pay for the high-risk individual's bad luck,
+either. My purpose here is not to convince the reader one way or another on
+this issue, but merely that skinny repeal is a strictly worse option than both.&lt;/p&gt;
+
+&lt;p&gt;Post-Obamacare, insurance companies can no longer discriminate on pre-existing
+conditions. In our model, this means that insurance companies set a single
+price for both high- and low-risk individuals. However, Obamacare also includes
+an individual mandate: all individuals must buy insurance. Knowing that all
+individuals must buy insurance, companies will set the fair price of $500 for
+everyone. This is a great deal for high-risk individuals, since they are now
+paying much lower than they would have without Obamacare. Low-risk individuals
+now must pay more than they are willing, but they must buy the insurance anyway
+to subsidize the high-risk individuals' health care. Behind the veil of
+ignorance, prior to knowing risk level, paying $500 is perfectly fair.&lt;/p&gt;
+
+&lt;p&gt;The trouble comes when we remove the individual mandate, but leave insurance
+companies unable to discriminate. Let's suppose the insurance company sets its
+price at $500 as before. The high-risk individuals will all buy this plan, but
+none of the low-risk individuals will buy it. In this scenario, the insurance
+company will lose money, so it will certainly not set its price at $500, or
+indeed, any price less than $800.&lt;/p&gt;
+
+&lt;p&gt;Then the price settles at $800, high-risk individuals will pay the same amount
+as without Obamacare, but low-risk individuals will be left entirely uninsured,
+which is a strictly worse outcome than without Obamacare at all assuming
+risk-aversion.&lt;/p&gt;
+
+&lt;p&gt;The results are even worse with more complicated models than my simple
+two-state, two-period example. In the real world, people have all different
+probabilities of falling ill. It follows fairly easily from the simple model
+that insurance companies will only charge the fair price of the individuals at
+greatest risk, since at any other price, they will lose money. As we spread
+more and more people across this continuum of illness risk, we see that more
+and more people are left without access to insurance.&lt;/p&gt;
+
+&lt;p&gt;Banning price discrimination without an individual mandate, then, is
+essentially a ban on health care insurance entirely. Despite making for a great
+sound bite, skinny repeal is an incredibly irresponsible and damaging political
+maneuver, and if it is enacted, skinny repeal is far, far worse for the
+American people than full repeal.&lt;/p&gt;</content><author><name></name></author><summary type="html">Today, Republicans announced the Health Care Freedom Act, notably removing the individual and employer mandates from the Affordable Care Act. By removing the requirement for people to have insurance, Republicans tout this bill as restoring choice to the American consumer, thereby reducing healthcare prices. This sounds like music in a speech: health insurance providers still can't discriminate against people with pre-existing conditions, but now consumers are not forced to pay for insurance they don't want! This seems like a double-win for the American people. Here's the catch: not only will a skinny repeal not lower costs, it's actually much worse than having Obamacare repealed entirely.</summary></entry><entry><title type="html">End-of-Life Agency</title><link href="http://localhost:4000/jekyll/posts/2017/07/26/eol-agency/" rel="alternate" type="text/html" title="End-of-Life Agency" /><published>2017-07-27T10:00:00+07:00</published><updated>2017-07-27T10:00:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/07/26/eol-agency</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/07/26/eol-agency/">&lt;p&gt;To what extent should people be able to control their futures, and to what
+extent can the government take that away? Last week, Jacob and I were
+discussing whether the government has done too little or too much in shaping
+our life decisions. The United States gives its citizens plenty of agency in
+weighing the short and long term. I can choose what food I eat and how much I
+exercise, as it's entirely my decision whether having a satisfying but
+unhealthy lifestyle is worth shaving years off the end of my life. I assess
+risk constantly, from inching closer to the edge of a cliff for that perfect
+photo to simply biking to and from work, internalizing the probability that I
+get into an accident. I can choose my career: some jobs are more financially
+risky while some are physically more dangerous, some better fit my skill set
+while others I find more intrinsically appealling, but the government leaves
+all of these factors up to the market to set prices and wages, and from there I
+make my own choice.&lt;/p&gt;
+
+&lt;p&gt;But in plenty of other instances, we don't get too much say in our future.
+Although I make the decision to hit the road, once I do, I must wear a seat
+belt. The government compels us into Social Security, essentially forcing us to
+prepare for retirement.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; Suicide is perhaps the most extreme expression of
+determining one's fate, but suicide historically has been illegal and is
+sometimes considered a common law crime, while medically assisted suicide is
+strictly illegal in all but six states.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; There's plenty to be said about
+whether the government should regulate one's decisions that only affect
+oneself in generality, but for the sake of this post we'll focus mostly on
+those decisions regarding end of life.&lt;/p&gt;
+
+&lt;h1 id=&quot;valuing-tomorrow&quot;&gt;Valuing Tomorrow&lt;/h1&gt;
+
+&lt;p&gt;First, I think it's necessary to establish why I value my future. I value my
+own well-being, which encompasses pleasure and pain in both the present and the
+future, and I value others' well-being, especially those I care for, like my
+family. The former is primarily self-interested: I desire pleasure and I avoid
+harm. The latter informs broader decisions I make: what I want out of my
+studies, my future career, and so on. While I do derive fulfillment from
+bettering the lives of those around me, and economists do lump all aspects of
+decision-making under the notion of utility, for the sake of this discussion it
+is useful to separate them.&lt;/p&gt;
+
+&lt;p&gt;What does utility over time and intertemporal choice look like? We tend to
+value consumption in the present more than consumption in the future. Given a
+piece of candy that can be consumed today or five years from now, it's
+reasonable to consume today. On the other hand, painful tasks like chores
+tend to be pushed back to the future. Economists model this behavior using
+discounting of future utility. The simplest model involves a parameter
+\(\delta \in [0,1)\), where we make decisions that maximize
+\[U := u_1 + \delta \mathop{\rm E}[u_2],\]
+where \(u_1\) is utility derived from consumption in the first period (the
+present) and \(\mathop{\rm E}[u_2]\) is the expected second period utility
+(the future).&lt;/p&gt;
+
+&lt;p&gt;Each of \(u_1\) and \(u_2\) can then be separated into the two components
+discussed earlier; we can write \(u_i(s_i,o_i)\) as an increasing function of
+well-being \(s_i\) of oneself and \(o_i\) of others. Choices that either better
+my personal life without impacting others or better others without impacting
+myself are strictly good, for example. Those that better myself at the cost of
+others or better others but demand sacrifice from me are more complex.&lt;/p&gt;
+
+&lt;p&gt;If I were to suddenly die painlessly in my sleep, there would be limited
+loss to my personal well-being. I would go to bed the previous night
+unsuspecting and happy as always, expecting the next day and the combination
+of joy and hurt it brings, only I would not actually experience it. Given a
+choice, however, I very much want to go to bed tonight waking up tomorrow. I
+want to experience \(s_2\), since my current decision maximizes \(U\) which
+is increasing in \(s_2\). I partly want to live the future for myself. But I
+also care about \(o_2\). If I were to die, I think \(o_2\) takes an even
+greater hit than \(s_2\). Death to me seems like a neutral thing, and I would
+die not feeling any pain, but those that care about me would suffer loss.&lt;/p&gt;
+
+&lt;p&gt;Determining what I value and why is a very hard question. I've written what I
+consider to be a crude but fairly accurate model, at least at the time of
+writing, but I fully expect that as my blog and I mature, my views on this
+particular issue to change and develop more than most of my other beliefs.&lt;/p&gt;
+
+&lt;h1 id=&quot;suicide&quot;&gt;Suicide&lt;/h1&gt;
+
+&lt;p&gt;The legality of suicide is certainly a very difficult matter, and it's very
+reasonable to default to laws that preserve life. But to what extent should
+suicide really be regulated by the government?&lt;/p&gt;
+
+&lt;p&gt;I unequivocally believe that I have a personal responsibility to help people with
+suicidal thoughts and encourage them to seek therapy. Someone who chooses
+suicide implicitly finds life tomorrow not worth living, but I believe that
+with proper help, they will find that life tomorrow has so much more
+fulfillment than they had expected the day before. In this case, the skewed
+perceived expectation of the future \(\mathop{\rm E}_*[u_2]\) is drastically
+out of line with the actual expected value of future utility 
+\(\mathop{\rm E}[u_2]\).&lt;/p&gt;
+
+&lt;p&gt;While this rationalization leads me to believe that I ought to do everything in
+my power to save lives, I have a hard time deciding whether or not it is
+grounds for the government to forcibly intervene. My inclination is that it is
+generally not the government's role to determine whether or not an adult's
+utility function is &quot;rational,&quot; or whether a future self would regret taking a
+particular action. Nevertheless, it still makes perfect sense for the
+government to limit the actions of children, so I'm not ready to make any
+general statement here.&lt;/p&gt;
+
+&lt;h1 id=&quot;death-with-dignity&quot;&gt;Death with Dignity&lt;/h1&gt;
+
+&lt;p&gt;That said, if someone were terminally ill and knew that for the rest of their
+short life, they would be in excruciating pain, they ought to have the right to
+escape pain gracefully. Perhaps the most well-known case of this today is that
+of &lt;a href=&quot;https://en.wikipedia.org/wiki/Brittany_Maynard&quot;&gt;Brittany Maynard&lt;/a&gt;, who
+moved to Oregon to end her life in 2014 following a terminal brain cancer
+diagnosis.&lt;/p&gt;
+
+&lt;p&gt;I think this is perfectly rational, in that 
+\(\mathop{\rm E}_*[u_2] \approx \mathop{\rm E}[u_2]\) is actually a
+reasonable representation of actual utility in the future. Using my simplified
+value heuristic, prolonged pain harms personal well-being, and terminal illness
+harms capability of improving others' well-being. The degree to which disease
+impacts these values varies person by person, so while I think everyone in such
+a position ought to have the right to death with dignity, I certainly don't
+mean to imply that death by dignity is a path that people in this situation
+should always take.&lt;/p&gt;
+
+&lt;p&gt;A natural extension to consider is removing the stipulation of pain. If someone
+had a terminal illness that didn't cause any bodily pain, but otherwise
+incapacitated me, e.g. loss of memory or paralysis, then I think death with
+dignity should still be granted.&lt;/p&gt;
+
+&lt;h1 id=&quot;euthanasia-and-death-as-a-prior-arrangement&quot;&gt;Euthanasia and Death as a Prior Arrangement&lt;/h1&gt;
+
+&lt;p&gt;Euthanasia is slightly different from physician-assisted suicide. In assisted
+suicide, a doctor prescribes lethal medication, and the agent self-administers
+that medication when desired. In euthanasia, the agent might be unable to
+self-administer; for example, they might be too weak to swallow the medication.
+Euthanasia contrasts from physician-assisted suicide in that it is entirely
+illegal in all the United States, despite the legality of physician-assisted
+suicide in some states.  Euthanasia is only legal in a handful of countries in
+the world, with the Netherlands and Belgium as notable examples.  Despite the
+differences in legality, which I'll discuss in the next section, I don't find
+anything morally different between these situations: one person wishes for
+death, and another person complies, ensuring that death comes exactly as the
+patient wishes it.&lt;/p&gt;
+
+&lt;p&gt;What separates euthanasia from physician-assisted suicide is that an agent can
+potentially enter a contract to be put down in the future, since the agent does
+not need to be the one administering the medicine at the time of death. Playing
+with timing makes euthanasia questionable. We allow people to opt into organ
+donation programs, where in the event of brain death, their organs can be
+harvested. It initially doesn't seem like an unreasonable leap to stipulate
+that, in the future, should a disease or freak accident cause me to permanently
+lose my memory and rational thought, though not quite leave brain dead, I give
+up my body for organ donation. Perhaps this injury causes me to lash out
+violently and mindlessly against everyone, including those I previously loved.
+Or perhaps I know that my disease will result in the eventual loss of my
+ability to think. It seems fair for the current me to agree to put this
+potential future me down, right?&lt;/p&gt;
+
+&lt;p&gt;But this is quite troubling. What if in the future I don't want to die, even
+though my present self willed it? Are the present and future selves the same
+person? Indeed, in the present, it is precisely because I consider the future
+me to be a different person whose values would not align with mine that I
+agreed to have myself put down in the first place. This is surprisingly similar
+to the intertemporal mindset of a saved suicidal person: in period 1, the agent
+determines that living in period 2 is unfulfilling, but in period 2, the agent
+then wants to live.&lt;/p&gt;
+
+&lt;p&gt;I believe that in this example, the period 1 agent should not be allowed to
+enter a contract that may result in the unwilling death of the period 2 self.
+We certainly should not kill someone who is unwilling just because we think it
+is for the better: this seems pretty clear to me to be murder. Should the
+period 1 self not wish to grant the period 2 agent control of their body, then
+they must take proactive action in period 1 rather than enter a contract to
+have themselves killed in the future.  Consequently, to be eligible for
+euthanasia, I believe that an agent must desire it at the time of
+administration, not at some previous time.&lt;/p&gt;
+
+&lt;h1 id=&quot;contrasting-with-current-laws&quot;&gt;Contrasting with Current Laws&lt;/h1&gt;
+
+&lt;p&gt;Interestingly, I find not trying to prevent medically assisted suicide more
+moral than not trying to prevent a normal suicide, though current laws indicate
+that the government believes the opposite, as physician-assisted suicide is
+more explicit in its illegality in more states. Note also that in almost all
+circumstances, we allow people to refuse life-saving medical treatment.
+Choosing to die painlessly seems strictly better than dying painfully without
+any medication at all.&lt;/p&gt;
+
+&lt;p&gt;Since I find euthanasia only proper when the patient desires death at the
+moment it is administered, I find euthanasia more justifiably illegal, as the
+cases where euthanasia is most applicable are also those where the patient is
+most vulnerable and incapacitated. Our legal system hinges on responsibility:
+granting doctors the right to terminate their patients, even with the consent
+of the patient, opens up room for abuse. If, for example, only verbal consent
+at the time of administration were required for euthanasia to be justified,
+then even with witnesses, determining whether a doctor conducted themself
+within the law is difficult. If we require written consent, then presumably the
+patient is capable of administering the medicine themself anyway, so only
+physician-assisted suicide is necessary. Morally, I think that there's no
+difference between written, verbal, or any other means of consent, but I
+understand that legally it may be necessary to distinguish them. The intent of
+the patient is much more clear in assisted suicide than in euthanasia, and our
+laws must err on the side of patient protection.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I think it's worth contrasting legislation meant strictly to protect your future self from your current self from most legislation, whose primary purpose is to restrict your actions to benefit other people. Seat belt laws are meant mostly to restrain you to keep you safe, as wearing a seat belt has minimal positive externalities of the safety of other drivers. Social Security is less clear, since it can be seen as a redistribution of income from the young to the old, but over a lifetime it largely does not redistribute income from the rich to the poor, so I think it's better to classify Social Security as a compulsory retirement plan rather than income redistribution. On the other hand, while Obamacare forces us to buy health insurance, the primary purpose of this is not to babysit us. The individual mandate's main purpose is to spread the cost of healthcare across the entire country to make the other key provision, banning price discrimination based on pre-existing conditions, feasible.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;At the time of writing, the five states with legislation allowing death with dignity are &lt;a href=&quot;https://www.deathwithdignity.org/learn/death-with-dignity-acts/&quot;&gt;Oregon since 1998, Vermont since 2013, Washington since 2009, and California and Colorado since 2016&lt;/a&gt;. Montana allows for death with dignity via a &lt;a href=&quot;https://en.wikipedia.org/wiki/Baxter_v._Montana&quot;&gt;court ruling in 2009&lt;/a&gt;.&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">To what extent should people be able to control their futures, and to what extent can the government take that away? Last week, Jacob and I were discussing whether the government has done too little or too much in shaping our life decisions. The United States gives its citizens plenty of agency in weighing the short and long term. I can choose what food I eat and how much I exercise, as it's entirely my decision whether having a satisfying but unhealthy lifestyle is worth shaving years off the end of my life. I assess risk constantly, from inching closer to the edge of a cliff for that perfect photo to simply biking to and from work, internalizing the probability that I get into an accident. I can choose my career: some jobs are more financially risky while some are physically more dangerous, some better fit my skill set while others I find more intrinsically appealling, but the government leaves all of these factors up to the market to set prices and wages, and from there I make my own choice.</summary></entry><entry><title type="html">Egorychev, Part 2</title><link href="http://localhost:4000/jekyll/posts/2017/07/15/egorychev-2/" rel="alternate" type="text/html" title="Egorychev, Part 2" /><published>2017-07-16T11:30:00+07:00</published><updated>2017-07-16T11:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/07/15/egorychev-2</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/07/15/egorychev-2/">&lt;p&gt;Ross sent me an interesting math problem last month, and I detailed my attempt
+at a solution in a &lt;a href=&quot;/jekyll/posts/2017/07/06/egorychev/&quot;&gt;blog post&lt;/a&gt; a little
+more than a week ago. With his substantial help, I was finally able to make
+some headway, and the following solution is much more a recreation of his
+rather than my own.&lt;/p&gt;
+
+&lt;p&gt;Let \(0 \le a &amp;lt; 1\) and \(n \in \mathbb{Z}^+\), and define
+\[ I_n = \left( 1-a^2 \right)^{n-1/2} \int_0^{2\pi} \frac{d\theta}{\left( 1 + a\cos\theta \right)^n}. \]
+Express \(I_n\) as a polynomial in \(a\).&lt;/p&gt;
+
+&lt;p&gt;As I mentioned in my earlier post, the reader should mind two key insights
+using complex analysis: the first, a treatment of \(\cos\theta\) I'd dealt
+with regularly, and the second, the Egorychev method, which I hadn't yet
+encountered. The beginning of the solution is much the same, so one who has
+already read my previous post on this problem can comfortably skip through the
+first steps.&lt;/p&gt;
+
+&lt;p&gt;We first get rid of the integral as quickly as possible and worry about
+simplifying later, applying a standard substitution of \(z = e^{i\theta}\),
+transforming the real integral into a complex one. We then have 
+\(\cos\theta = \frac{1}{2} \left( z + \frac{1}{z} \right)\) and 
+\(dz = iz \,d\theta\), and the integral becomes
+\[ \int_0^{2\pi} \frac{d\theta}{\left( 1 + a\cos\theta \right)^n} = \oint_{\lvert z \rvert=1} \frac{1}{iz} \frac{dz}{\left( 1 + \frac{a}{2} \left( z + \frac{1}{z} \right) \right)^n}. \]
+If \(a = 0\), \(I_n = 2\pi\) immediately; otherwise, we have
+\begin{align}
+&amp;amp;\phantom{ {}={} } \oint_{\lvert z \rvert=1} \frac{1}{iz} \frac{dz}{\left( 1 + \frac{a}{2} \left( z + \frac{1}{z} \right) \right)^n} \\
+&amp;amp;= \frac{1}{i} \oint_{\lvert z \rvert=1} \frac{z^{n-1} \,dz}{\left( \frac{a}{2} z^2 + z + \frac{a}{2} \right)^n} \\
+&amp;amp;= \frac{1}{i} \left( \frac{2}{a} \right)^n \oint_{\lvert z \rvert=1} \frac{z^{n-1} \,dz}{\left( \left( z - \frac{-1 - \sqrt{1-a^2}}{a} \right) \left( z - \frac{-1 + \sqrt{1-a^2}}{a} \right) \right)^n} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dz^{n-1}} \left( \frac{z^{n-1}}{\left( z - \frac{-1 - \sqrt{1-a^2}}{a} \right)^n } \right) \right\rvert_{z = \frac{-1 + \sqrt{1-a^2}}{a}},
+\end{align}
+by Cauchy's integral formula. For the sake of simplifying notation, we
+substitute \(w = z - \frac{-1 - \sqrt{1-a^2}}{a}\), giving us
+\begin{align}
+&amp;amp;\phantom{ {}={} } 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dz^{n-1}} \left( \frac{z^{n-1}}{\left( z - \frac{-1 - \sqrt{1-a^2}}{a} \right)^n } \right) \right\rvert_{z = \frac{-1 + \sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dw^{n-1}} \left( \frac{\left(w + \frac{-1 - \sqrt{1-a^2}}{a} \right)^{n-1}}{ w^n } \right) \right\rvert_{w = \frac{2\sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dw^{n-1}} \left( \sum_{k=0}^{n-1} \binom{n-1}{k} \left( \frac{-1 - \sqrt{1-a^2}}{a} \right)^k w^{-k-1} \right) \right\rvert_{w = \frac{2\sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \sum_{k=0}^{n-1} \binom{n-1}{k} \frac{(-1)^{n-1} (n-1+k)!}{k!} \left( \frac{-1 - \sqrt{1-a^2}}{a} \right)^k w^{-k-n} \right\rvert_{w = \frac{2\sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( \frac{-1 - \sqrt{1-a^2}}{a} \right)^k \left( \frac{2\sqrt{1-a^2}}{a} \right)^{-k-n} \\
+&amp;amp;= 2\pi (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( \frac{-1 - \sqrt{1-a^2}}{2} \right)^k \left( \sqrt{1-a^2} \right)^{-k-n}.
+\end{align}
+We then have
+\begin{align}
+I_n &amp;amp;= \left( \sqrt{1-a^2} \right)^{2n-1} 2\pi (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( \frac{-1 - \sqrt{1-a^2}}{2} \right)^k \left( \sqrt{1-a^2} \right)^{-k-n} \\
+&amp;amp;= 2\pi (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( -\frac{1 + \sqrt{1-a^2}}{2} \right)^k \left( \sqrt{1-a^2} \right)^{n-1-k}.
+\end{align}
+Again, for the sake of simplifying notation, let \(x = \sqrt{1-a^2}\). Notice
+that there very well may be terms of odd powers of \(x\), so we have no
+indication yet that the resulting value will end up being a polynomial in
+\(a\). We then have
+\begin{align}
+&amp;amp;\phantom{ {}={} } 2\pi (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1 + k)!}{k!k!(n-1 - k)!} \left( -\frac{1 + x}{2} \right)^k x^{n-1 - k} \\
+&amp;amp;= 2\pi \sum_{k=0}^{n-1} \sum_{j=0}^k \frac{(n-1 + k)!}{k! (n-1 - k)! j! (k - j)!} (-2)^{-k} x^{n-1 - j}.
+\end{align}
+This is a minor change from my previous solution. We expand 
+\( \left( \frac{1 + x}{2} \right)^k = \sum_{j=0}^k \binom{k}{j} \left(\frac{x}{2}\right)^{k-j} \) 
+rather than using \(j\) as the exponent; this avoids some annoying
+reindexing, as the resulting exponent of \(x\) in the double sum depends only
+on \(j\) rather than a combination. Swapping the sums gives
+\begin{align}
+&amp;amp;\phantom{ {}={} } 2\pi \sum_{k=0}^{n-1} \sum_{j=0}^k \frac{(n-1 + k)!}{k! (n-1 - k)! j! (k - j)!} (-2)^{-k} x^{n-1 - j} \\
+&amp;amp;= 2\pi \sum_{j=0}^{n-1} x^{n-1 - j} \sum_{k=j}^{n-1} \frac{(n-1 + k)!}{k! (n-1 - k)! j! (k - j)!} (-2)^{-k} \\
+&amp;amp;= 2\pi \sum_{j=0}^{n-1} x^{n-1 - j} \sum_{k=0}^{n-1} \binom{n-1 + k}{k - j} \binom{n-1 + j}{n-1} \binom{n-1}{k} (-2)^{-k} \\
+&amp;amp;= 2\pi \sum_{j=0}^{n-1} x^{n-1 - j} \binom{n-1 + j}{n-1} \sum_{k=0}^{n-1} \binom{n-1 + k}{k - j} \binom{n-1}{k} (-2)^{-k},
+\end{align}
+where we extend the sum over \(k\) to start at \(0\), as terms where 
+\(k &amp;lt; j\) are \(0\) anyway.&lt;/p&gt;
+
+&lt;p&gt;Here we apply the Egorychev method. Up until this point I'd been in a mad dash
+to get rid of the integral as quickly as possible, and then simplify as much as
+possible, but then I was blocked by a binomial sum I couldn't handle. The
+Egorychev method involves introducing complex contour integrals to simplify
+binomial identities, which seems a little backwards – after all, didn't we
+just work so hard to get rid of a contour integral in the first place? Well,
+let's see what this method really does.
+Our main tool is the following identity:
+\[
+\binom{s}{t} = \frac{1}{2\pi i} \oint_{\lvert z \rvert = \varepsilon} \frac{(1+z)^s \,dz}{z^{t+1}}
+\]
+There are other possible integrals we could use to express binomials, but this
+will suffice for this problem. My main intuition here for why we would ever
+want to substitute this is that binomials are nice in two ways:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Each individual binomial is pretty arithmetically: 
+\(\binom{s}{t} = \frac{s!}{t!(s-t)!}\).&lt;/li&gt;
+  &lt;li&gt;Binomials combine to be pretty algebraically: 
+\(\sum_{t=0}^s \binom{s}{t}z^t = (1+z)^s\) is the simplest example, and we
+can think of generating functions more generally.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are nice ways combinatorially to think about binomials using both these
+facts simultaneously, but here we're stuck with individual binomials in a sum
+that doesn't allow them to play nicely off of each other, especially because of
+this nasty \( (-2)^{n-1 - k} \) term. We'd like to be able to take advantage
+of property 2, which is what the Egorychev method affords us. Applying the
+method to the binomial \(\binom{n-1 + k}{k - j}\) gives us
+\begin{align}
+&amp;amp;\phantom{ {}={} } \sum_{k=0}^{n-1} \binom{n-1 + k}{k - j} \binom{n-1}{k} (-2)^{-k} \\
+&amp;amp;= \frac{1}{2\pi i} \sum_{k=0}^{n-1} \oint_{\lvert z \rvert = \varepsilon} \frac{(1+z)^{n-1 + k} \,dz}{z^{k - j + 1}} \binom{n-1}{k} (-2)^{-k} \\
+&amp;amp;= \frac{1}{2\pi i} \oint_{\lvert z \rvert = \varepsilon} \frac{(1+z)^{n-1}}{z^{-j + 1}} \sum_{k=0}^{n-1} \binom{n-1}{k} \left( -\frac{1}{2z} - \frac{1}{2} \right)^k \,dz \\
+&amp;amp;= \frac{1}{2\pi i} \oint_{\lvert z \rvert = \varepsilon} \frac{(1+z)^{n-1}}{z^{n-1 - j + 1}} \left( -\frac{1}{2z} + \frac{1}{2} \right)^{n-1} \,dz \\
+&amp;amp;= \frac{1}{2^{n-1}} \frac{1}{2\pi i} \oint_{\lvert z \rvert = \varepsilon} \frac{\left( 1 - z^2 \right)^{n-1} \,dz}{z^{n-1 - j + 1}} \\
+&amp;amp;= \begin{cases} 0 &amp;amp; 2 \not\mid n-1 - j \\ \frac{1}{2^{n-1}} \binom{n-1}{(n-1 - j)/2} (-1)^{(n-1 - j)/2} &amp;amp; 2 \mid n-1 - j. \end{cases}
+\end{align}
+Now let \(k' = \frac{n-1 - j}{2}\). We can then write
+\begin{align}
+&amp;amp;\phantom{ {}={} } 2\pi \sum_{j=0}^{n-1} x^{n-1 - j} \binom{n-1 + j}{n-1} \sum_{k=0}^{n-1} \binom{n-1 + k}{k - j} \binom{n-1}{k} (-2)^{-k} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{k'=0}^{n-1} x^{2k'} \binom{2(n-1) - 2k'}{n-1} \binom{n-1}{k'} (-1)^{k'} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{k'=0}^{n-1} \binom{2(n-1) - 2k'}{n-1} \binom{n-1}{k'} (-1)^{k'} \left( 1 - a^2 \right)^{k'},
+\end{align}
+which is indeed a polynomial in \(a\). Expanding once more and swapping the
+sums, we have
+\begin{align}
+&amp;amp;\phantom{ {}={} } \frac{2\pi}{2^{n-1}} \sum_{k'=0}^{n-1} \binom{2(n-1) - 2k'}{n-1} \binom{n-1}{k'} (-1)^{k'} \left( 1 - a^2 \right)^{k'} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{k'=0}^{\lfloor (n-1)/2 \rfloor} \binom{2(n-1) - 2k'}{n-1} \binom{n-1}{k'} (-1)^{k'} \sum_{m=0}^{k'} \binom{k'}{m} (-1)^m a^{2m} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{m=0}^{\lfloor (n-1)/2 \rfloor} (-1)^m a^{2m} \sum_{k'=m}^{\lfloor (n-1)/2 \rfloor} \binom{2(n-1) - 2k'}{n-1} \binom{n-1}{k'} \binom{k'}{m} (-1)^{k'} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{m=0}^{\lfloor (n-1)/2 \rfloor} (-1)^m a^{2m} \sum_{k'=m}^{\lfloor (n-1)/2 \rfloor} \binom{2(n-1) - 2k'}{n-1} \binom{n-1}{m} \binom{n-1 - m}{k' - m} (-1)^{k'} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{m=0}^{\lfloor (n-1)/2 \rfloor} (-1)^m a^{2m} \binom{n-1}{m} \sum_{k'=m}^{\lfloor (n-1)/2 \rfloor} \binom{2(n-1) - 2k'}{n-1} \binom{n-1 - m}{k' - m} (-1)^{k'}.
+\end{align}
+We now use the Egorychev method again to the binomial 
+\(\binom{2(n-1) - 2k'}{n-1}\):
+\begin{align}
+&amp;amp;\phantom{ {}={} } \sum_{k'=m}^{\lfloor (n-1)/2 \rfloor} \binom{2(n-1) - 2k'}{n-1} \binom{n-1 - m}{k' - m} (-1)^{k'} \\
+&amp;amp;= \frac{1}{2 \pi i} \sum_{k'=m}^{\lfloor (n-1)/2 \rfloor} \oint_{\lvert z \rvert = \varepsilon} \frac{(1+z)^{2(n-1) - 2k'} \,dz}{z^n} \binom{n-1 - m}{k' - m} (-1)^{k'} \\
+&amp;amp;= \frac{1}{2 \pi i} (-1)^m \oint_{\lvert z \rvert = \varepsilon} \frac{1}{z^n} \sum_{k'=m}^{\lfloor (n-1)/2 \rfloor} \binom{n-1 - m}{k' - m} \left( 1 + 2z + z^2 \right)^{n-1 - k'} (-1)^{k' - m} \,dz \\
+&amp;amp;= \frac{1}{2 \pi i} (-1)^m \oint_{\lvert z \rvert = \varepsilon} \frac{1}{z^n} \left( 2z + z^2 \right)^{n-1 - m} \,dz \\
+&amp;amp;= \frac{1}{2 \pi i} (-1)^m \oint_{\lvert z \rvert = \varepsilon} \frac{(2 + z)^{n-1 - m} \,dz}{z^{m + 1}} \\
+&amp;amp;= (-1)^m 2^{n-1 - 2m} \binom{n-1 - m}{m}.
+\end{align}
+Finishing, we have
+\begin{align}
+I_n &amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{m=0}^{\lfloor (n-1)/2 \rfloor} (-1)^m a^{2m} \binom{n-1}{m} \sum_{k'=m}^{\lfloor (n-1)/2 \rfloor} \binom{2(n-1) - 2k'}{n-1} \binom{n-1 - m}{k' - m} (-1)^{k'} \\
+I_n &amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{m=0}^{\lfloor (n-1)/2 \rfloor} (-1)^m a^{2m} \binom{n-1}{m} (-1)^m 2^{n-1 - 2m} \binom{n-1 - m}{m} \\
+I_n &amp;amp;= 2\pi \sum_{m=0}^{\lfloor (n-1)/2 \rfloor}\binom{n-1}{m} \binom{n-1 - m}{m} \left(\frac{a}{2}\right)^{2m}.
+\end{align}
+This end result is very nice. The general strategy in this problem centered
+around simplifying sums of the form 
+\(\sum_{k=0}^{n} \binom{s}{t} \binom{n}{k} c^k\), where the first binomial
+was manipulated using Egorychev, and the resulting exponential combines with
+the second binomial to simplify the sum.  The &lt;a href=&quot;https://en.wikipedia.org/wiki/Egorychev_method&quot;&gt;Wikipedia article&lt;/a&gt; on
+the Egorychev method highlights some examples of more complicated uses of the
+method, using more than just one integral at a time.&lt;/p&gt;
+
+&lt;p&gt;Finally, Ross noted to me that this integral actually has applications in
+physics: &quot;this integral actually comes out of computing the time averages
+\(\left\langle r^n \right\rangle\) of a Kepler orbit 
+\(r = r_0/(1+a\cos(\theta))\).&quot;&lt;/p&gt;</content><author><name></name></author><summary type="html">Ross sent me an interesting math problem last month, and I detailed my attempt at a solution in a blog post a little more than a week ago. With his substantial help, I was finally able to make some headway, and the following solution is much more a recreation of his rather than my own.</summary></entry><entry><title type="html">Prius</title><link href="http://localhost:4000/jekyll/posts/2017/07/11/prius/" rel="alternate" type="text/html" title="Prius" /><published>2017-07-12T11:30:00+07:00</published><updated>2017-07-12T11:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/07/11/prius</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/07/11/prius/">&lt;p&gt;I landed in Seattle for the first time, and I have never seen so many
+Priuses&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; in one place as in the Lyft pickup line. Apparently drivers using
+ride-sharing apps, in order to use the pickup queue at the airport, need to
+drive cars with at least 40 MPG. Go figure.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Apparently the public voted the plural of &quot;Prius&quot; to be &quot;Prii,&quot; which Toyota then made official, but I think the term is silly.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">I landed in Seattle for the first time, and I have never seen so many Priuses1 in one place as in the Lyft pickup line. Apparently drivers using ride-sharing apps, in order to use the pickup queue at the airport, need to drive cars with at least 40 MPG. Go figure. Apparently the public voted the plural of &quot;Prius&quot; to be &quot;Prii,&quot; which Toyota then made official, but I think the term is silly.&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Egorychev</title><link href="http://localhost:4000/jekyll/posts/2017/07/06/egorychev/" rel="alternate" type="text/html" title="Egorychev" /><published>2017-07-07T09:30:00+07:00</published><updated>2017-07-07T09:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/07/06/egorychev</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/07/06/egorychev/">&lt;p&gt;A couple weeks ago my friend Ross sent me an interesting integral involving a
+neat trick called the &lt;a href=&quot;https://en.wikipedia.org/wiki/Egorychev_method&quot;&gt;Egorychev method&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let \(0 \le a &amp;lt; 1\) and \(n \in \mathbb{Z}^+\), and define
+\[ I_n = \left( 1-a^2 \right)^{n-1/2} \int_0^{2\pi} \frac{d\theta}{\left( 1 + a\cos\theta \right)^n}. \]
+Express \(I_n\) as a polynomial in \(a\).&lt;/p&gt;
+
+&lt;p&gt;I haven't completely simplified the end polynomial (note: a full solution can
+be found in a &lt;a href=&quot;/jekyll/posts/2017/07/15/egorychev-2/&quot;&gt;newer blog post&lt;/a&gt;), but
+the key insights using complex analysis – the first, a treatment of
+\(\cos\theta\) I'd dealt with regularly, and the second, the Egorychev
+method, which I hadn't yet encountered – are present and worth sharing.&lt;/p&gt;
+
+&lt;p&gt;My intuition was to get rid of the integral as quickly as possible and worry
+about simplifying later. I therefore immediately applied a standard
+substitution of \(z = e^{i\theta}\), transforming the real integral into a
+complex one. We then have 
+\(\cos\theta = \frac{1}{2} \left( z + \frac{1}{z} \right)\) 
+and \(dz = iz \,d\theta\), and the integral becomes
+\[ \int_0^{2\pi} \frac{d\theta}{\left( 1 + a\cos\theta \right)^n} = \oint_{\lvert z \rvert=1} \frac{1}{iz} \frac{dz}{\left( 1 + \frac{a}{2} \left( z + \frac{1}{z} \right) \right)^n}. \]
+If \(a = 0\), \(I_n = 2\pi\) immediately; otherwise, we have
+\begin{align}
+&amp;amp;\phantom{ {}={} } \oint_{\lvert z \rvert=1} \frac{1}{iz} \frac{dz}{\left( 1 + \frac{a}{2} \left( z + \frac{1}{z} \right) \right)^n} \\
+&amp;amp;= \frac{1}{i} \oint_{\lvert z \rvert=1} \frac{z^{n-1} \,dz}{\left( \frac{a}{2} z^2 + z + \frac{a}{2} \right)^n} \\
+&amp;amp;= \frac{1}{i} \left( \frac{2}{a} \right)^n \oint_{\lvert z \rvert=1} \frac{z^{n-1} \,dz}{\left( \left( z - \frac{-1 - \sqrt{1-a^2}}{a} \right) \left( z - \frac{-1 + \sqrt{1-a^2}}{a} \right) \right)^n} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dz^{n-1}} \left( \frac{z^{n-1}}{\left( z - \frac{-1 - \sqrt{1-a^2}}{a} \right)^n } \right) \right\rvert_{z = \frac{-1 + \sqrt{1-a^2}}{a}},
+\end{align}
+by Cauchy's integral formula. For the sake of simplifying notation, we
+substitute \(w = z - \frac{-1 - \sqrt{1-a^2}}{a}\), giving us
+\begin{align}
+&amp;amp;\phantom{ {}={} } 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dz^{n-1}} \left( \frac{z^{n-1}}{\left( z - \frac{-1 - \sqrt{1-a^2}}{a} \right)^n } \right) \right\rvert_{z = \frac{-1 + \sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dw^{n-1}} \left( \frac{\left(w + \frac{-1 - \sqrt{1-a^2}}{a} \right)^{n-1}}{ w^n } \right) \right\rvert_{w = \frac{2\sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \frac{d^{n-1}}{dw^{n-1}} \left( \sum_{k=0}^{n-1} \binom{n-1}{k} \left( \frac{-1 - \sqrt{1-a^2}}{a} \right)^k w^{-k-1} \right) \right\rvert_{w = \frac{2\sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n \frac{1}{(n-1)!} \left. \sum_{k=0}^{n-1} \binom{n-1}{k} \frac{(-1)^{n-1} (n-1+k)!}{k!} \left( \frac{-1 - \sqrt{1-a^2}}{a} \right)^k w^{-k-n} \right\rvert_{w = \frac{2\sqrt{1-a^2}}{a}} \\
+&amp;amp;= 2\pi \left( \frac{2}{a} \right)^n (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( \frac{-1 - \sqrt{1-a^2}}{a} \right)^k \left( \frac{2\sqrt{1-a^2}}{a} \right)^{-k-n} \\
+&amp;amp;= 2\pi (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( \frac{-1 - \sqrt{1-a^2}}{2} \right)^k \left( \sqrt{1-a^2} \right)^{-k-n}.
+\end{align}
+We then have
+\begin{align}
+I_n &amp;amp;= \left( \sqrt{1-a^2} \right)^{2n-1} 2\pi (-1)^{n-1} \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( \frac{-1 - \sqrt{1-a^2}}{2} \right)^k \left( \sqrt{1-a^2} \right)^{-k-n} \\
+&amp;amp;= 2\pi \sum_{k=0}^{n-1} \frac{(n-1+k)!}{k!k!(n-1-k)!} \left( \frac{1 + \sqrt{1-a^2}}{2} \right)^k \left( -\sqrt{1-a^2} \right)^{n-1-k}.
+\end{align}
+Again, for the sake of simplifying notation, let \(x = \sqrt{1-a^2}\). Notice
+that there very well may be terms of odd powers of \(x\), so we have no
+indication yet that the resulting value will end up being a polynomial in
+\(a\). We then have
+\begin{align}
+&amp;amp;\phantom{ {}={} } 2\pi \sum_{k=0}^{n-1} \frac{(n-1 + k)!}{k!k!(n-1 - k)!} \left( \frac{1 + x}{2} \right)^k (-x)^{n-1 - k} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{k=0}^{n-1} \sum_{j=0}^k \frac{(n-1 + k)!}{k! (n-1 - k)! j! (k - j)!} (-2)^{n-1 - k} x^{n-1 - k + j}.
+\end{align}
+Rearranging with \(k' = n-1 - k\) and  \(j' = k' + j = n-1 - k + j\), and
+then swapping the sums, we have
+\begin{align}
+&amp;amp;\phantom{ {}={} } \frac{2\pi}{2^{n-1}} \sum_{k=0}^{n-1} \sum_{j=0}^k \frac{(n-1 + k)!}{k! (n-1 - k)! j! (k - j)!} (-2)^{n-1 - k} x^{n-1 - k + j} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{k'=0}^{n-1} \sum_{j'=k'}^{n-1} \frac{(2(n-1) - k')!}{(n-1 - k')! k'! (j' - k')! (n-1 - j')!} (-2)^{k'} x^{j'} \\
+&amp;amp;= \frac{2\pi}{2^{n-1}} \sum_{j=0}^{n-1} x^j \sum_{k=0}^j \binom{2(n-1)-k}{n-1} \binom{n-1}{j} \binom{j}{k} (-2)^k,
+\end{align}
+where in the last step \(k\) and \(j\) are written in place of \(k'\) and
+\(j'\) for convenience.&lt;/p&gt;
+
+&lt;p&gt;Here we apply the Egorychev method. Up until this point I'd been in a mad dash
+to get rid of the integral as quickly as possible, and then simplify as much as
+possible, but then I was blocked by a binomial sum I couldn't handle. The
+Egorychev method involves introducing complex contour integrals to simplify
+binomial identities, which seems a little backwards – after all, didn't we
+just work so hard to get rid of a contour integral in the first place? Well,
+let's see what this method really does.  Our main tool is the following
+identity:
+\[
+\binom{s}{t} = \frac{1}{2\pi i} \oint_{\lvert z \rvert = \varepsilon} \frac{(1+z)^s \,dz}{z^{t+1}}
+\]
+There are other possible integrals we could use to express binomials, but this
+will suffice for this problem. My main intuition here for why we would ever
+want to substitute this is that binomials are nice in two ways:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Each individual binomial is pretty arithmetically: 
+\(\binom{s}{t} = \frac{s!}{t!(s-t)!}\).&lt;/li&gt;
+  &lt;li&gt;Binomials combine to be pretty algebraically: 
+\(\sum_{t=0}^s \binom{s}{t}z^t = (1+z)^s\) is the simplest example, and we
+can think of generating functions more generally.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are nice ways combinatorially to think about binomials using both these
+facts simultaneously, but here we're stuck with individual binomials in a sum
+that doesn't allow them to play nicely off of each other, especially because of
+this nasty \( (-2)^k \) term. We'd like to be able to take advantage of
+property 2, which is what the Egorychev method affords us. Applying the method
+to the binomial \(\binom{2(n-1)-k}{n-1}\) gives us
+\begin{align}
+&amp;amp;\phantom{ {}={} } \sum_{k=0}^j \binom{2(n-1)-k}{n-1} \binom{j}{k} (-2)^k \\
+&amp;amp;= \frac{1}{2\pi i}  \sum_{k=0}^j \oint_{\lvert z \rvert = \varepsilon} \frac{(1+z)^{2(n-1)-k} \,dz}{z^n} \binom{j}{k} (-2)^k \\
+&amp;amp;= \frac{1}{2\pi i}  \oint_{\lvert z \rvert = \varepsilon} \frac{1}{z^n} (1+z)^{2(n-1)-j} \sum_{k=0}^j \binom{j}{k} (1+z)^{j-k} (-2)^k \,dz \\
+&amp;amp;= \frac{1}{2\pi i}  \oint_{\lvert z \rvert = \varepsilon} \frac{1}{z^n} (z+1)^{2(n-1)-j} (z-1)^j \,dz \\
+&amp;amp;= \sum_{k=0}^j \binom{2(n-1)-j}{n-1 - k} \binom{j}{k} (-1)^k,
+\end{align}
+giving us the identity
+\[
+\sum_{k=0}^j \binom{2(n-1)-k}{n-1} \binom{j}{k} (-2)^k = \sum_{k=0}^j \binom{2(n-1)-j}{n-1 - k} \binom{j}{k} (-1)^k.
+\]
+This is considerably nicer. In particular, look what happens when \(j\) is
+odd! By pairing the terms up by \(k\) and \(j-k\), we have
+\[
+\binom{2(n-1)-j}{n-1 - k} \binom{j}{k} (-1)^k + \binom{2(n-1)-j}{(n-1) - (j-k)} \binom{j}{j-k} (-1)^{j-k} = 0,
+\]
+so therefore
+\[
+\binom{n-1}{j} \sum_{k=0}^j \binom{2(n-1)-j}{n-1 - k} \binom{j}{k} (-1)^k
+\]
+is \(0\) for odd \(j\)! Then we have
+\[
+I_n = \frac{2\pi}{2^{n-1}} \sum_{\substack{j \in [0, n-1], \\ 2 \mid j }} \left( 1-a^2 \right)^{j/2} \binom{n-1}{j} \sum_{k=0}^j \binom{2(n-1)-j}{n-1 - k} \binom{j}{k} (-1)^k,
+\]
+which is indeed a polynomial in \(a\), as desired.&lt;/p&gt;
+
+&lt;p&gt;I expect that someone more clever than I could manage to get from the first
+contour integral to the last without evaluating the former and reintroducing
+the latter or establish the binomial sum identity using purely elementary
+means, since as much of a nuisance exponentials are, \(2\) is still a very
+nice number. Whether or not the Egorychev method is necessary for this problem
+specifically, I felt that this problem served as a neat introduction to its
+concept and set me up to explore more substantive applications of the Egorychev
+method in the future.&lt;/p&gt;</content><author><name></name></author><summary type="html">A couple weeks ago my friend Ross sent me an interesting integral involving a neat trick called the Egorychev method.</summary></entry><entry><title type="html">A N G E R Y</title><link href="http://localhost:4000/jekyll/posts/2017/06/28/angery/" rel="alternate" type="text/html" title="A N G E R Y" /><published>2017-06-29T10:50:00+07:00</published><updated>2017-06-29T10:50:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/06/28/angery</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/06/28/angery/">&lt;p&gt;angery &amp;gt;:(&lt;/p&gt;
+
+&lt;textarea id=&quot;angery-input&quot; rows=&quot;4&quot; cols=&quot;50&quot; placeholder=&quot;angery reaccs only&quot; autofocus=&quot;&quot;&gt;
+&lt;/textarea&gt;
+
+&lt;textarea readonly=&quot;&quot; id=&quot;angery-output&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;
+&lt;/textarea&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; id=&quot;continuous&quot; name=&quot;continuous&quot; value=&quot;continuous&quot; checked=&quot;&quot; /&gt;
+&lt;label for=&quot;continuous&quot;&gt;continuous conversion&lt;/label&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; id=&quot;capitalize&quot; name=&quot;capitalize&quot; value=&quot;capitalize&quot; checked=&quot;&quot; /&gt;
+&lt;label for=&quot;capitalize&quot;&gt;capitalize&lt;/label&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; id=&quot;extra-space&quot; name=&quot;extra-space&quot; value=&quot;extra-space&quot; /&gt;
+&lt;label for=&quot;extra-space&quot;&gt;extra spaces between words&lt;/label&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;button&quot; id=&quot;convert&quot; name=&quot;convert&quot; value=&quot;convert&quot; onclick=&quot;convert()&quot; style=&quot;visibility: hidden&quot; /&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var input_area = document.getElementById(&quot;angery-input&quot;);
+var output_area = document.getElementById(&quot;angery-output&quot;);
+var convert_button = document.getElementById(&quot;convert&quot;);
+
+var continuous_checkbox = document.getElementById(&quot;continuous&quot;);
+
+var continuous = continuous_checkbox.checked;
+function continuous_checkbox_change(event) {
+  continuous = this.checked;
+  if(continuous) {
+    convert_button.style.visibility = &quot;hidden&quot;;
+    convert();
+  } else {
+    convert_button.style.visibility = &quot;visible&quot;;
+  }
+}
+continuous_checkbox.addEventListener('change', continuous_checkbox_change);
+
+var capitalize_checkbox = document.getElementById(&quot;capitalize&quot;);
+var extra_space_checkbox = document.getElementById(&quot;extra-space&quot;);
+
+var capitalize = capitalize_checkbox.checked;
+var extra_space = extra_space_checkbox.checked;
+
+capitalize_checkbox.addEventListener('change', convert);
+extra_space_checkbox.addEventListener('change', convert);
+
+// https://stackoverflow.com/a/14029861
+if (input_area.addEventListener) {
+  input_area.addEventListener('input', function() {
+    // event handling code for sane browsers
+    continuous = continuous_checkbox.checked;
+    if(continuous) {
+      convert();
+    }
+  }, false);
+} else if (input_area.attachEvent) {
+  input_area.attachEvent('onpropertychange', function() {
+    // IE-specific event handling code
+    continuous = continuous_checkbox.checked;
+    if(continuous) {
+      convert();
+    }
+  });
+}
+
+function convert() {
+    var input = input_area.value;
+    capitalize = capitalize_checkbox.checked;
+    extra_space = extra_space_checkbox.checked;
+    if(capitalize) {
+      input = input.toUpperCase();
+    }
+    var input_arr = input.split(&quot;&quot;);
+    var output_arr = new Array();
+    var first_in_word = true;
+    for(var i = 0; i &lt; input_arr.length; i++) {
+    	if(/\s/.test(input_arr[i])) {
+            // is whitespace
+            output_arr.push(input_arr[i]);
+            if(extra_space &amp;&amp; input_arr[i] == ' ') {
+              output_arr.push(' ');
+            }
+            first_in_word = true;
+            continue;
+        }
+        if(!first_in_word) {
+            output_arr.push(&quot; &quot;);
+        }
+        output_arr.push(input_arr[i]);
+        first_in_word = false;
+    }
+    var output = output_arr.join(&quot;&quot;);
+    output_area.value = output;
+}
+&lt;/script&gt;</content><author><name></name></author><summary type="html">angery &amp;gt;:(</summary></entry><entry><title type="html">Money in Pride</title><link href="http://localhost:4000/jekyll/posts/2017/06/27/pride/" rel="alternate" type="text/html" title="Money in Pride" /><published>2017-06-27T22:50:00+07:00</published><updated>2017-06-27T22:50:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/06/27/pride</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/06/27/pride/">&lt;p&gt;As part of the Resist Movement, someone in the second group of the SF Pride
+Parade held up a sign reading &quot;Get cops and corporations out of our parade.&quot;
+Initially, I felt apprehensive about this sentiment; I knew a good number of
+interns marching in the Facebook contingent, and I had trouble reasoning why
+allies with good intent ought not march.&lt;/p&gt;
+
+&lt;p&gt;I still feel that we are moving in the right direction when police officers,
+politicians, and other members of government demonstrate their solidarity with
+the pride movement. But towards the end of the parade, the corparate presence
+in particular was very noticable. Most corporations were fairly innocuous,
+simply passing out rainbow stickers, but some companies were advertising quite
+blatantly: my friends and I were collecting Clif bars and Chipotle
+buy-one-get-one-free coupons. Is that what we came out to the parade for?
+Corporate representation at pride should be in support of employees and the
+community at large, not for a business promotion.&lt;/p&gt;</content><author><name></name></author><summary type="html">As part of the Resist Movement, someone in the second group of the SF Pride Parade held up a sign reading &quot;Get cops and corporations out of our parade.&quot; Initially, I felt apprehensive about this sentiment; I knew a good number of interns marching in the Facebook contingent, and I had trouble reasoning why allies with good intent ought not march.</summary></entry><entry><title type="html">My Name</title><link href="http://localhost:4000/jekyll/posts/2017/06/13/name/" rel="alternate" type="text/html" title="My Name" /><published>2017-06-14T12:22:22+07:00</published><updated>2017-06-14T12:22:22+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/06/13/name</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/06/13/name/">&lt;p&gt;In my first grade class, everyone wrote a journal entry about their name. I
+remember writing that I liked my initials: &quot;SCH&quot; were the first three leters of
+&quot;school,&quot; and I liked school. You get the picture: I've always been a pretty
+lame kid.&lt;/p&gt;
+
+&lt;p&gt;I have several names. I am Samuel Chen Hsiang, born Samuel Chen Xiang. Most
+people call me Sam or Samuel, though to my family and oldest friends I'm Sammy.
+But I am also 项莅山, in pinyin &lt;em&gt;Xiàng Lìshān&lt;/em&gt;. In traditional my name is
+項蒞山, and in my family's dialect, Ningbonese, my name is pronounced more like
+&lt;em&gt;Hong Lihseh&lt;/em&gt;. My Chinese nickname is 山山, which in Mandarin comes out to
+&lt;em&gt;Shanshan&lt;/em&gt;, and in Ningbonese &lt;em&gt;Sehseh&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I don't intend for this blog to contain too many personal posts, but I feel
+that a page hosted under a domain that is precisely my name warrants some
+discussion of that name. What does it mean to me? What do any of these names
+mean to me?&lt;/p&gt;
+
+&lt;p&gt;My last name is my father's, and sharing this name with my family ties us
+together as a unit. My parents and older sister have been the most important
+positive influences on my life, and my last name serves as a fitting reminder
+of that fact. My parents changed the spelling of our family name when they were
+naturalized. The uninitiated used to call me &lt;em&gt;Zyang&lt;/em&gt;; now, they hiss at me. I'm
+also presumed Taiwanese-American. Everything's in good spirits though; nobody's
+at fault except for Wade and Giles!&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; My current last name has, however,
+provided me one benefit: I escaped the glut of Wangs and Zhangs that crowd the
+end of graduation roll call.&lt;/p&gt;
+
+&lt;p&gt;It's not uncommon to take great pride in a last name. A man remembers his
+father and his grandfather and hears stories from generations past passed down
+through that name. For better or worse, I don't felt strongly about my name's
+history. I never knew my paternal grandfather, and I sure couldn't care less
+for a [ruthless general][xiang-yu] who lived 2000 years ago. The romanization
+of my name means nothing to me; after all, I've had two, and no one is more
+special than the other. Although some people chance upon others with their same
+last name and bond over it, I've never met anyone with the same Chinese
+character.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; My father had a professor in college with the same family name,
+but that's as much luck as we've had.&lt;/p&gt;
+
+&lt;p&gt;项莅山 is my Chinese name. My given name reflects my birthplace, among the
+Allegheny Mountains. &quot;Having mountains and water&quot; is my mother's favorite
+criterion for the beauty of a nature. I write in simplified Chinese, so I don't
+place much value in 蒞山, though in my father's ancestral village the character
+項 was painted on a giant stone in proud traditional. Since I don't speak a
+lick of Ningbonese, no one in my life has called me &lt;em&gt;Hong Lihseh&lt;/em&gt;, though my
+older relatives still refer to me affectionately as &lt;em&gt;Sehseh&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;My middle name is a token from my mother. I am no less my mother's son than my
+father's son, and I think it's arbitrary that my father's name takes
+precedence. But it is proper that my mother's family name, not my Chinese name,
+has legal meaning; indeed, I am more my mother's son than I am Chinese.&lt;/p&gt;
+
+&lt;p&gt;It's a shame that hyphenated last names become a mess after just two
+generations. If I'm lucky enough to have children, I would prefer to defer the
+choice of family name to the mother, or even to a coin flip. Certainly there
+are more pressing issues in society than last name precedence; after all, a
+name is just a symbol. But it is certainly the most powerful one.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Not even their fault either, since pinyin is no less quirky for an English speaker; however, more people are used to it.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;You may know other Xiangs and Hsiangs, but all those I've met have family name 向.  [xiang-yu]: https://en.wikipedia.org/wiki/Xiang_Yu&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">In my first grade class, everyone wrote a journal entry about their name. I remember writing that I liked my initials: &quot;SCH&quot; were the first three leters of &quot;school,&quot; and I liked school. You get the picture: I've always been a pretty lame kid.</summary></entry></feed>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>End-of-Life Agency</title>
+  <meta name="description" content="To what extent should people be able to control their futures, and to what extent can the government take that away? Last week, Jacob and I were discussing w...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/jekyll/posts/2017/07/26/eol-agency/">
+  <link rel="alternate" type="application/rss+xml" title="Samuel Hsiang" href="/feed.xml">
+
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">samuel hsiang</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/about/">about</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">End-of-Life Agency</h1>
+    <p class="post-meta">
+      <time datetime="2017-07-27T10:00:00+07:00" itemprop="datePublished">
+        
+        Jul 26, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>To what extent should people be able to control their futures, and to what
+extent can the government take that away? Last week, Jacob and I were
+discussing whether the government has done too little or too much in shaping
+our life decisions. The United States gives its citizens plenty of agency in
+weighing the short and long term. I can choose what food I eat and how much I
+exercise, as it's entirely my decision whether having a satisfying but
+unhealthy lifestyle is worth shaving years off the end of my life. I assess
+risk constantly, from inching closer to the edge of a cliff for that perfect
+photo to simply biking to and from work, internalizing the probability that I
+get into an accident. I can choose my career: some jobs are more financially
+risky while some are physically more dangerous, some better fit my skill set
+while others I find more intrinsically appealling, but the government leaves
+all of these factors up to the market to set prices and wages, and from there I
+make my own choice.</p>
+
+<p>But in plenty of other instances, we don't get too much say in our future.
+Although I make the decision to hit the road, once I do, I must wear a seat
+belt. The government compels us into Social Security, essentially forcing us to
+prepare for retirement.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Suicide is perhaps the most extreme expression of
+determining one's fate, but suicide historically has been illegal and is
+sometimes considered a common law crime, while medically assisted suicide is
+strictly illegal in all but six states.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> There's plenty to be said about
+whether the government should regulate one's decisions that only affect
+oneself in generality, but for the sake of this post we'll focus mostly on
+those decisions regarding end of life.</p>
+
+<h1 id="valuing-tomorrow">Valuing Tomorrow</h1>
+
+<p>First, I think it's necessary to establish why I value my future. I value my
+own well-being, which encompasses pleasure and pain in both the present and the
+future, and I value others' well-being, especially those I care for, like my
+family. The former is primarily self-interested: I desire pleasure and I avoid
+harm. The latter informs broader decisions I make: what I want out of my
+studies, my future career, and so on. While I do derive fulfillment from
+bettering the lives of those around me, and economists do lump all aspects of
+decision-making under the notion of utility, for the sake of this discussion it
+is useful to separate them.</p>
+
+<p>What does utility over time and intertemporal choice look like? We tend to
+value consumption in the present more than consumption in the future. Given a
+piece of candy that can be consumed today or five years from now, it's
+reasonable to consume today. On the other hand, painful tasks like chores
+tend to be pushed back to the future. Economists model this behavior using
+discounting of future utility. The simplest model involves a parameter
+\(\delta \in [0,1)\), where we make decisions that maximize
+\[U := u_1 + \delta \mathop{\rm E}[u_2],\]
+where \(u_1\) is utility derived from consumption in the first period (the
+present) and \(\mathop{\rm E}[u_2]\) is the expected second period utility
+(the future).</p>
+
+<p>Each of \(u_1\) and \(u_2\) can then be separated into the two components
+discussed earlier; we can write \(u_i(s_i,o_i)\) as an increasing function of
+well-being \(s_i\) of oneself and \(o_i\) of others. Choices that either better
+my personal life without impacting others or better others without impacting
+myself are strictly good, for example. Those that better myself at the cost of
+others or better others but demand sacrifice from me are more complex.</p>
+
+<p>If I were to suddenly die painlessly in my sleep, there would be limited
+loss to my personal well-being. I would go to bed the previous night
+unsuspecting and happy as always, expecting the next day and the combination
+of joy and hurt it brings, only I would not actually experience it. Given a
+choice, however, I very much want to go to bed tonight waking up tomorrow. I
+want to experience \(s_2\), since my current decision maximizes \(U\) which
+is increasing in \(s_2\). I partly want to live the future for myself. But I
+also care about \(o_2\). If I were to die, I think \(o_2\) takes an even
+greater hit than \(s_2\). Death to me seems like a neutral thing, and I would
+die not feeling any pain, but those that care about me would suffer loss.</p>
+
+<p>Determining what I value and why is a very hard question. I've written what I
+consider to be a crude but fairly accurate model, at least at the time of
+writing, but I fully expect that as my blog and I mature, my views on this
+particular issue to change and develop more than most of my other beliefs.</p>
+
+<h1 id="suicide">Suicide</h1>
+
+<p>The legality of suicide is certainly a very difficult matter, and it's very
+reasonable to default to laws that preserve life. But to what extent should
+suicide really be regulated by the government?</p>
+
+<p>I unequivocally believe that I have a personal responsibility to help people with
+suicidal thoughts and encourage them to seek therapy. Someone who chooses
+suicide implicitly finds life tomorrow not worth living, but I believe that
+with proper help, they will find that life tomorrow has so much more
+fulfillment than they had expected the day before. In this case, the skewed
+perceived expectation of the future \(\mathop{\rm E}_*[u_2]\) is drastically
+out of line with the actual expected value of future utility 
+\(\mathop{\rm E}[u_2]\).</p>
+
+<p>While this rationalization leads me to believe that I ought to do everything in
+my power to save lives, I have a hard time deciding whether or not it is
+grounds for the government to forcibly intervene. My inclination is that it is
+generally not the government's role to determine whether or not an adult's
+utility function is "rational," or whether a future self would regret taking a
+particular action. Nevertheless, it still makes perfect sense for the
+government to limit the actions of children, so I'm not ready to make any
+general statement here.</p>
+
+<h1 id="death-with-dignity">Death with Dignity</h1>
+
+<p>That said, if someone were terminally ill and knew that for the rest of their
+short life, they would be in excruciating pain, they ought to have the right to
+escape pain gracefully. Perhaps the most well-known case of this today is that
+of <a href="https://en.wikipedia.org/wiki/Brittany_Maynard">Brittany Maynard</a>, who
+moved to Oregon to end her life in 2014 following a terminal brain cancer
+diagnosis.</p>
+
+<p>I think this is perfectly rational, in that 
+\(\mathop{\rm E}_*[u_2] \approx \mathop{\rm E}[u_2]\) is actually a
+reasonable representation of actual utility in the future. Using my simplified
+value heuristic, prolonged pain harms personal well-being, and terminal illness
+harms capability of improving others' well-being. The degree to which disease
+impacts these values varies person by person, so while I think everyone in such
+a position ought to have the right to death with dignity, I certainly don't
+mean to imply that death by dignity is a path that people in this situation
+should always take.</p>
+
+<p>A natural extension to consider is removing the stipulation of pain. If someone
+had a terminal illness that didn't cause any bodily pain, but otherwise
+incapacitated me, e.g. loss of memory or paralysis, then I think death with
+dignity should still be granted.</p>
+
+<h1 id="euthanasia-and-death-as-a-prior-arrangement">Euthanasia and Death as a Prior Arrangement</h1>
+
+<p>Euthanasia is slightly different from physician-assisted suicide. In assisted
+suicide, a doctor prescribes lethal medication, and the agent self-administers
+that medication when desired. In euthanasia, the agent might be unable to
+self-administer; for example, they might be too weak to swallow the medication.
+Euthanasia contrasts from physician-assisted suicide in that it is entirely
+illegal in all the United States, despite the legality of physician-assisted
+suicide in some states.  Euthanasia is only legal in a handful of countries in
+the world, with the Netherlands and Belgium as notable examples.  Despite the
+differences in legality, which I'll discuss in the next section, I don't find
+anything morally different between these situations: one person wishes for
+death, and another person complies, ensuring that death comes exactly as the
+patient wishes it.</p>
+
+<p>What separates euthanasia from physician-assisted suicide is that an agent can
+potentially enter a contract to be put down in the future, since the agent does
+not need to be the one administering the medicine at the time of death. Playing
+with timing makes euthanasia questionable. We allow people to opt into organ
+donation programs, where in the event of brain death, their organs can be
+harvested. It initially doesn't seem like an unreasonable leap to stipulate
+that, in the future, should a disease or freak accident cause me to permanently
+lose my memory and rational thought, though not quite leave brain dead, I give
+up my body for organ donation. Perhaps this injury causes me to lash out
+violently and mindlessly against everyone, including those I previously loved.
+Or perhaps I know that my disease will result in the eventual loss of my
+ability to think. It seems fair for the current me to agree to put this
+potential future me down, right?</p>
+
+<p>But this is quite troubling. What if in the future I don't want to die, even
+though my present self willed it? Are the present and future selves the same
+person? Indeed, in the present, it is precisely because I consider the future
+me to be a different person whose values would not align with mine that I
+agreed to have myself put down in the first place. This is surprisingly similar
+to the intertemporal mindset of a saved suicidal person: in period 1, the agent
+determines that living in period 2 is unfulfilling, but in period 2, the agent
+then wants to live.</p>
+
+<p>I believe that in this example, the period 1 agent should not be allowed to
+enter a contract that may result in the unwilling death of the period 2 self.
+We certainly should not kill someone who is unwilling just because we think it
+is for the better: this seems pretty clear to me to be murder. Should the
+period 1 self not wish to grant the period 2 agent control of their body, then
+they must take proactive action in period 1 rather than enter a contract to
+have themselves killed in the future.  Consequently, to be eligible for
+euthanasia, I believe that an agent must desire it at the time of
+administration, not at some previous time.</p>
+
+<h1 id="contrasting-with-current-laws">Contrasting with Current Laws</h1>
+
+<p>Interestingly, I find not trying to prevent medically assisted suicide more
+moral than not trying to prevent a normal suicide, though current laws indicate
+that the government believes the opposite, as physician-assisted suicide is
+more explicit in its illegality in more states. Note also that in almost all
+circumstances, we allow people to refuse life-saving medical treatment.
+Choosing to die painlessly seems strictly better than dying painfully without
+any medication at all.</p>
+
+<p>Since I find euthanasia only proper when the patient desires death at the
+moment it is administered, I find euthanasia more justifiably illegal, as the
+cases where euthanasia is most applicable are also those where the patient is
+most vulnerable and incapacitated. Our legal system hinges on responsibility:
+granting doctors the right to terminate their patients, even with the consent
+of the patient, opens up room for abuse. If, for example, only verbal consent
+at the time of administration were required for euthanasia to be justified,
+then even with witnesses, determining whether a doctor conducted themself
+within the law is difficult. If we require written consent, then presumably the
+patient is capable of administering the medicine themself anyway, so only
+physician-assisted suicide is necessary. Morally, I think that there's no
+difference between written, verbal, or any other means of consent, but I
+understand that legally it may be necessary to distinguish them. The intent of
+the patient is much more clear in assisted suicide than in euthanasia, and our
+laws must err on the side of patient protection.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I think it's worth contrasting legislation meant strictly to protect your future self from your current self from most legislation, whose primary purpose is to restrict your actions to benefit other people. Seat belt laws are meant mostly to restrain you to keep you safe, as wearing a seat belt has minimal positive externalities of the safety of other drivers. Social Security is less clear, since it can be seen as a redistribution of income from the young to the old, but over a lifetime it largely does not redistribute income from the rich to the poor, so I think it's better to classify Social Security as a compulsory retirement plan rather than income redistribution. On the other hand, while Obamacare forces us to buy health insurance, the primary purpose of this is not to babysit us. The individual mandate's main purpose is to spread the cost of healthcare across the entire country to make the other key provision, banning price discrimination based on pre-existing conditions, feasible.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>At the time of writing, the five states with legislation allowing death with dignity are <a href="https://www.deathwithdignity.org/learn/death-with-dignity-acts/">Oregon since 1998, Vermont since 2013, Washington since 2009, and California and Colorado since 2016</a>. Montana allows for death with dignity via a <a href="https://en.wikipedia.org/wiki/Baxter_v._Montana">court ruling in 2009</a>.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Samuel Hsiang</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Samuel Hsiang
+            
+            </li>
+            
+            <li><a href="mailto:samuel.c.hsiang@gmail.com">samuel.c.hsiang@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/alwayswimmin"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">alwayswimmin</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/alwayswimmin"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">alwayswimmin</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>TJ &#39;16, H &#39;20
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
