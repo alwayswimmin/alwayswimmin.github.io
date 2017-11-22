@@ -1,5 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-02T21:31:55+07:00</updated><id>http://localhost:4000/</id><title type="html">Samuel Hsiang</title><subtitle>TJ '16, H '20
-</subtitle><entry><title type="html">Skinny Repeal</title><link href="http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal/" rel="alternate" type="text/html" title="Skinny Repeal" /><published>2017-07-28T11:00:00+07:00</published><updated>2017-07-28T11:00:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal/">&lt;p&gt;Today, Republicans announced the Health Care Freedom Act, notably removing the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-23T02:02:49+07:00</updated><id>http://localhost:4000/</id><title type="html">Samuel Hsiang</title><subtitle>TJ '16, H '20
+</subtitle><entry><title type="html">Zhuangzi, Catan, and Classes</title><link href="http://localhost:4000/jekyll/posts/2017/11/22/zhuangzi-catan-classes/" rel="alternate" type="text/html" title="Zhuangzi, Catan, and Classes" /><published>2017-11-23T01:30:00+07:00</published><updated>2017-11-23T01:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/11/22/zhuangzi-catan-classes</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/11/22/zhuangzi-catan-classes/">&lt;p&gt;Thanksgiving provides me with some well-needed rest before I jump back in to
+finish the semester, giving me time to reflect a little bit and collect some
+random thoughts.&lt;/p&gt;
+
+&lt;p&gt;Zhuangzi's passage on the happiness of fish discusses the relativity of
+knowledge: How does Zhuangzi know whether the fish are happy? But Huizi cannot
+know what Zhuangzi knows… the cycle continues. Zhuangzi finishes with a play
+on the word 安, which can mean either &quot;how&quot; or &quot;where.&quot; Last night, I read a
+&lt;a href=&quot;https://paper-republic.org/lucasklein/anarchist-anthropology-happy-fish-and-translation/&quot;&gt;blog post&lt;/a&gt; 
+that focused on that last line, and I found both the post and its comment chain
+enjoyable to peruse, comparing relativity of perspective to relativity of
+location (hence 安 as &quot;whence&quot;) and the joy of philosophy to the playfulness of
+fish.&lt;/p&gt;
+
+&lt;p&gt;A couple weeks ago, a game of Catan ended in an interesting way: it was Will's
+turn, and should Will end his turn it would be mine, and I would immediately
+build a settlement with the resources in my hand and win the game. Andrew,
+who almost has the resources to win himself, recognized that if he gave all of
+his resources to Will, he could enable Will to win before me. Wishing to
+prolong the game, he threatened to do so unless I forfeited the resources in my
+hand that would have allowed me to win. I gave up my resources and was forced
+to roll on my turn; I still got lucky with my roll, but I wonder if Andrew
+could have strong-armed me further than he had done. Perhaps the game could
+have been prolonged further if Andrew, Will, and I had entered an agreement to
+give all of our resources to Rowen, who was far away in last place. My game of
+Catan presented a similar situation to Risk, in which a player might threaten
+to retaliate in full force against any invader, essentially sacking the current
+game to win the metagame. This also leads me to wonder how much negative
+expected value I would be willing to take on to prevent my opponents from
+winning high positive expected value.&lt;/p&gt;
+
+&lt;p&gt;Classes are finally coming to a close. All classes build up in nature; the end
+material rests on the foundation laid in the beginning. Yet I think I stand
+more to learn at the end of this semester than at the end of my previous
+semesters: Math 114 is entering Fourier analysis and exploring some familiar
+results from complex analysis, like the maximum principle, in a real analysis
+context (perhaps its original context); Stat 210 is covering the Central Limit
+Theorem in more rigor; ER 18 is synthesizing all of the thinkers we'd covered
+in the class; USW 35 is now proposing and discussing solutions to the problems
+in our education system. Everything is coming together, but it's difficult to
+keep track of everything, and truly, &lt;em&gt;tempus fugit&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Thanksgiving provides me with some well-needed rest before I jump back in to finish the semester, giving me time to reflect a little bit and collect some random thoughts.</summary></entry><entry><title type="html">sicut cor ita cervus</title><link href="http://localhost:4000/jekyll/posts/2017/10/30/cervus/" rel="alternate" type="text/html" title="sicut cor ita cervus" /><published>2017-10-31T09:30:00+07:00</published><updated>2017-10-31T09:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/10/30/cervus</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/10/30/cervus/">&lt;p&gt;I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of
+Palestrina's &lt;em&gt;Sicut cervus&lt;/em&gt; at the first rehearsal freshman year. The text is
+an adaptation of Psalm 42:&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;em&gt;Sicut cervus desiderat ad fontes aquarum, ita
+desiderat anima mea ad te, Deus&lt;/em&gt;. The sheet music we were using had a typo in
+the English translation, using &lt;em&gt;heart&lt;/em&gt; instead of &lt;em&gt;hart&lt;/em&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; as the translation
+for &lt;em&gt;cervus&lt;/em&gt;. Interestingly, just as &lt;em&gt;hart&lt;/em&gt; and &lt;em&gt;heart&lt;/em&gt; sound similar, so do
+&lt;em&gt;cervus&lt;/em&gt; and the Latin word for &lt;em&gt;heart&lt;/em&gt;, &lt;em&gt;cor&lt;/em&gt;,&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; and even more
+interestingly, this is not a coincidence.&lt;/p&gt;
+
+&lt;p&gt;The two words in each language sound similar because they are derived from
+words that sound similar in Proto-Indo-European. &lt;em&gt;Heart&lt;/em&gt; and &lt;em&gt;cor&lt;/em&gt; are derived
+from PIE &lt;em&gt;*ḱḗr&lt;/em&gt; (oblique stem &lt;em&gt;*ḱr̥d-&lt;/em&gt;), which is well-attested across the many
+branches of Indo-European; another familiar example is Greek &lt;em&gt;kardiá&lt;/em&gt;.&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; The
+relationship between &lt;em&gt;heart&lt;/em&gt; and &lt;em&gt;cor&lt;/em&gt; is unexceptional to anyone with exposure
+to PIE. Less commonly known is the corresponding relationship between &lt;em&gt;hart&lt;/em&gt;
+and &lt;em&gt;cervus&lt;/em&gt;, both rarer words in their respective languages. &lt;em&gt;Hart&lt;/em&gt; is derived
+from PIE &lt;em&gt;*ḱerh₂-&lt;/em&gt; (&quot;horn&quot;),&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; which is also the source of &lt;em&gt;cervus&lt;/em&gt;.  We see
+that &lt;em&gt;*ḱḗr&lt;/em&gt; and &lt;em&gt;*ḱerh₂-&lt;/em&gt; sound similar, and by regularity of sound change,&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;
+words derived from similar-sounding roots in the proto-language will continue
+to sound similar in daughter languages, which resulted in the confusion in the
+English translation of &lt;em&gt;Sicut cervus&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Psalm 41:2 in the Vulgate.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;hart &lt;em&gt;n&lt;/em&gt;. An adult male deer, especially a red deer over five years old. &lt;a href=&quot;https://en.oxforddictionaries.com/definition/hart&quot;&gt;Oxford English Dictionary&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;&lt;em&gt;cor&lt;/em&gt;, &lt;em&gt;cordis&lt;/em&gt;. From which we derive the words &lt;em&gt;core&lt;/em&gt;, &lt;em&gt;accord&lt;/em&gt;, &lt;em&gt;cordial&lt;/em&gt;, etc. via French.&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;&lt;em&gt;καρδιά&lt;/em&gt; (&lt;em&gt;kardiá&lt;/em&gt;). From which we derive the root &lt;em&gt;cardio-&lt;/em&gt; and therefore words like &lt;em&gt;cardiology&lt;/em&gt; and &lt;em&gt;cardiovascular&lt;/em&gt;, and other words like &lt;em&gt;tachycardia&lt;/em&gt;.&amp;nbsp;&lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot;&gt;
+      &lt;p&gt;&lt;em&gt;*ḱerh₂-&lt;/em&gt; (&quot;horn&quot;). From which we also derive the English words &lt;em&gt;horn&lt;/em&gt;; &lt;em&gt;flugelhorn&lt;/em&gt; from German; &lt;em&gt;cornucopia&lt;/em&gt;, &lt;em&gt;cornea&lt;/em&gt;, &lt;em&gt;cervix&lt;/em&gt; from Latin and &lt;em&gt;unicorn&lt;/em&gt;, &lt;em&gt;carrot&lt;/em&gt;, &lt;em&gt;cerebral&lt;/em&gt;, &lt;em&gt;corner&lt;/em&gt; from Latin via French; &lt;em&gt;keratin&lt;/em&gt;, &lt;em&gt;rhinoceros&lt;/em&gt;, &lt;em&gt;triceratops&lt;/em&gt; from Greek and &lt;em&gt;cranium&lt;/em&gt; from Greek via Latin.  &lt;a href=&quot;https://www.etymonline.com/word/*ker-&quot;&gt;Online Etymology Dictionary&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:6&quot;&gt;
+      &lt;p&gt;The notable sound changes here are PIE &lt;em&gt;*ḱ&lt;/em&gt; resulting in English &lt;em&gt;h&lt;/em&gt; and Latin &lt;em&gt;k&lt;/em&gt;, often spelled &lt;em&gt;c&lt;/em&gt;, which later palatalized before the front vowels &lt;em&gt;i&lt;/em&gt; and &lt;em&gt;e&lt;/em&gt;. Another sound change is PIE &lt;em&gt;*d&lt;/em&gt; resulting in English &lt;em&gt;t&lt;/em&gt; and Latin &lt;em&gt;d&lt;/em&gt;.&amp;nbsp;&lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of Palestrina's Sicut cervus at the first rehearsal freshman year. The text is an adaptation of Psalm 42:1 Sicut cervus desiderat ad fontes aquarum, ita desiderat anima mea ad te, Deus. The sheet music we were using had a typo in the English translation, using heart instead of hart2 as the translation for cervus. Interestingly, just as hart and heart sound similar, so do cervus and the Latin word for heart, cor,3 and even more interestingly, this is not a coincidence. Psalm 41:2 in the Vulgate.&amp;nbsp;&amp;#8617; hart n. An adult male deer, especially a red deer over five years old. Oxford English Dictionary&amp;nbsp;&amp;#8617; cor, cordis. From which we derive the words core, accord, cordial, etc. via French.&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Skinny Repeal</title><link href="http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal/" rel="alternate" type="text/html" title="Skinny Repeal" /><published>2017-07-28T11:00:00+07:00</published><updated>2017-07-28T11:00:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/07/27/skinny-repeal/">&lt;p&gt;Today, Republicans announced the Health Care Freedom Act, notably removing the
 individual and employer mandates from the Affordable Care Act. By removing the
 requirement for people to have insurance, Republicans tout this bill as
 restoring choice to the American consumer, thereby reducing healthcare prices.
