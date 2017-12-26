@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-23T02:02:49+07:00</updated><id>http://localhost:4000/</id><title type="html">Samuel Hsiang</title><subtitle>TJ '16, H '20
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-12-26T09:06:04+07:00</updated><id>http://localhost:4000/</id><title type="html">Samuel Hsiang</title><subtitle>TJ '16, H '20
 </subtitle><entry><title type="html">Zhuangzi, Catan, and Classes</title><link href="http://localhost:4000/jekyll/posts/2017/11/22/zhuangzi-catan-classes/" rel="alternate" type="text/html" title="Zhuangzi, Catan, and Classes" /><published>2017-11-23T01:30:00+07:00</published><updated>2017-11-23T01:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/11/22/zhuangzi-catan-classes</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/11/22/zhuangzi-catan-classes/">&lt;p&gt;Thanksgiving provides me with some well-needed rest before I jump back in to
 finish the semester, giving me time to reflect a little bit and collect some
 random thoughts.&lt;/p&gt;
@@ -34,12 +34,13 @@ winning high positive expected value.&lt;/p&gt;
 material rests on the foundation laid in the beginning. Yet I think I stand
 more to learn at the end of this semester than at the end of my previous
 semesters: Math 114 is entering Fourier analysis and exploring some familiar
-results from complex analysis, like the maximum principle, in a real analysis
-context (perhaps its original context); Stat 210 is covering the Central Limit
-Theorem in more rigor; ER 18 is synthesizing all of the thinkers we'd covered
-in the class; USW 35 is now proposing and discussing solutions to the problems
-in our education system. Everything is coming together, but it's difficult to
-keep track of everything, and truly, &lt;em&gt;tempus fugit&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Thanksgiving provides me with some well-needed rest before I jump back in to finish the semester, giving me time to reflect a little bit and collect some random thoughts.</summary></entry><entry><title type="html">sicut cor ita cervus</title><link href="http://localhost:4000/jekyll/posts/2017/10/30/cervus/" rel="alternate" type="text/html" title="sicut cor ita cervus" /><published>2017-10-31T09:30:00+07:00</published><updated>2017-10-31T09:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/10/30/cervus</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/10/30/cervus/">&lt;p&gt;I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of
+results from complex analysis, like the mean-value property of harmonic
+functions, in a real analysis context (perhaps its original context); Stat 210
+is covering the Central Limit Theorem in more rigor; ER 18 is synthesizing all
+of the thinkers we'd covered in the class; USW 35 is now proposing and
+discussing solutions to the problems in our education system. Everything is
+coming together, but it's difficult to keep track of everything, and truly,
+&lt;em&gt;tempus fugit&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Thanksgiving provides me with some well-needed rest before I jump back in to finish the semester, giving me time to reflect a little bit and collect some random thoughts.</summary></entry><entry><title type="html">sicut cor ita cervus</title><link href="http://localhost:4000/jekyll/posts/2017/10/30/cervus/" rel="alternate" type="text/html" title="sicut cor ita cervus" /><published>2017-10-31T09:30:00+07:00</published><updated>2017-10-31T09:30:00+07:00</updated><id>http://localhost:4000/jekyll/posts/2017/10/30/cervus</id><content type="html" xml:base="http://localhost:4000/jekyll/posts/2017/10/30/cervus/">&lt;p&gt;I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of
 Palestrina's &lt;em&gt;Sicut cervus&lt;/em&gt; at the first rehearsal freshman year. The text is
 an adaptation of Psalm 42:&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;em&gt;Sicut cervus desiderat ad fontes aquarum, ita
 desiderat anima mea ad te, Deus&lt;/em&gt;. The sheet music we were using had a typo in
