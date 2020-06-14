@@ -1,5 +1,1763 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="alwayswimmin.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="alwayswimmin.github.io/" rel="alternate" type="text/html" /><updated>2017-12-28T09:12:14+07:00</updated><id>alwayswimmin.github.io/</id><title type="html">Samuel Hsiang</title><subtitle>TJ '16, H '20
-</subtitle><entry><title type="html">Exponential Dynamic Programming</title><link href="alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp/" rel="alternate" type="text/html" title="Exponential Dynamic Programming" /><published>2017-12-28T07:50:00+07:00</published><updated>2017-12-28T07:50:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp/">&lt;p&gt;Dynamic programming can turn exponential solutions into polynomial solutions,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="alwayswimmin.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="alwayswimmin.github.io/" rel="alternate" type="text/html" /><updated>2020-06-14T10:34:26+04:00</updated><id>alwayswimmin.github.io/feed.xml</id><title type="html">Samuel Hsiang</title><subtitle>My little corner of the web.
+</subtitle><entry><title type="html">The Aeneid, Book I</title><link href="alwayswimmin.github.io/jekyll/posts/2020/06/13/aeneid/" rel="alternate" type="text/html" title="The Aeneid, Book I" /><published>2020-06-14T07:50:00+04:00</published><updated>2020-06-14T07:50:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2020/06/13/aeneid</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2020/06/13/aeneid/">&lt;p&gt;Translated by A. S. Kline. Formatting in progress.&lt;/p&gt;
+
+&lt;!-- Bootstrap CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&quot; integrity=&quot;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&quot; crossorigin=&quot;anonymous&quot; /&gt;
+
+&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot; integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&quot; integrity=&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&quot; integrity=&quot;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;container&quot; style=&quot;font-size:8px;&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt;
+&lt;br /&gt; Arma virumque canō, Trōiae quī prīmus ab ōrīs&lt;br /&gt; Ītaliam,
+fātō profugus, Lāvīniaque vēnit&lt;br /&gt; lītora, multum ille et terrīs
+iactātus et altō&lt;br /&gt; vī superum saevae memorem Iūnōnis ob īram;&lt;br /&gt;                multa quoque et bellō passūs, dum conderet urbem,&lt;br /&gt; inferretque
+deōs Latiō, genus unde Latīnum,&lt;br /&gt; Albānīque patrēs, atque altae
+moenia Rōmae.
+&lt;br /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt; I sing of arms and the man, he who, exiled by fate,
+&lt;br /&gt; first came from the coast of Troy to Italy, and to
+&lt;br /&gt; Lavinian shores – hurled about endlessly by land and sea,
+&lt;br /&gt; by the will of the gods, by cruel Juno’s remorseless anger,
+&lt;br /&gt; long suffering also in war, until he founded a city
+&lt;br /&gt; and brought his gods to Latium: from that the Latin people
+&lt;br /&gt; came, the lords of Alba Longa, the walls of noble Rome.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt;
+&lt;br /&gt; Mūsa, mihī causās memorā, quō nūmine laesō,&lt;br /&gt; quidve dolēns,
+rēgīna deum tot volvere cāsūs&lt;br /&gt; īnsīgnem pietāte virum, tot adīre
+labōrēs
+&lt;br /&gt; impulerit. Tantaene animīs caelestibus īrae?
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt; Muse, tell me the cause: how was she offended in her divinity,
+&lt;br /&gt; how was she grieved, the Queen of Heaven, to drive a man,
+&lt;br /&gt; noted for virtue, to endure such dangers, to face so many
+&lt;br /&gt; trials? Can there be such anger in the minds of the gods?
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt;
+&lt;br /&gt; Urbs antīqua fuit, Tyriī tenuēre colōnī,&lt;br /&gt; Karthāgō, Ītaliam
+contrā Tiberīnaque longē&lt;br /&gt; ōstia, dīves opum studiīsque asperrima
+bellī,
+&lt;br /&gt; quam Iūnō fertur terrīs magis omnibus ūnam&lt;br /&gt; posthabitā
+coluisse Samō; hīc illius arma,&lt;br /&gt; hīc currus fuit; hōc rēgnum
+dea gentibus esse,&lt;br /&gt; sī quā Fāta sinant, iam tum tenditque fovetque.
+&lt;br /&gt; Prōgeniem sed enim Trōiānō ā sanguine dūcī&lt;br /&gt; audierat, Tyriās
+olim quae verteret arcēs;&lt;br /&gt; hinc populum lātē regem bellōque
+superbum
+&lt;br /&gt; ventūrum excidiō Libyae: sīc volvere Parcās.&lt;br /&gt; Id metuēns,
+veterisque memor Sāturnia bellī,&lt;br /&gt; prīma quod ad Trōiam prō cārīs
+gesserat Argīs&amp;#151;&lt;br /&gt; necdum etiam causae īrārum saevīque dolōrēs
+&lt;br /&gt; exciderant animō: manet altā mente repostum&lt;br /&gt; iūdicium Paridis
+sprētaeque iniūria fōrmae,&lt;br /&gt; et genus invīsum, et raptī Ganymēdis
+honōrēs.
+&lt;br /&gt; Hīs accēnsa super, iactātōs aequore tōtō&lt;br /&gt; Trōas, rēliquiās
+Danaum atque immītis Achillī,&lt;br /&gt; arcēbat longē Latiō, multōsque
+per annōs&lt;br /&gt; errābant, āctī Fātīs, maria omnia circum.
+&lt;br /&gt; Tantae mōlis erat Rōmānam condere gentem!
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;There was an ancient city, Carthage (held by colonists from Tyre),
+&lt;br /&gt;opposite Italy, and the far-off mouths of the Tiber,
+&lt;br /&gt;rich in wealth, and very savage in pursuit of war.
+&lt;br /&gt;They say Juno loved this one land above all others,
+&lt;br /&gt;even neglecting Samos: here were her weapons
+&lt;br /&gt;and her chariot, even then the goddess worked at,
+&lt;br /&gt;and cherished, the idea that it should have supremacy
+&lt;br /&gt;over the nations, if only the fates allowed.
+&lt;br /&gt;Yet she’d heard of offspring, derived from Trojan blood,
+&lt;br /&gt;that would one day overthrow the Tyrian stronghold:
+&lt;br /&gt;that from them a people would come, wide-ruling,
+&lt;br /&gt;and proud in war, to Libya’s ruin: so the Fates ordained.
+&lt;br /&gt;Fearing this, and remembering the ancient war
+&lt;br /&gt;she had fought before, at Troy, for her dear Argos,
+&lt;br /&gt;(and the cause of her anger and bitter sorrows
+&lt;br /&gt;had not yet passed from her mind: the distant judgement
+&lt;br /&gt;of Paris stayed deep in her heart, the injury to her scorned
+beauty,
+&lt;br /&gt;her hatred of the race, and abducted Ganymede’s honours)
+&lt;br /&gt;the daughter of Saturn, incited further by this,
+&lt;br /&gt;hurled the Trojans, the Greeks and pitiless Achilles had left,
+&lt;br /&gt;round the whole ocean, keeping them far from Latium:
+&lt;br /&gt;they wandered for many years, driven by fate over all the seas.
+&lt;br /&gt;Such an effort it was to found the Roman people.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt;
+&lt;br /&gt;Vix e conspectu Siculae telluris in altum&lt;br /&gt; vela dabant laeti,
+et spumas salis aere ruebant,&lt;br /&gt; cum Iuno, aeternum servans sub
+pectore volnus,&lt;br /&gt; haec secum: 'Mene incepto desistere victam,&lt;br /&gt;                nec posse Italia Teucrorum avertere regem?&lt;br /&gt; Quippe vetor fatis.
+Pallasne exurere classem&lt;br /&gt; Argivom atque ipsos potuit submergere
+ponto,
+&lt;br /&gt; unius ob noxam et furias Aiacis Oilei?&lt;br /&gt; Ipsa, Iovis rapidum
+iaculata e nubibus ignem,&lt;br /&gt; disiecitque rates evertitque aequora
+ventis,
+&lt;br /&gt; illum expirantem transfixo pectore flammas&lt;br /&gt; turbine corripuit
+scopuloque infixit acuto.&lt;br /&gt; Ast ego, quae divom incedo regina,
+Iovisque
+&lt;br /&gt; et soror et coniunx, una cum gente tot annos&lt;br /&gt; bella gero!
+Et quisquam numen Iunonis adoret&lt;br /&gt; praeterea, aut supplex aris
+imponet honorem?'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;They were hardly out of sight of Sicily’s isle, in deeper water,
+&lt;br /&gt;joyfully spreading sail, bronze keel ploughing the brine,
+&lt;br /&gt;when Juno, nursing the eternal wound in her breast,
+&lt;br /&gt;spoke to herself: ‘Am I to abandon my purpose, conquered,
+&lt;br /&gt;unable to turn the Teucrian king away from Italy!
+&lt;br /&gt;Why, the fates forbid it. Wasn’t Pallas able to burn
+&lt;br /&gt;the Argive fleet, to sink it in the sea, because of the guilt
+&lt;br /&gt;and madness of one single man, Ajax, son of Oileus?
+&lt;br /&gt;She herself hurled Jupiter’s swift fire from the clouds,
+&lt;br /&gt;scattered the ships, and made the sea boil with storms:
+&lt;br /&gt;She caught him up in a water-spout, as he breathed flame
+&lt;br /&gt;from his pierced chest, and pinned him to a sharp rock:
+&lt;br /&gt;yet I, who walk about as queen of the gods, wife
+&lt;br /&gt;and sister of Jove, wage war on a whole race, for so many years.
+&lt;br /&gt;Indeed, will anyone worship Juno’s power from now on,
+&lt;br /&gt;or place offerings, humbly, on her altars?’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt;
+&lt;br /&gt; Talia flammato secum dea corde volutans&lt;br /&gt; nimborum in patriam,
+loca feta furentibus austris,&lt;br /&gt; Aeoliam venit. Hic vasto rex
+Aeolus antro&lt;br /&gt; luctantes ventos tempestatesque sonoras&lt;br /&gt; imperio
+premit ac vinclis et carcere frenat.&lt;br /&gt; Illi indignantes magno
+cum murmure montis&lt;br /&gt; circum claustra fremunt; celsa sedet Aeolus
+arce
+&lt;br /&gt; sceptra tenens, mollitque animos et temperat iras.&lt;br /&gt; Ni
+faciat, maria ac terras caelumque profundum&lt;br /&gt; quippe ferant rapidi
+secum verrantque per auras.&lt;br /&gt; Sed pater omnipotens speluncis
+abdidit atris,&lt;br /&gt; hoc metuens, molemque et montis insuper altos&lt;br /&gt;                imposuit, regemque dedit, qui foedere certo&lt;br /&gt; et premere et laxas
+sciret dare iussus habenas.&lt;br /&gt; Ad quem tum Iuno supplex his vocibus
+usa est:
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt; So debating with herself, her heart inflamed, the goddess
+&lt;br /&gt;came to Aeolia, to the country of storms, the place
+&lt;br /&gt;of wild gales. Here in his vast cave, King Aeolus,
+&lt;br /&gt;keeps the writhing winds, and the roaring tempests,
+&lt;br /&gt;under control, curbs them with chains and imprisonment.
+&lt;br /&gt;They moan angrily at the doors, with a mountain’s vast murmurs:
+&lt;br /&gt;Aeolus sits, holding his sceptre, in his high stronghold,
+&lt;br /&gt;softening their passions, tempering their rage: if not,
+&lt;br /&gt;they’d surely carry off seas and lands and the highest heavens,
+&lt;br /&gt;with them, in rapid flight, and sweep them through the air.
+&lt;br /&gt;But the all-powerful Father, fearing this, hid them
+&lt;br /&gt;in dark caves, and piled a high mountain mass over them
+&lt;br /&gt;and gave them a king, who by fixed agreement, would know
+&lt;br /&gt;how to give the order to tighten or slacken the reins.
+&lt;br /&gt;Juno now offered these words to him, humbly:
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt; 'Aeole, namque tibi divom pater atque hominum rex&lt;br /&gt; et mulcere
+dedit fluctus et tollere vento,&lt;br /&gt; gens inimica mihi Tyrrhenum
+navigat aequor,
+&lt;br /&gt; Ilium in Italiam portans victosque Penates:
+&lt;br /&gt; incute vim ventis submersasque obrue puppes,&lt;br /&gt; aut age diversos
+et disiice corpora ponto.&lt;br /&gt; Sunt mihi bis septem praestanti corpore
+nymphae,
+&lt;br /&gt; quarum quae forma pulcherrima Deiopea,&lt;br /&gt; conubio iungam
+stabili propriamque dicabo,&lt;br /&gt; omnis ut tecum meritis pro talibus
+annos
+&lt;br /&gt; exigat, et pulchra faciat te prole parentem.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt; ‘Aeolus, since the Father of gods, and king of men,
+&lt;br /&gt;gave you the power to quell, and raise, the waves with the
+winds,
+&lt;br /&gt;there is a people I hate sailing the Tyrrhenian Sea,
+&lt;br /&gt;bringing Troy’s conquered gods to Italy:
+&lt;br /&gt;Add power to the winds, and sink their wrecked boats,
+&lt;br /&gt;or drive them apart, and scatter their bodies over the sea.
+&lt;br /&gt;I have fourteen Nymphs of outstanding beauty:
+&lt;br /&gt;of whom I’ll name Deiopea, the loveliest in looks,
+&lt;br /&gt;joined in eternal marriage, and yours for ever, so that,
+&lt;br /&gt;for such service to me as yours, she’ll spend all her years
+&lt;br /&gt;with you, and make you the father of lovely children.’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Aeolus haec contra: 'Tuus, O regina, quid optes&lt;br /&gt; explorare labor;
+mihi iussa capessere fas est.&lt;br /&gt; Tu mihi, quodcumque hoc regni,
+tu sceptra Iovemque&lt;br /&gt; concilias, tu das epulis accumbere divom,
+&lt;br /&gt; nimborumque facis tempestatumque potentem.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Aeolus replied: ‘Your task, O queen, is to decide
+&lt;br /&gt;what you wish: my duty is to fulfil your orders.
+&lt;br /&gt;You brought about all this kingdom of mine, the sceptre,
+&lt;br /&gt;Jove’s favour, you gave me a seat at the feasts of the gods,
+&lt;br /&gt;and you made me lord of the storms and the tempests.’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Haec ubi dicta, cavum conversa cuspide montem&lt;br /&gt; impulit in latus:
+ac venti, velut agmine facto,&lt;br /&gt; qua data porta, ruunt et terras
+turbine perflant.&lt;br /&gt; Incubuere mari, totumque a sedibus imis
+&lt;br /&gt; una Eurusque Notusque ruunt creberque procellis&lt;br /&gt; Africus,
+et vastos volvunt ad litora fluctus.&lt;br /&gt; Insequitur clamorque virum
+stridorque rudentum.&lt;br /&gt; Eripiunt subito nubes caelumque diemque&lt;br /&gt;                Teucrorum ex oculis; ponto nox incubat atra.&lt;br /&gt; Intonuere poli,
+et crebris micat ignibus aether,&lt;br /&gt; praesentemque viris intentant
+omnia mortem.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;When he had spoken, he reversed his trident and struck
+&lt;br /&gt;the hollow mountain on the side: and the winds, formed ranks,
+&lt;br /&gt;rushed out by the door he’d made, and whirled across the earth.
+&lt;br /&gt;They settle on the sea, East and West wind,
+&lt;br /&gt;and the wind from Africa, together, thick with storms,
+&lt;br /&gt;stir it all from its furthest deeps, and roll vast waves to
+shore:
+&lt;br /&gt;follows a cry of men and a creaking of cables.
+&lt;br /&gt;Suddenly clouds take sky and day away
+&lt;br /&gt;from the Trojan’s eyes: dark night rests on the sea.
+&lt;br /&gt;It thunders from the pole, and the aether flashes thick fire,
+&lt;br /&gt;and all things threaten immediate death to men.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Extemplo Aeneae solvuntur frigore membra:&lt;br /&gt; ingemit, et duplicis
+tendens ad sidera palmas&lt;br /&gt; talia voce refert: 'O terque quaterque
+beati,
+&lt;br /&gt; quis ante ora patrum Troiae sub moenibus altis
+&lt;br /&gt; contigit oppetere! O Danaum fortissime gentis&lt;br /&gt; Tydide!
+Mene Iliacis occumbere campis&lt;br /&gt; non potuisse, tuaque animam hanc
+effundere dextra,&lt;br /&gt; saevus ubi Aeacidae telo iacet Hector, ubi
+ingens
+&lt;br /&gt; Sarpedon, ubi tot Simois correpta sub undis&lt;br /&gt; scuta virum
+galeasque et fortia corpora volvit?'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Instantly Aeneas groans, his limbs slack with cold:
+&lt;br /&gt;stretching his two hands towards the heavens,
+&lt;br /&gt;he cries out in this voice: ‘Oh, three, four times fortunate
+&lt;br /&gt;were those who chanced to die in front of their father’s eyes
+&lt;br /&gt;under Troy’s high walls! O Diomede, son of Tydeus
+&lt;br /&gt;bravest of Greeks! Why could I not have fallen, at your hand,
+&lt;br /&gt;in the fields of Ilium, and poured out my spirit,
+&lt;br /&gt;where fierce Hector lies, beneath Achilles’s spear,
+&lt;br /&gt;and mighty Sarpedon: where Simois rolls, and sweeps away
+&lt;br /&gt;so many shields, helmets, brave bodies, of men, in its waves!’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt;
+&lt;br /&gt; Talia iactanti stridens Aquilone procella&lt;br /&gt; velum adversa
+ferit, fluctusque ad sidera tollit.&lt;br /&gt; Franguntur remi; tum prora
+avertit, et undis&lt;br /&gt; dat latus; insequitur cumulo praeruptus aquae
+mons.
+&lt;br /&gt; Hi summo in fluctu pendent; his unda dehiscens&lt;br /&gt; terram
+inter fluctus aperit; furit aestus harenis.&lt;br /&gt; Tris Notus abreptas
+in saxa latentia torquet&amp;#151;&lt;br /&gt; saxa vocant Itali mediis quae
+in fluctibus aras&amp;#151;&lt;br /&gt; dorsum immane mari summo; tris Eurus
+ab alto&lt;br /&gt; in brevia et Syrtis urget, miserabile visu,&lt;br /&gt; inliditque
+vadis atque aggere cingit harenae.&lt;br /&gt; Unam, quae Lycios fidumque
+vehebat Oronten,&lt;br /&gt; ipsius ante oculos ingens a vertice pontus&lt;br /&gt;                in puppim ferit: excutitur pronusque magister&lt;br /&gt; volvitur in caput;
+ast illam ter fluctus ibidem&lt;br /&gt; torquet agens circum, et rapidus
+vorat aequore vortex.&lt;br /&gt; Adparent rari nantes in gurgite vasto,&lt;br /&gt;                arma virum, tabulaeque, et Troia gaza per undas.&lt;br /&gt; Iam validam
+Ilionei navem, iam fortis Achati,&lt;br /&gt; et qua vectus Abas, et qua
+grandaevus Aletes,&lt;br /&gt; vicit hiems; laxis laterum compagibus omnes&lt;br /&gt;                accipiunt inimicum imbrem, rimisque fatiscunt.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Hurling these words out, a howling blast from the north,
+&lt;br /&gt;strikes square on the sail, and lifts the seas to heaven:
+&lt;br /&gt;the oars break: then the prow swings round and offers
+&lt;br /&gt;the beam to the waves: a steep mountain of water follows in
+a mass.
+&lt;br /&gt;Some ships hang on the breaker’s crest: to others the yawning
+deep
+&lt;br /&gt;shows land between the waves: the surge rages with sand.
+&lt;br /&gt;The south wind catches three, and whirls them onto hidden rocks
+&lt;br /&gt;(rocks the Italians call the Altars, in mid-ocean,
+&lt;br /&gt;a vast reef on the surface of the sea) three the east wind
+drives
+&lt;br /&gt;from the deep, to the shallows and quick-sands (a pitiful sight),
+&lt;br /&gt;dashes them against the bottom, covers them with a gravel mound.
+&lt;br /&gt;A huge wave, toppling, strikes one astern, in front of his
+very eyes,
+&lt;br /&gt;one carrying faithful Orontes and the Lycians.
+&lt;br /&gt;The steersman’s thrown out and hurled headlong, face down:
+&lt;br /&gt;but the sea turns the ship three times, driving her round,
+&lt;br /&gt;in place, and the swift vortex swallows her in the deep.
+&lt;br /&gt;Swimmers appear here and there in the vast waste,
+&lt;br /&gt;men’s weapons, planking, Trojan treasure in the waves.
+&lt;br /&gt;Now the storm conquers Iloneus’s tough ship, now Achates,
+&lt;br /&gt;now that in which Abas sailed, and old Aletes’s:
+&lt;br /&gt;their timbers sprung in their sides, all the ships
+&lt;br /&gt;let in the hostile tide, and split open at the seams.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Interea magno misceri murmure pontum,&lt;br /&gt; emissamque hiemem sensit
+Neptunus, et imis&lt;br /&gt; stagna refusa vadis, graviter commotus; et
+alto
+&lt;br /&gt; prospiciens, summa placidum caput extulit unda.&lt;br /&gt; Disiectam
+Aeneae, toto videt aequore classem,&lt;br /&gt; fluctibus oppressos Troas
+caelique ruina,&lt;br /&gt; nec latuere doli fratrem Iunonis et irae.&lt;br /&gt;                Eurum ad se Zephyrumque vocat, dehinc talia fatur:
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt; Neptune, meanwhile, greatly troubled, saw that the sea
+&lt;br /&gt;was churned with vast murmur, and the storm was loose
+&lt;br /&gt;and the still waters welled from their deepest levels:
+&lt;br /&gt;he raised his calm face from the waves, gazing over the deep.
+&lt;br /&gt;He sees Aeneas’s fleet scattered all over the ocean,
+&lt;br /&gt;the Trojans crushed by the breakers, and the plummeting sky.
+&lt;br /&gt;And Juno’s anger, and her stratagems, do not escape her brother.
+&lt;br /&gt;He calls the East and West winds to him, and then says:
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;'Tantane vos generis tenuit fiducia vestri?&lt;br /&gt; Iam caelum terramque
+meo sine numine, venti,&lt;br /&gt; miscere, et tantas audetis tollere
+moles?
+&lt;br /&gt; Quos ego&amp;#151;sed motos praestat componere fluctus.&lt;br /&gt; Post
+mihi non simili poena commissa luetis.&lt;br /&gt; Maturate fugam, regique
+haec dicite vestro:&lt;br /&gt; non illi imperium pelagi saevumque tridentem,
+&lt;br /&gt; sed mihi sorte datum. Tenet ille immania saxa,&lt;br /&gt; vestras,
+Eure, domos; illa se iactet in aula&lt;br /&gt; Aeolus, et clauso ventorum
+carcere regnet.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;‘Does confidence in your birth fill you so? Winds, do you dare,
+&lt;br /&gt;without my intent, to mix earth with sky, and cause such trouble,
+&lt;br /&gt;now? You whom I – ! But it’s better to calm the running waves:
+&lt;br /&gt;you’ll answer to me later for this misfortune, with a different
+punishment.
+&lt;br /&gt;Hurry, fly now, and say this to your king:
+&lt;br /&gt;control of the ocean, and the fierce trident, were given to
+me,
+&lt;br /&gt;by lot, and not to him. He owns the wild rocks, home to you,
+&lt;br /&gt;and yours, East Wind: let Aeolus officiate in his palace,
+&lt;br /&gt;and be king in the closed prison of the winds.’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Sic ait, et dicto citius tumida aequora placat,&lt;br /&gt; collectasque
+fugat nubes, solemque reducit.&lt;br /&gt; Cymothoe simul et Triton adnixus
+acuto
+&lt;br /&gt; detrudunt navis scopulo; levat ipse tridenti;&lt;br /&gt; et vastas
+aperit syrtis, et temperat aequor,&lt;br /&gt; atque rotis summas levibus
+perlabitur undas.&lt;br /&gt; Ac veluti magno in populo cum saepe coorta
+est
+&lt;br /&gt; seditio, saevitque animis ignobile volgus,&lt;br /&gt; iamque faces
+et saxa volant&amp;#151;furor arma ministrat;&lt;br /&gt; tum, pietate gravem
+ac meritis si forte virum quem&lt;br /&gt; conspexere, silent, arrectisque
+auribus adstant;&lt;br /&gt; ille regit dictis animos, et pectora mulcet,&amp;#151;&lt;br /&gt;                sic cunctus pelagi cecidit fragor, aequora postquam&lt;br /&gt; prospiciens
+genitor caeloque invectus aperto&lt;br /&gt; flectit equos, curruque volans
+dat lora secundo.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;So he speaks, and swifter than his speech, he calms the swollen
+sea,
+&lt;br /&gt;scatters the gathered cloud, and brings back the sun.
+&lt;br /&gt;Cymothoë and Triton, working together, thrust the ships
+&lt;br /&gt;from the sharp reef: Neptune himself raises them with his trident,
+&lt;br /&gt;parts the vast quicksand, tempers the flood,
+&lt;br /&gt;and glides on weightless wheels, over the tops of the waves.
+&lt;br /&gt;As often, when rebellion breaks out in a great nation,
+&lt;br /&gt;and the common rabble rage with passion, and soon stones
+&lt;br /&gt;and fiery torches fly (frenzy supplying weapons),
+&lt;br /&gt;if they then see a man of great virtue, and weighty service,
+&lt;br /&gt;they are silent, and stand there listening attentively:
+&lt;br /&gt;he sways their passions with his words and soothes their hearts:
+&lt;br /&gt;so all the uproar of the ocean died, as soon as their father,
+&lt;br /&gt;gazing over the water, carried through the clear sky, wheeled
+&lt;br /&gt;his horses, and gave them their head, flying behind in his
+chariot.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Defessi Aeneadae, quae proxima litora, cursu&lt;br /&gt; contendunt petere,
+et Libyae vertuntur ad oras.&lt;br /&gt; Est in secessu longo locus: insula
+portum
+&lt;br /&gt; efficit obiectu laterum, quibus omnis ab alto&lt;br /&gt; frangitur
+inque sinus scindit sese unda reductos.&lt;br /&gt; Hinc atque hinc vastae
+rupes geminique minantur&lt;br /&gt; in caelum scopuli, quorum sub vertice
+late
+&lt;br /&gt; aequora tuta silent; tum silvis scaena coruscis&lt;br /&gt; desuper
+horrentique atrum nemus imminet umbra.&lt;br /&gt; Fronte sub adversa scopulis
+pendentibus antrum,&lt;br /&gt; intus aquae dulces vivoque sedilia saxo,
+&lt;br /&gt; nympharum domus: hic fessas non vincula navis&lt;br /&gt; ulla tenent,
+unco non alligat ancora morsu.&lt;br /&gt; Huc septem Aeneas collectis
+navibus omni&lt;br /&gt; ex numero subit; ac magno telluris amore&lt;br /&gt; egressi
+optata potiuntur Troes harena,&lt;br /&gt; et sale tabentis artus in litore
+ponunt.
+&lt;br /&gt; Ac primum silici scintillam excudit Achates,&lt;br /&gt; succepitque
+ignem foliis, atque arida circum&lt;br /&gt; nutrimenta dedit, rapuitque
+in fomite flammam.&lt;br /&gt; Tum Cererem corruptam undis Cerealiaque
+arma
+&lt;br /&gt; expediunt fessi rerum, frugesque receptas&lt;br /&gt; et torrere parant
+flammis et frangere saxo.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;The weary followers of Aeneas made efforts to set a course
+&lt;br /&gt;for the nearest land, and tacked towards the Libyan coast.
+&lt;br /&gt;There is a place there in a deep inlet: an island forms a harbour
+&lt;br /&gt;with the barrier of its bulk, on which every wave from the
+deep
+&lt;br /&gt;breaks, and divides into diminishing ripples.
+&lt;br /&gt;On this side and that, vast cliffs and twin crags loom in the
+sky,
+&lt;br /&gt;under whose summits the whole sea is calm, far and wide:
+&lt;br /&gt;then, above that, is a scene of glittering woods,
+&lt;br /&gt;and a dark grove overhangs the water, with leafy shade:
+&lt;br /&gt;under the headland opposite is a cave, curtained with rock,
+&lt;br /&gt;inside it, fresh water, and seats of natural stone,
+&lt;br /&gt;the home of Nymphs. No hawsers moor the weary ships
+&lt;br /&gt;here, no anchor, with its hooked flukes, fastens them.
+&lt;br /&gt;Aeneas takes shelter here with seven ships gathered
+&lt;br /&gt;from the fleet, and the Trojans, with a passion for dry land,
+&lt;br /&gt;disembarking, take possession of the sands they longed for,
+&lt;br /&gt;and stretch their brine-caked bodies on the shore.
+&lt;br /&gt;At once Achates strikes a spark from his flint,
+&lt;br /&gt;catches the fire in the leaves, places dry fuel round it,
+&lt;br /&gt;and quickly has flames among the kindling.
+&lt;br /&gt;Then, wearied by events, they take out wheat, damaged
+&lt;br /&gt;by the sea, and implements of Ceres, and prepare to parch
+&lt;br /&gt;the grain over the flames, and grind it on stone.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Aeneas scopulum interea conscendit, et omnem&lt;br /&gt; prospectum late
+pelago petit, Anthea si quem&lt;br /&gt; iactatum vento videat Phrygiasque
+biremis,
+&lt;br /&gt; aut Capyn, aut celsis in puppibus arma Caici.&lt;br /&gt; Navem in
+conspectu nullam, tris litore cervos&lt;br /&gt; prospicit errantis; hos
+tota armenta sequuntur&lt;br /&gt; a tergo, et longum per vallis pascitur
+agmen.
+&lt;br /&gt; Constitit hic, arcumque manu celerisque sagittas&lt;br /&gt; corripuit,
+fidus quae tela gerebat Achates;&lt;br /&gt; ductoresque ipsos primum,
+capita alta ferentis&lt;br /&gt; cornibus arboreis, sternit, tum volgus,
+et omnem&lt;br /&gt; miscet agens telis nemora inter frondea turbam;&lt;br /&gt;                nec prius absistit, quam septem ingentia victor&lt;br /&gt; corpora fundat
+humi, et numerum cum navibus aequet.&lt;br /&gt; Hinc portum petit, et
+socios partitur in omnes.&lt;br /&gt; Vina bonus quae deinde cadis onerarat
+Acestes
+&lt;br /&gt; litore Trinacrio dederatque abeuntibus heros,&lt;br /&gt; dividit,
+et dictis maerentia pectora mulcet:
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Aeneas climbs a crag meanwhile, and searches the whole prospect
+&lt;br /&gt;far and wide over the sea, looking if he can see anything
+&lt;br /&gt;of Antheus and his storm-tossed Phrygian galleys,
+&lt;br /&gt;or Capys, or Caicus’s arms blazoned on a high stern.
+&lt;br /&gt;There’s no ship in sight: he sees three stags wandering
+&lt;br /&gt;on the shore: whole herds of deer follow at their back,
+&lt;br /&gt;and graze in long lines along the valley.
+&lt;br /&gt;He halts at this, and grasps in his hand his bow
+&lt;br /&gt;and swift arrows, shafts that loyal Achates carries,
+&lt;br /&gt;and first he shoots the leaders themselves, their heads,
+&lt;br /&gt;with branching antlers, held high, then the mass, with his
+shafts,
+&lt;br /&gt;and drives the whole crowd in confusion among the leaves:
+&lt;br /&gt;The conqueror does not stop until he’s scattered seven huge
+&lt;br /&gt;carcasses on the ground, equal in number to his ships.
+&lt;br /&gt;Then he seeks the harbour, and divides them among all his friends.
+&lt;br /&gt;Next he shares out the wine that the good Acestes had stowed
+&lt;br /&gt;in jars, on the Trinacrian coast, and that hero had given them
+&lt;br /&gt;on leaving: and speaking to them, calmed their sad hearts:
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;'O socii&amp;#151;neque enim ignari sumus ante malorum&amp;#151;&lt;br /&gt; O
+passi graviora, dabit deus his quoque finem.&lt;br /&gt; Vos et Scyllaeam
+rabiem penitusque sonantis&lt;br /&gt; accestis scopulos, vos et Cyclopea
+saxa
+&lt;br /&gt; experti: revocate animos, maestumque timorem&lt;br /&gt; mittite:
+forsan et haec olim meminisse iuvabit.&lt;br /&gt; Per varios casus, per
+tot discrimina rerum&lt;br /&gt; tendimus in Latium; sedes ubi fata quietas&lt;br /&gt;                ostendunt; illic fas regna resurgere Troiae.&lt;br /&gt; Durate, et vosmet
+rebus servate secundis.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;‘O friends (well, we were not unknown to trouble before)
+&lt;br /&gt;O you who’ve endured worse, the god will grant an end to this
+too.
+&lt;br /&gt;You’ve faced rabid Scylla, and her deep-sounding cliffs:
+&lt;br /&gt;and you’ve experienced the Cyclopes’s rocks:
+&lt;br /&gt;remember your courage and chase away gloomy fears:
+&lt;br /&gt;perhaps one day you’ll even delight in remembering this.
+&lt;br /&gt;Through all these misfortunes, these dangerous times,
+&lt;br /&gt;we head for Latium, where the fates hold peaceful lives
+&lt;br /&gt;for us: there Troy’s kingdom can rise again. Endure,
+&lt;br /&gt;and preserve yourselves for happier days.’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Talia voce refert, curisque ingentibus aeger&lt;br /&gt; spem voltu simulat,
+premit altum corde dolorem.&lt;br /&gt; Illi se praedae accingunt, dapibusque
+futuris;
+&lt;br /&gt; tergora deripiunt costis et viscera nudant;&lt;br /&gt; pars in frusta
+secant veribusque trementia figunt;
+&lt;br /&gt; litore aena locant alii, flammasque ministrant.&lt;br /&gt; Tum victu
+revocant vires, fusique per herbam&lt;br /&gt; implentur veteris Bacchi
+pinguisque ferinae.&lt;br /&gt; Postquam exempta fames epulis mensaeque
+remotae,
+&lt;br /&gt; amissos longo socios sermone requirunt,&lt;br /&gt; spemque metumque
+inter dubii, seu vivere credant,&lt;br /&gt; sive extrema pati nec iam
+exaudire vocatos.&lt;br /&gt; Praecipue pius Aeneas nunc acris Oronti,
+&lt;br /&gt; nunc Amyci casum gemit et crudelia secum&lt;br /&gt; fata Lyci, fortemque
+Gyan, fortemque Cloanthum.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;So his voice utters, and sick with the weight of care, he pretends
+&lt;br /&gt;hope, in his look, and stifles the pain deep in his heart.
+&lt;br /&gt;They make ready the game, and the future feast:
+&lt;br /&gt;they flay the hides from the ribs and lay the flesh bare:
+&lt;br /&gt;some cut it in pieces, quivering, and fix it on spits,
+&lt;br /&gt;others place cauldrons on the beach, and feed them with flames.
+&lt;br /&gt;Then they revive their strength with food, stretched on the
+grass,
+&lt;br /&gt;and fill themselves with rich venison and old wine.
+&lt;br /&gt;When hunger is quenched by the feast, and the remnants cleared,
+&lt;br /&gt;deep in conversation, they discuss their missing friends,
+&lt;br /&gt;and, between hope and fear, question whether they live,
+&lt;br /&gt;or whether they’ve suffered death and no longer hear their
+name.
+&lt;br /&gt; Aeneas, the virtuous, above all mourns the lot of fierce Orontes,
+&lt;br /&gt;then that of Amycus, together with Lycus’s cruel fate,
+&lt;br /&gt;and those of brave Gyus, and brave Cloanthus.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Et iam finis erat, cum Iuppiter aethere summo&lt;br /&gt; despiciens mare
+velivolum terrasque iacentis&lt;br /&gt; litoraque et latos populos, sic
+vertice caeli
+&lt;br /&gt; constitit, et Libyae defixit lumina regnis.&lt;br /&gt; Atque illum
+talis iactantem pectore curas&lt;br /&gt; tristior et lacrimis oculos suffusa
+nitentis
+&lt;br /&gt; adloquitur Venus: 'O qui res hominumque deumque
+&lt;br /&gt; aeternis regis imperiis, et fulmine terres,&lt;br /&gt; quid meus
+Aeneas in te committere tantum,&lt;br /&gt; quid Troes potuere, quibus,
+tot funera passis,&lt;br /&gt; cunctus ob Italiam terrarum clauditur orbis?&lt;br /&gt;                Certe hinc Romanos olim, volventibus annis,&lt;br /&gt; hinc fore ductores,
+revocato a sanguine Teucri,&lt;br /&gt; qui mare, qui terras omni dicione
+tenerent,
+&lt;br /&gt; pollicitus, quae te, genitor, sententia vertit?&lt;br /&gt; Hoc equidem
+occasum Troiae tristisque ruinas&lt;br /&gt; solabar, fatis contraria fata
+rependens;
+&lt;br /&gt; nunc eadem fortuna viros tot casibus actos
+&lt;br /&gt; insequitur. Quem das finem, rex magne, laborum?&lt;br /&gt; Antenor
+potuit, mediis elapsus Achivis,&lt;br /&gt; Illyricos penetrare sinus,
+atque intima tutus&lt;br /&gt; regna Liburnorum, et fontem superare Timavi,&lt;br /&gt;                unde per ora novem vasto cum murmure montis&lt;br /&gt; it mare proruptum
+et pelago premit arva sonanti.&lt;br /&gt; Hic tamen ille urbem Patavi
+sedesque locavit&lt;br /&gt; Teucrorum, et genti nomen dedit, armaque fixit&lt;br /&gt;                Troia; nunc placida compostus pace quiescit:&lt;br /&gt; nos, tua progenies,
+caeli quibus adnuis arcem,&lt;br /&gt; navibus (infandum!) amissis, unius
+ob iram&lt;br /&gt; prodimur atque Italis longe disiungimur oris.&lt;br /&gt; Hic
+pietatis honos? Sic nos in sceptra reponis?'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Now, all was complete, when Jupiter, from the heights of the air,
+&lt;br /&gt;looked down on the sea with its flying sails, and the broad
+lands,
+&lt;br /&gt;and the coasts, and the people far and wide, and paused,
+&lt;br /&gt;at the summit of heaven, and fixed his eyes on the Libyan kingdom.
+&lt;br /&gt;And as he weighed such cares as he had in his heart, Venus
+spoke
+&lt;br /&gt;to him, sadder still, her bright eyes brimming with tears:
+&lt;br /&gt;‘Oh you who rule things human, and divine, with eternal law,
+&lt;br /&gt;and who terrify them all with your lightning-bolt,
+&lt;br /&gt;what can my Aeneas have done to you that’s so serious,
+&lt;br /&gt;what have the Trojans done, who’ve suffered so much destruction,
+&lt;br /&gt;to whom the whole world’s closed, because of the Italian lands?
+&lt;br /&gt;Surely you promised that at some point, as the years rolled
+by,
+&lt;br /&gt;the Romans would rise from them, leaders would rise,
+&lt;br /&gt;restored from Teucer’s blood, who would hold power
+&lt;br /&gt; over the sea, and all the lands. Father, what thought has
+changed
+&lt;br /&gt;your mind? It consoled me for the fall of Troy, and its sad
+ruin,
+&lt;br /&gt;weighing one destiny, indeed, against opposing destinies:
+&lt;br /&gt;now the same misfortune follows these men driven on by such
+&lt;br /&gt;disasters. Great king, what end to their efforts will you give?
+&lt;br /&gt;Antenor could escape through the thick of the Greek army,
+&lt;br /&gt;and safely enter the Illyrian gulfs, and deep into the realms
+&lt;br /&gt;of the Liburnians, and pass the founts of Timavus,
+&lt;br /&gt; from which the river bursts, with a huge mountainous roar,
+&lt;br /&gt;through nine mouths, and buries the fields under its noisy
+flood.
+&lt;br /&gt;Here, nonetheless, he sited the city of Padua, and homes
+&lt;br /&gt;for Teucrians, and gave the people a name, and hung up
+&lt;br /&gt;the arms of Troy: now he’s calmly settled, in tranquil peace.
+&lt;br /&gt;But we, your race, to whom you permit the heights of heaven,
+&lt;br /&gt;lose our ships (shameful!), betrayed, because of one person’s
+anger,
+&lt;br /&gt;and kept far away from the shores of Italy.
+&lt;br /&gt;Is this the prize for virtue? Is this how you restore our rule?
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Olli subridens hominum sator atque deorum,&lt;br /&gt; voltu, quo caelum
+tempestatesque serenat,
+&lt;br /&gt; oscula libavit natae, dehinc talia fatur:&lt;br /&gt; 'Parce metu,
+Cytherea: manent immota tuorum&lt;br /&gt; fata tibi; cernes urbem et promissa
+Lavini
+&lt;br /&gt; moenia, sublimemque feres ad sidera caeli&lt;br /&gt; magnanimum Aenean;
+neque me sententia vertit.
+&lt;br /&gt; Hic tibi (fabor enim, quando haec te cura remordet,&lt;br /&gt; longius
+et volvens fatorum arcana movebo)&lt;br /&gt; bellum ingens geret Italia,
+populosque feroces&lt;br /&gt; contundet, moresque viris et moenia ponet,
+&lt;br /&gt; tertia dum Latio regnantem viderit aestas,&lt;br /&gt; ternaque transierint
+Rutulis hiberna subactis.&lt;br /&gt; At puer Ascanius, cui nunc cognomen
+Iulo
+&lt;br /&gt; additur,&amp;#151;Ilus erat, dum res stetit Ilia regno,&amp;#151;&lt;br /&gt;                triginta magnos volvendis mensibus orbis&lt;br /&gt; imperio explebit,
+regnumque ab sede Lavini&lt;br /&gt; transferet, et longam multa vi muniet
+Albam.
+&lt;br /&gt; Hic iam ter centum totos regnabitur annos
+&lt;br /&gt; gente sub Hectorea, donec regina sacerdos,&lt;br /&gt; Marte gravis,
+geminam partu dabit Ilia prolem.&lt;br /&gt; Inde lupae fulvo nutricis
+tegmine laetus&lt;br /&gt; Romulus excipiet gentem, et Mavortia condet&lt;br /&gt;                moenia, Romanosque suo de nomine dicet.&lt;br /&gt; His ego nec metas rerum
+nec tempora pono;&lt;br /&gt; imperium sine fine dedi. Quin aspera Iuno,&lt;br /&gt;                quae mare nunc terrasque metu caelumque fatigat,&lt;br /&gt; consilia in
+melius referet, mecumque fovebit&lt;br /&gt; Romanos rerum dominos gentemque
+togatam:
+&lt;br /&gt; sic placitum. Veniet lustris labentibus aetas,&lt;br /&gt; cum domus
+Assaraci Phthiam clarasque Mycenas&lt;br /&gt; servitio premet, ac victis
+dominabitur Argis.&lt;br /&gt; Nascetur pulchra Troianus origine Caesar,
+&lt;br /&gt; imperium oceano, famam qui terminet astris,&amp;#151;&lt;br /&gt; Iulius,
+a magno demissum nomen Iulo.&lt;br /&gt; Hunc tu olim caelo, spoliis Orientis
+onustum,
+&lt;br /&gt; accipies secura; vocabitur hic quoque votis.&lt;br /&gt; Aspera tum
+positis mitescent saecula bellis;&lt;br /&gt; cana Fides, et Vesta, Remo
+cum fratre Quirinus,&lt;br /&gt; iura dabunt; dirae ferro et compagibus
+artis
+&lt;br /&gt; claudentur Belli portae; Furor impius intus,&lt;br /&gt; saeva sedens
+super arma, et centum vinctus aenis&lt;br /&gt; post tergum nodis, fremet
+horridus ore cruento.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;The father of men and gods, smiled at her with that look
+&lt;br /&gt;with which he clears the sky of storms,
+&lt;br /&gt;kissed his daughter’s lips, and then said this:
+&lt;br /&gt; ‘Don’t be afraid, Cytherea, your child’s fate remains unaltered:
+&lt;br /&gt;You’ll see the city of Lavinium, and the walls I promised,
+&lt;br /&gt;and you’ll raise great-hearted Aeneas high, to the starry sky:
+&lt;br /&gt;No thought has changed my mind. This son of yours
+&lt;br /&gt;(since this trouble gnaws at my heart, I’ll speak,
+&lt;br /&gt;and unroll the secret scroll of destiny)
+&lt;br /&gt;will wage a mighty war in Italy, destroy proud peoples,
+&lt;br /&gt;and establish laws, and city walls, for his warriors,
+&lt;br /&gt;until a third summer sees his reign in Latium, and
+&lt;br /&gt;three winter camps pass since the Rutulians were beaten.
+&lt;br /&gt;But the boy Ascanius, surnamed Iulus now (He was Ilus
+&lt;br /&gt;while the Ilian kingdom was a reality) will imperially
+&lt;br /&gt;complete thirty great circles of the turning months,
+&lt;br /&gt;and transfer his throne from its site at Lavinium,
+&lt;br /&gt;and mighty in power, will build the walls of Alba Longa.
+&lt;br /&gt;Here kings of Hector’s race will reign now
+&lt;br /&gt;for three hundred years complete, until a royal priestess,
+&lt;br /&gt;Ilia, heavy with child, shall bear Mars twins.
+&lt;br /&gt;Then Romulus will further the race, proud in his nurse
+&lt;br /&gt;the she-wolf’s tawny pelt, and found the walls of Mars,
+&lt;br /&gt;and call the people Romans, from his own name.
+&lt;br /&gt;I’ve fixed no limits or duration to their possessions:
+&lt;br /&gt;I’ve given them empire without end. Why, harsh Juno
+&lt;br /&gt;who now torments land, and sea and sky with fear,
+&lt;br /&gt;will respond to better judgement, and favour the Romans,
+&lt;br /&gt;masters of the world, and people of the toga, with me.
+&lt;br /&gt;So it is decreed. A time will come, as the years glide by,
+&lt;br /&gt;when the Trojan house of Assaracus will force Phthia
+&lt;br /&gt;into slavery, and be lords of beaten Argos.
+&lt;br /&gt;From this glorious source a Trojan Caesar will be born,
+&lt;br /&gt;who will bound the empire with Ocean, his fame with the stars,
+&lt;br /&gt;Augustus, a Julius, his name descended from the great Iulus.
+&lt;br /&gt;You, no longer anxious, will receive him one day in heaven,
+&lt;br /&gt;burdened with Eastern spoils: he’ll be called to in prayer.
+&lt;br /&gt;Then with wars abandoned, the harsh ages will grow mild:
+&lt;br /&gt;White haired Trust, and Vesta, Quirinus with his brother Remus
+&lt;br /&gt;will make the laws: the gates of War, grim with iron,
+&lt;br /&gt;and narrowed by bars, will be closed: inside impious Rage will
+roar
+&lt;br /&gt;frighteningly from blood-stained mouth, seated on savage weapons,
+&lt;br /&gt;hands tied behind his back, with a hundred knots of bronze.’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Haec ait, et Maia genitum demittit ab alto,&lt;br /&gt; ut terrae, utque
+novae pateant Karthaginis arces&lt;br /&gt; hospitio Teucris, ne fati nescia
+Dido
+&lt;br /&gt; finibus arceret: volat ille per aera magnum&lt;br /&gt; remigio alarum,
+ac Libyae citus adstitit oris.&lt;br /&gt; Et iam iussa facit, ponuntque
+ferocia Poeni&lt;br /&gt; corda volente deo; in primis regina quietum
+&lt;br /&gt; accipit in Teucros animum mentemque benignam.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Saying this, he sends Mercury, Maia’s son, down from heaven,
+&lt;br /&gt;so that the country and strongholds of this new Carthage
+&lt;br /&gt;would open to the Trojans, as guests, and Dido, unaware of
+fate,
+&lt;br /&gt;would not keep them from her territory. He flies through the
+air
+&lt;br /&gt;with a beating of mighty wings and quickly lands on Libyan
+shore.
+&lt;br /&gt;And soon does as commanded, and the Phoenicians set aside
+&lt;br /&gt;their savage instincts, by the god’s will: the queen above
+all
+&lt;br /&gt;adopts calm feelings, and kind thoughts, towards the Trojans.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt; At pius Aeneas, per noctem plurima volvens,&lt;br /&gt; ut primum lux
+alma data est, exire locosque&lt;br /&gt; explorare novos, quas vento accesserit
+oras,
+&lt;br /&gt; qui teneant, nam inculta videt, hominesne feraene,
+&lt;br /&gt; quaerere constituit, sociisque exacta referre&lt;br /&gt; Classem
+in convexo nemorum sub rupe cavata&lt;br /&gt; arboribus clausam circum
+atque horrentibus umbris&lt;br /&gt; occulit; ipse uno graditur comitatus
+Achate,
+&lt;br /&gt; bina manu lato crispans hastilia ferro.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt; But Aeneas, the virtuous, turning things over all night,
+&lt;br /&gt;decides, as soon as kindly dawn appears, to go out
+&lt;br /&gt;and explore the place, to find what shores he has reached,
+&lt;br /&gt;on the wind, who owns them (since he sees desert)
+&lt;br /&gt;man or beast, and bring back the details to his friends.
+&lt;br /&gt;He conceals the boats in over-hanging woods
+&lt;br /&gt;under an arching cliff, enclosed by trees
+&lt;br /&gt;and leafy shadows: accompanied only by Achetes,
+&lt;br /&gt;he goes, swinging two broad-bladed spears in his hand.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Cui mater media sese tulit obvia silva,&lt;br /&gt; virginis os habitumque
+gerens, et virginis arma&lt;br /&gt; Spartanae, vel qualis equos Threissa
+fatigat
+&lt;br /&gt; Harpalyce, volucremque fuga praevertitur Hebrum.&lt;br /&gt; Namque
+umeris de more habilem suspenderat arcum&lt;br /&gt; venatrix, dederatque
+comam diffundere ventis,&lt;br /&gt; nuda genu, nodoque sinus collecta
+fluentis.
+&lt;br /&gt; Ac prior, 'Heus' inquit 'iuvenes, monstrate mearum&lt;br /&gt; vidistis
+si quam hic errantem forte sororum,&lt;br /&gt; succinctam pharetra et
+maculosae tegmine lyncis,&lt;br /&gt; aut spumantis apri cursum clamore
+prementem.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;His mother met him herself, among the trees, with the face
+&lt;br /&gt;and appearance of a virgin, and a virgin’s weapons,
+&lt;br /&gt;a Spartan girl, or such as Harpalyce of Thrace,
+&lt;br /&gt;who wearies horses, and outdoes winged Hebrus in flight.
+&lt;br /&gt;For she’d slung her bow from her shoulders, at the ready,
+&lt;br /&gt;like a huntress, and loosed her hair for the wind to scatter,
+&lt;br /&gt;her knees bare, and her flowing tunic gathered up in a knot.
+&lt;br /&gt;And she cried first: ‘Hello, you young men, tell me,
+&lt;br /&gt;if you’ve seen my sister wandering here by any chance,
+&lt;br /&gt;wearing a quiver, and the hide of a dappled lynx,
+&lt;br /&gt;or shouting, hot on the track of a slavering boar?’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Sic Venus; et Veneris contra sic filius orsus:&lt;br /&gt; 'Nulla tuarum
+audita mihi neque visa sororum&amp;#151;&lt;br /&gt; O quam te memorem, virgo?
+Namque haud tibi voltus&lt;br /&gt; mortalis, nec vox hominem sonat: O,
+dea certe&amp;#151;&lt;br /&gt; an Phoebi soror? an nympharum sanguinis una?&amp;#151;
+&lt;br /&gt; sis felix, nostrumque leves, quaecumque, laborem,&lt;br /&gt; et,
+quo sub caelo tandem, quibus orbis in oris&lt;br /&gt; iactemur, doceas.
+Ignari hominumque locorumque&lt;br /&gt; erramus, vento huc vastis et fluctibus
+acti:
+&lt;br /&gt; multa tibi ante aras nostra cadet hostia dextra.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;So Venus: and so Venus’s son began in answer:
+&lt;br /&gt;‘I’ve not seen or heard any of your sisters, O Virgin –
+&lt;br /&gt;or how should I name you? Since your looks are not mortal
+&lt;br /&gt;and your voice is more than human: oh, a goddess for certain!
+&lt;br /&gt;Or Phoebus’s sister? Or one of the race of Nymphs?
+&lt;br /&gt;Be kind, whoever you may be, and lighten our labour,
+&lt;br /&gt;and tell us only what sky we’re under, and what shores
+&lt;br /&gt;we’ve landed on: we’re adrift here, driven by wind and vast
+seas,
+&lt;br /&gt;knowing nothing of the people or the country:
+&lt;br /&gt;many a sacrifice to you will fall at the altars, under our
+hand.’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Tum Venus: 'Haud equidem tali me dignor honore;&lt;br /&gt; virginibus
+Tyriis mos est gestare pharetram,&lt;br /&gt; purpureoque alte suras vincire
+cothurno.
+&lt;br /&gt; Punica regna vides, Tyrios et Agenoris urbem;&lt;br /&gt; sed fines
+Libyci, genus intractabile bello.&lt;br /&gt; Imperium Dido Tyria regit
+urbe profecta,&lt;br /&gt; germanum fugiens. Longa est iniuria, longae&lt;br /&gt;                ambages; sed summa sequar fastigia rerum.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;Then Venus said: ‘I don’t think myself worthy of such honours:
+&lt;br /&gt;it’s the custom of Tyrian girls to carry a quiver,
+&lt;br /&gt;and lace our calves high up, over red hunting boots.
+&lt;br /&gt;You see the kingdom of Carthage, Tyrians, Agenor’s city:
+&lt;br /&gt;but bordered by Libyans, a people formidable in war.
+&lt;br /&gt;Dido rules this empire, having set out from Tyre,
+&lt;br /&gt;fleeing her brother. It’s a long tale of wrong, with many
+&lt;br /&gt;windings: but I’ll trace the main chapters of the story.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;'Huic coniunx Sychaeus erat, ditissimus agri&lt;br /&gt; Phoenicum, et
+magno miserae dilectus amore,&lt;br /&gt; cui pater intactam dederat, primisque
+iugarat
+&lt;br /&gt; ominibus. Sed regna Tyri germanus habebat&lt;br /&gt; Pygmalion, scelere
+ante alios immanior omnes.&lt;br /&gt; Quos inter medius venit furor. Ille
+Sychaeum
+&lt;br /&gt; impius ante aras, atque auri caecus amore,
+&lt;br /&gt; clam ferro incautum superat, securus amorum&lt;br /&gt; germanae;
+factumque diu celavit, et aegram,&lt;br /&gt; multa malus simulans, vana
+spe lusit amantem.&lt;br /&gt; Ipsa sed in somnis inhumati venit imago&lt;br /&gt;                coniugis, ora modis attollens pallida miris,&lt;br /&gt; crudeles aras
+traiectaque pectora ferro&lt;br /&gt; nudavit, caecumque domus scelus omne
+retexit.
+&lt;br /&gt; Tum celerare fugam patriaque excedere suadet,&lt;br /&gt; auxiliumque
+viae veteres tellure recludit&lt;br /&gt; thesauros, ignotum argenti pondus
+et auri.&lt;br /&gt; His commota fugam Dido sociosque parabat:&lt;br /&gt; conveniunt,
+quibus aut odium crudele tyranni&lt;br /&gt; aut metus acer erat; navis,
+quae forte paratae,&lt;br /&gt; corripiunt, onerantque auro: portantur
+avari
+&lt;br /&gt; Pygmalionis opes pelago; dux femina facti.&lt;br /&gt; Devenere locos,
+ubi nunc ingentia cernis&lt;br /&gt; moenia surgentemque novae Karthaginis
+arcem,
+&lt;br /&gt; mercatique solum, facti de nomine Byrsam,
+&lt;br /&gt; taurino quantum possent circumdare tergo.&lt;br /&gt; Sed vos qui
+tandem, quibus aut venistis ab oris,&lt;br /&gt; quove tenetis iter? 'Quaerenti
+talibus ille&lt;br /&gt; suspirans, imoque trahens a pectore vocem:
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;Sychaeus was her husband, wealthiest, in land, of Phoenicians
+&lt;br /&gt;and loved with a great love by the wretched girl,
+&lt;br /&gt;whose father gave her as a virgin to him, and wed them
+&lt;br /&gt;with great solemnity. But her brother Pygmalion, savage
+&lt;br /&gt;in wickedness beyond all others, held the kingdom of Tyre.
+&lt;br /&gt;Madness came between them. The king, blinded by greed for gold,
+&lt;br /&gt;killed the unwary Sychaeus, secretly, with a knife, impiously,
+&lt;br /&gt;in front of the altars, indifferent to his sister’s affections.
+&lt;br /&gt;He concealed his actions for a while, deceived the lovesick
+girl,
+&lt;br /&gt;with empty hopes, and many evil pretences.
+&lt;br /&gt;But the ghost of her unburied husband came to her in dream:
+&lt;br /&gt;lifting his pale head in a strange manner, he laid bare the
+cruelty
+&lt;br /&gt;at the altars, and his heart pierced by the knife,
+&lt;br /&gt;and unveiled all the secret wickedness of that house.
+&lt;br /&gt;Then he urged her to leave quickly and abandon her country,
+&lt;br /&gt;and, to help her journey, revealed an ancient treasure
+&lt;br /&gt;under the earth, an unknown weight of gold and silver.
+&lt;br /&gt;Shaken by all this, Dido prepared her flight and her friends.
+&lt;br /&gt;Those who had fierce hatred of the tyrant or bitter fear,
+&lt;br /&gt;gathered together: they seized some ships that by chance
+&lt;br /&gt;were ready, and loaded the gold: greedy Pygmalion’s riches
+&lt;br /&gt;are carried overseas: a woman leads the enterprise.
+&lt;br /&gt;The came to this place, and bought land, where you now see
+&lt;br /&gt;the vast walls, and resurgent stronghold, of new Carthage,
+&lt;br /&gt;as much as they could enclose with the strips of hide
+&lt;br /&gt;from a single bull, and from that they called it Byrsa.
+&lt;br /&gt;But who then are you? What shores do you come from?
+&lt;br /&gt;What course do you take?’ He sighed as she questioned him,
+&lt;br /&gt;and drawing the words from deep in his heart he replied:
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;'O dea, si prima repetens ab origine pergam,&lt;br /&gt; et vacet annalis
+nostrorum audire laborum,&lt;br /&gt; ante diem clauso componat Vesper
+Olympo.
+&lt;br /&gt; Nos Troia antiqua, si vestras forte per auris&lt;br /&gt; Troiae nomen
+iit, diversa per aequora vectos&lt;br /&gt; forte sua Libycis tempestas
+adpulit oris.&lt;br /&gt; Sum pius Aeneas, raptos qui ex hoste Penates
+&lt;br /&gt; classe veho mecum, fama super aethera notus.&lt;br /&gt; Italiam quaero
+patriam et genus ab Iove summo.&lt;br /&gt; Bis denis Phrygium conscendi
+navibus aequor,&lt;br /&gt; matre dea monstrante viam, data fata secutus;&lt;br /&gt;                vix septem convolsae undis Euroque supersunt.&lt;br /&gt; Ipse ignotus,
+egens, Libyae deserta peragro,&lt;br /&gt; Europa atque Asia pulsus.' Nec
+plura querentem&lt;br /&gt; passa Venus medio sic interfata dolore est:
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;‘O goddess, if I were to start my tale at the very beginning,
+&lt;br /&gt;and you had time to hear the story of our misfortunes,
+&lt;br /&gt;Vesper would have shut day away in the closed heavens.
+&lt;br /&gt;A storm drove us at whim to Libya’s shores,
+&lt;br /&gt;sailing the many seas from ancient Troy,
+&lt;br /&gt;if by chance the name of Troy has come to your hearing.
+&lt;br /&gt;I am that Aeneas, the virtuous, who carries my household gods
+&lt;br /&gt;in my ship with me, having snatched them from the enemy,
+&lt;br /&gt;my name is known beyond the sky.
+&lt;br /&gt;I seek my country Italy, and a people born of Jupiter on high.
+&lt;br /&gt;I embarked on the Phrygian sea with twenty ships,
+&lt;br /&gt;following my given fate, my mother, a goddess, showing the
+way:
+&lt;br /&gt;barely seven are left, wrenched from the wind and waves.
+&lt;br /&gt;I myself wander, destitute and unknown, in the Libyan desert,
+&lt;br /&gt;driven from Europe and Asia.’ Venus did not wait
+&lt;br /&gt;for further complaint but broke in on his lament like this:
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;'Quisquis es, haud, credo, invisus caelestibus auras&lt;br /&gt; vitalis
+carpis, Tyriam qui adveneris urbem.&lt;br /&gt; Perge modo, atque hinc
+te reginae ad limina perfer,&lt;br /&gt; Namque tibi reduces socios classemque
+relatam
+&lt;br /&gt; nuntio, et in tutum versis aquilonibus actam,&lt;br /&gt; ni frustra
+augurium vani docuere parentes.&lt;br /&gt; Aspice bis senos laetantis
+agmine cycnos,&lt;br /&gt; aetheria quos lapsa plaga Iovis ales aperto
+&lt;br /&gt; turbabat caelo; nunc terras ordine longo&lt;br /&gt; aut capere, aut
+captas iam despectare videntur:&lt;br /&gt; ut reduces illi ludunt stridentibus
+alis,
+&lt;br /&gt; et coetu cinxere polum, cantusque dedere,&lt;br /&gt; haud aliter
+puppesque tuae pubesque tuorum&lt;br /&gt; aut portum tenet aut pleno subit
+ostia velo.&lt;br /&gt; Perge modo, et, qua te ducit via, dirige gressum.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;‘Whoever you are I don’t think you draw the breath of life
+&lt;br /&gt;while hated by the gods, you who’ve reached a city of Tyre.
+&lt;br /&gt;Only go on from here, and take yourself to the queen’s threshold,
+&lt;br /&gt;since I bring you news that your friends are restored,
+&lt;br /&gt;and your ships recalled, driven to safety by the shifting winds,
+&lt;br /&gt;unless my parents taught me false prophecies, in vain.
+&lt;br /&gt;See, those twelve swans in exultant line, that an eagle,
+&lt;br /&gt;Jupiter’s bird, swooping from the heavens,
+&lt;br /&gt;was troubling in the clear sky: now, in a long file, they seem
+&lt;br /&gt;to have settled, or be gazing down now at those who already
+have.
+&lt;br /&gt;As, returning, their wings beat in play, and they circle the
+zenith
+&lt;br /&gt;in a crowd, and give their cry, so your ships and your people
+&lt;br /&gt;are in harbour, or near its entrance under full sail.
+&lt;br /&gt;Only go on, turn your steps where the path takes you.’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Dixit, et avertens rosea cervice refulsit,&lt;br /&gt; ambrosiaeque comae
+divinum vertice odorem&lt;br /&gt; spiravere, pedes vestis defluxit ad
+imos,
+&lt;br /&gt; et vera incessu patuit dea. Ille ubi matrem&lt;br /&gt; adgnovit,
+tali fugientem est voce secutus:&lt;br /&gt; 'Quid natum totiens, crudelis
+tu quoque, falsis&lt;br /&gt; ludis imaginibus? Cur dextrae iungere dextram&lt;br /&gt;                non datur, ac veras audire et reddere voces?'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;She spoke, and turning away she reflected the light
+&lt;br /&gt;from her rose-tinted neck, and breathed a divine perfume
+&lt;br /&gt;from her ambrosial hair: her robes trailed down to her feet,
+&lt;br /&gt;and, in her step, showed her a true goddess. He recognised
+&lt;br /&gt;his mother, and as she vanished followed her with his voice:
+&lt;br /&gt;‘You too are cruel, why do you taunt your son with false
+&lt;br /&gt;phantoms? Why am I not allowed to join hand
+&lt;br /&gt;with hand, and speak and hear true words?’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Talibus incusat, gressumque ad moenia tendit:&lt;br /&gt; at Venus obscuro
+gradientes aere saepsit,&lt;br /&gt; et multo nebulae circum dea fudit
+amictu,
+&lt;br /&gt; cernere ne quis eos, neu quis contingere posset,&lt;br /&gt; molirive
+moram, aut veniendi poscere causas.&lt;br /&gt; Ipsa Paphum sublimis abit,
+sedesque revisit&lt;br /&gt; laeta suas, ubi templum illi, centumque Sabaeo
+&lt;br /&gt; ture calent arae, sertisque recentibus halant.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;So he accuses her, and turns his steps towards the city.
+&lt;br /&gt;But Venus veiled them with a dark mist as they walked,
+&lt;br /&gt;and, as a goddess, spread a thick covering of cloud around
+them,
+&lt;br /&gt;so that no one could see them, or touch them,
+&lt;br /&gt;or cause them delay, or ask them where they were going.
+&lt;br /&gt;She herself soars high in the air, to Paphos, and returns to
+her home
+&lt;br /&gt;with delight, where her temple and its hundred altars
+&lt;br /&gt;steam with Sabean incense, fragrant with fresh garlands.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Corripuere viam interea, qua semita monstrat.&lt;br /&gt; Iamque ascendebant
+collem, qui plurimus urbi&lt;br /&gt; imminet, adversasque adspectat desuper
+arces.
+&lt;br /&gt; Miratur molem Aeneas, magalia quondam,&lt;br /&gt; miratur portas
+strepitumque et strata viarum.&lt;br /&gt; Instant ardentes Tyrii pars
+ducere muros,&lt;br /&gt; molirique arcem et manibus subvolvere saxa,
+&lt;br /&gt; pars optare locum tecto et concludere sulco.&lt;br /&gt; [Iura magistratusque
+legunt sanctumque senatum;]&lt;br /&gt; hic portus alii effodiunt; hic
+alta theatris&lt;br /&gt; fundamenta locant alii, immanisque columnas
+&lt;br /&gt; rupibus excidunt, scaenis decora alta futuris.&lt;br /&gt; Qualis
+apes aestate nova per florea rura&lt;br /&gt; exercet sub sole labor, cum
+gentis adultos&lt;br /&gt; educunt fetus, aut cum liquentia mella&lt;br /&gt; stipant
+et dulci distendunt nectare cellas,&lt;br /&gt; aut onera accipiunt venientum,
+aut agmine facto&lt;br /&gt; ignavom fucos pecus a praesepibus arcent:
+&lt;br /&gt; fervet opus, redolentque thymo fragrantia mella.&lt;br /&gt; 'O fortunati,
+quorum iam moenia surgunt!'&lt;br /&gt; Aeneas ait, et fastigia suspicit
+urbis.
+&lt;br /&gt; Infert se saeptus nebula, mirabile dictu,&lt;br /&gt; per medios,
+miscetque viris, neque cernitur ulli.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Meanwhile they’ve tackled the route the path revealed.
+&lt;br /&gt;And soon they climbed the hill that looms high over the city,
+&lt;br /&gt;and looks down from above on the towers that face it.
+&lt;br /&gt;Aeneas marvels at the mass of buildings, once huts,
+&lt;br /&gt;marvels at the gates, the noise, the paved roads.
+&lt;br /&gt;The eager Tyrians are busy, some building walls,
+&lt;br /&gt;and raising the citadel, rolling up stones by hand,
+&lt;br /&gt;some choosing the site for a house, and marking a furrow:
+&lt;br /&gt;they make magistrates and laws, and a sacred senate:
+&lt;br /&gt;here some are digging a harbour: others lay down
+&lt;br /&gt;the deep foundations of a theatre, and carve huge columns
+&lt;br /&gt;from the cliff, tall adornments for the future stage.
+&lt;br /&gt;Just as bees in early summer carry out their tasks
+&lt;br /&gt;among the flowery fields, in the sun, when they lead out
+&lt;br /&gt;the adolescent young of their race, or cram the cells
+&lt;br /&gt;with liquid honey, and swell them with sweet nectar,
+&lt;br /&gt;or receive the incoming burdens, or forming lines
+&lt;br /&gt;drive the lazy herd of drones from their hives:
+&lt;br /&gt;the work glows, and the fragrant honey’s sweet with thyme.
+&lt;br /&gt;‘O fortunate those whose walls already rise!’
+&lt;br /&gt;Aeneas cries, and admires the summits of the city.
+&lt;br /&gt;He enters among them, veiled in mist (marvellous to tell)
+&lt;br /&gt;and mingles with the people seen by no one.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Lucus in urbe fuit media, laetissimus umbra,&lt;br /&gt; quo primum iactati
+undis et turbine Poeni&lt;br /&gt; effodere loco signum, quod regia Iuno
+&lt;br /&gt; monstrarat, caput acris equi; sic nam fore bello&lt;br /&gt; egregiam
+et facilem victu per saecula gentem.&lt;br /&gt; Hic templum Iunoni ingens
+Sidonia Dido&lt;br /&gt; condebat, donis opulentum et numine divae,&lt;br /&gt;                aerea cui gradibus surgebant limina, nexaeque&lt;br /&gt; aere trabes,
+foribus cardo stridebat aenis.&lt;br /&gt; Hoc primum in luco nova res
+oblata timorem&lt;br /&gt; leniit, hic primum Aeneas sperare salutem&lt;br /&gt;                ausus, et adflictis melius confidere rebus.&lt;br /&gt; Namque sub ingenti
+lustrat dum singula templo,&lt;br /&gt; reginam opperiens, dum, quae fortuna
+sit urbi,&lt;br /&gt; artificumque manus inter se operumque laborem&lt;br /&gt;                miratur, videt Iliacas ex ordine pugnas,&lt;br /&gt; bellaque iam fama
+totum volgata per orbem,&lt;br /&gt; Atridas, Priamumque, et saevum ambobus
+Achillem.
+&lt;br /&gt; Constitit, et lacrimans, 'Quis iam locus' inquit 'Achate,
+&lt;br /&gt; quae regio in terris nostri non plena laboris?&lt;br /&gt; En Priamus!
+Sunt hic etiam sua praemia laudi;&lt;br /&gt; sunt lacrimae rerum et mentem
+mortalia tangunt.&lt;br /&gt; Solve metus; feret haec aliquam tibi fama
+salutem.'
+&lt;br /&gt; Sic ait, atque animum pictura pascit inani,&lt;br /&gt; multa gemens,
+largoque umectat flumine voltum.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;There was a grove in the centre of the city, delightful
+&lt;br /&gt;with shade, where the wave and storm-tossed Phoenicians
+&lt;br /&gt;first uncovered the head of a fierce horse, that regal Juno
+&lt;br /&gt;showed them: so the race would be noted in war,
+&lt;br /&gt;and rich in substance throughout the ages.
+&lt;br /&gt;Here Sidonian Dido was establishing a great temple
+&lt;br /&gt;to Juno, rich with gifts and divine presence,
+&lt;br /&gt;with bronze entrances rising from stairways, and beams
+&lt;br /&gt;jointed with bronze, and hinges creaking on bronze doors.
+&lt;br /&gt;Here in the grove something new appeared that calmed his fears
+&lt;br /&gt;for the first time, here for the first time Aeneas dared to
+hope
+&lt;br /&gt;for safety, and to put greater trust in his afflicted fortunes.
+&lt;br /&gt;While, waiting for the queen, in the vast temple, he looks
+&lt;br /&gt;at each thing: while he marvels at the city’s wealth,
+&lt;br /&gt;the skill of their artistry, and the products of their labours,
+&lt;br /&gt;he sees the battles at Troy in their correct order,
+&lt;br /&gt;the War, known through its fame to the whole world,
+&lt;br /&gt;the sons of Atreus, of Priam, and Achilles angered with both.
+&lt;br /&gt;He halted, and said, with tears: ‘What place is there,
+&lt;br /&gt;Achates, what region of earth not full of our hardships?
+&lt;br /&gt;See, Priam! Here too virtue has its rewards, here too
+&lt;br /&gt;there are tears for events, and mortal things touch the heart.
+&lt;br /&gt;Lose your fears: this fame will bring you benefit.’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Namque videbat, uti bellantes Pergama circum&lt;br /&gt; hac fugerent Graii,
+premeret Troiana iuventus,&lt;br /&gt; hac Phryges, instaret curru cristatus
+Achilles.
+&lt;br /&gt; Nec procul hinc Rhesi niveis tentoria velis&lt;br /&gt; adgnoscit
+lacrimans, primo quae prodita somno&lt;br /&gt; Tydides multa vastabat
+caede cruentus,&lt;br /&gt; ardentisque avertit equos in castra, prius
+quam
+&lt;br /&gt; pabula gustassent Troiae Xanthumque bibissent.&lt;br /&gt; Parte alia
+fugiens amissis Troilus armis,&lt;br /&gt; infelix puer atque impar congressus
+Achilli,
+&lt;br /&gt; fertur equis, curruque haeret resupinus inani,
+&lt;br /&gt; lora tenens tamen; huic cervixque comaeque trahuntur&lt;br /&gt; per
+terram, et versa pulvis inscribitur hasta.&lt;br /&gt; Interea ad templum
+non aequae Palladis ibant&lt;br /&gt; crinibus Iliades passis peplumque
+ferebant,
+&lt;br /&gt; suppliciter tristes et tunsae pectora palmis;&lt;br /&gt; diva solo
+fixos oculos aversa tenebat.&lt;br /&gt; Ter circum Iliacos raptaverat
+Hectora muros,&lt;br /&gt; exanimumque auro corpus vendebat Achilles.&lt;br /&gt;                Tum vero ingentem gemitum dat pectore ab imo,&lt;br /&gt; ut spolia, ut
+currus, utque ipsum corpus amici,&lt;br /&gt; tendentemque manus Priamum
+conspexit inermis.&lt;br /&gt; Se quoque principibus permixtum adgnovit
+Achivis,
+&lt;br /&gt; Eoasque acies et nigri Memnonis arma.&lt;br /&gt; Ducit Amazonidum
+lunatis agmina peltis&lt;br /&gt; Penthesilea furens, mediisque in milibus
+ardet,
+&lt;br /&gt; aurea subnectens exsertae cingula mammae,&lt;br /&gt; bellatrix, audetque
+viris concurrere virgo.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;So he speaks, and feeds his spirit with the insubstantial frieze,
+&lt;br /&gt;sighing often, and his face wet with the streaming tears.
+&lt;br /&gt;For he saw how, here, the Greeks fled, as they fought round
+Troy,
+&lt;br /&gt;chased by the Trojan youth, and, there, the Trojans fled,
+&lt;br /&gt;with plumed Achilles pressing them close in his chariot.
+&lt;br /&gt;Not far away, through his tears, he recognises Rhesus’s
+&lt;br /&gt;white-canvassed tents, that blood-stained Diomede, Tydeus’s
+son,
+&lt;br /&gt;laid waste with great slaughter, betrayed in their first sleep,
+&lt;br /&gt;diverting the fiery horses to his camp, before they could eat
+&lt;br /&gt;Trojan fodder, or drink from the river Xanthus.
+&lt;br /&gt;Elsewhere Troilus, his weapons discarded in flight,
+&lt;br /&gt;unhappy boy, unequally matched in his battle with Achilles,
+&lt;br /&gt;is dragged by his horses, clinging face-up to the empty chariot,
+&lt;br /&gt;still clutching the reins: his neck and hair trailing
+&lt;br /&gt;on the ground, and his spear reversed furrowing the dust.
+&lt;br /&gt;Meanwhile the Trojan women with loose hair, walked
+&lt;br /&gt;to unjust Pallas’s temple carrying the sacred robe,
+&lt;br /&gt;mourning humbly, and beating their breasts with their hands.
+&lt;br /&gt;The goddess was turned away, her eyes fixed on the ground.
+&lt;br /&gt;Three times had Achilles dragged Hector round the walls of
+Troy,
+&lt;br /&gt;and now was selling the lifeless corpse for gold.
+&lt;br /&gt;Then Aeneas truly heaves a deep sigh, from the depths of his
+heart,
+&lt;br /&gt;as he views the spoils, the chariot, the very body of his friend,
+&lt;br /&gt;and Priam stretching out his unwarlike hands.
+&lt;br /&gt;He recognised himself as well, fighting the Greek princes,
+&lt;br /&gt;and the Ethiopian ranks and black Memnon’s armour.
+&lt;br /&gt;Raging Penthesilea leads the file of Amazons,
+&lt;br /&gt;with crescent shields, and shines out among her thousands,
+&lt;br /&gt;her golden girdle fastened beneath her exposed breasts,
+&lt;br /&gt;a virgin warrior daring to fight with men.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Haec dum Dardanio Aeneae miranda videntur,&lt;br /&gt; dum stupet, obtutuque
+haeret defixus in uno,&lt;br /&gt; regina ad templum, forma pulcherrima
+Dido,
+&lt;br /&gt; incessit magna iuvenum stipante caterva.&lt;br /&gt; Qualis in Eurotae
+ripis aut per iuga Cynthi&lt;br /&gt; exercet Diana choros, quam mille
+secutae
+&lt;br /&gt; hinc atque hinc glomerantur oreades; illa pharetram&lt;br /&gt; fert
+umero, gradiensque deas supereminet omnis:&lt;br /&gt; Latonae tacitum
+pertemptant gaudia pectus:&lt;br /&gt; talis erat Dido, talem se laeta
+ferebat
+&lt;br /&gt; per medios, instans operi regnisque futuris.&lt;br /&gt; Tum foribus
+divae, media testudine templi,&lt;br /&gt; saepta armis, solioque alte
+subnixa resedit.&lt;br /&gt; Iura dabat legesque viris, operumque laborem
+&lt;br /&gt; partibus aequabat iustis, aut sorte trahebat:&lt;br /&gt; cum subito
+Aeneas concursu accedere magno&lt;br /&gt; Anthea Sergestumque videt fortemque
+Cloanthum,
+&lt;br /&gt; Teucrorumque alios, ater quos aequore turbo
+&lt;br /&gt; dispulerat penitusque alias avexerat oras.&lt;br /&gt; Obstipuit simul
+ipse simul perculsus Achates&lt;br /&gt; laetitiaque metuque; avidi coniungere
+dextras
+&lt;br /&gt; ardebant; sed res animos incognita turbat.&lt;br /&gt; Dissimulant,
+et nube cava speculantur amicti,&lt;br /&gt; quae fortuna viris, classem
+quo litore linquant,&lt;br /&gt; quid veniant; cunctis nam lecti navibus
+ibant,
+&lt;br /&gt; orantes veniam, et templum clamore petebant.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;While these wonderful sights are viewed by Trojan Aeneas,
+&lt;br /&gt;while amazed he hangs there, rapt, with fixed gaze,
+&lt;br /&gt;Queen Dido, of loveliest form, reached the temple,
+&lt;br /&gt;with a great crowd of youths accompanying her.
+&lt;br /&gt;Just as Diana leads her dancing throng on Eurotas’s banks,
+&lt;br /&gt;or along the ridges of Cynthus, and, following her,
+&lt;br /&gt;a thousand mountain-nymphs gather on either side:
+&lt;br /&gt;and she carries a quiver on her shoulder, and overtops
+&lt;br /&gt;all the other goddesses as she walks: and delight
+&lt;br /&gt;seizes her mother Latona’s silent heart:
+&lt;br /&gt;such was Dido, so she carried herself, joyfully,
+&lt;br /&gt;amongst them, furthering the work, and her rising kingdom.
+&lt;br /&gt;Then, fenced with weapons, and resting on a high throne,
+&lt;br /&gt;she took her seat, at the goddess’s doorway, under the central
+vault.
+&lt;br /&gt;She was giving out laws and statutes to the people, and sharing
+&lt;br /&gt;the workers labour out in fair proportions, or assigning it
+by lot:
+&lt;br /&gt;when Aeneas suddenly saw Antheus, and Sergestus,
+&lt;br /&gt;and brave Cloanthus, approaching, among a large crowd,
+&lt;br /&gt;with others of the Trojans whom the black storm-clouds
+&lt;br /&gt;had scattered over the sea and carried far off to other shores.
+&lt;br /&gt;He was stunned, and Achates was stunned as well
+&lt;br /&gt;with joy and fear: they burned with eagerness to clasp hands,
+&lt;br /&gt;but the unexpected event confused their minds.
+&lt;br /&gt;They stay concealed and, veiled in the deep mist, they watch
+&lt;br /&gt;to see what happens to their friends, what shore they have
+left
+&lt;br /&gt;the fleet on, and why they are here: the elect of every ship
+came
+&lt;br /&gt;begging favour, and made for the temple among the shouting.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Postquam introgressi et coram data copia fandi,&lt;br /&gt; maximus Ilioneus
+placido sic pectore coepit:&lt;br /&gt; 'O Regina, novam cui condere Iuppiter
+urbem
+&lt;br /&gt; iustitiaque dedit gentis frenare superbas,&lt;br /&gt; Troes te miseri,
+ventis maria omnia vecti,&lt;br /&gt; oramus, prohibe infandos a navibus
+ignis,
+&lt;br /&gt; parce pio generi, et propius res aspice nostras.&lt;br /&gt; Non nos
+aut ferro Libycos populare Penatis&lt;br /&gt; venimus, aut raptas ad litora
+vertere praedas;&lt;br /&gt; non ea vis animo, nec tanta superbia victis.
+&lt;br /&gt; Est locus, Hesperiam Grai cognomine dicunt,
+&lt;br /&gt; terra antiqua, potens armis atque ubere glaebae;&lt;br /&gt; Oenotri
+coluere viri; nunc fama minores&lt;br /&gt; Italiam dixisse ducis de nomine
+gentem.
+&lt;br /&gt; Hic cursus fuit:&lt;br /&gt; cum subito adsurgens fluctu nimbosus
+Orion
+&lt;br /&gt; in vada caeca tulit, penitusque procacibus austris
+&lt;br /&gt; perque undas, superante salo, perque invia saxa&lt;br /&gt; dispulit;
+huc pauci vestris adnavimus oris.&lt;br /&gt; Quod genus hoc hominum? Quaeve
+hunc tam barbara morem&lt;br /&gt; permittit patria? Hospitio prohibemur
+harenae;
+&lt;br /&gt; bella cient, primaque vetant consistere terra.
+&lt;br /&gt; Si genus humanum et mortalia temnitis arma&lt;br /&gt; at sperate
+deos memores fandi atque nefandi.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;When they’d entered, and freedom to speak in person
+&lt;br /&gt;had been granted, Ilioneus, the eldest, began calmly:
+&lt;br /&gt;‘O queen, whom Jupiter grants the right to found
+&lt;br /&gt;a new city, and curb proud tribes with your justice,
+&lt;br /&gt;we unlucky Trojans, driven by the winds over every sea,
+&lt;br /&gt;pray to you: keep the terror of fire away from our ships,
+&lt;br /&gt;spare a virtuous race and look more kindly on our fate.
+&lt;br /&gt;We have not come to despoil Libyan homes with the sword,
+&lt;br /&gt;or to carry off stolen plunder to the shore: that violence
+&lt;br /&gt;is not in our minds, the conquered have not such pride.
+&lt;br /&gt;There’s a place called Hesperia by the Greeks,
+&lt;br /&gt;an ancient land, strong in men, with a rich soil:
+&lt;br /&gt;There the Oenotrians lived: now rumour has it
+&lt;br /&gt;that a later people has called it Italy, after their leader.
+&lt;br /&gt;We had set our course there when stormy Orion,
+&lt;br /&gt;rising with the tide, carried us onto hidden shoals,
+&lt;br /&gt;and fierce winds scattered us far, with the overwhelming surge,
+&lt;br /&gt;over the waves among uninhabitable rocks:
+&lt;br /&gt;we few have drifted here to your shores.
+&lt;br /&gt;What race of men is this? What land is so barbaric as to allow
+&lt;br /&gt;this custom, that we’re denied the hospitality of the sands?
+&lt;br /&gt;They stir up war, and prevent us setting foot on dry land.
+&lt;br /&gt;If you despise the human race and mortal weapons,
+&lt;br /&gt;still trust that the gods remember right and wrong.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;'Rex erat Aeneas nobis, quo iustior alter,&lt;br /&gt; nec pietate fuit,
+nec bello maior et armis.&lt;br /&gt; Quem si fata virum servant, si vescitur
+aura
+&lt;br /&gt; aetheria, neque adhuc crudelibus occubat umbris,&lt;br /&gt; non metus;
+officio nec te certasse priorem&lt;br /&gt; poeniteat. Sunt et Siculis
+regionibus urbes&lt;br /&gt; armaque, Troianoque a sanguine clarus Acestes.&lt;br /&gt;                Quassatam ventis liceat subducere classem,&lt;br /&gt; et silvis aptare
+trabes et stringere remos:&lt;br /&gt; si datur Italiam, sociis et rege
+recepto,
+&lt;br /&gt; tendere, ut Italiam laeti Latiumque petamus;
+&lt;br /&gt; sin absumpta salus, et te, pater optime Teucrum,&lt;br /&gt; pontus
+habet Libyae, nec spes iam restat Iuli,&lt;br /&gt; at freta Sicaniae saltem
+sedesque paratas,&lt;br /&gt; unde huc advecti, regemque petamus Acesten.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;&lt;br /&gt;'Aeneas was our king, no one more just than him
+&lt;br /&gt;in his duty, or greater in war and weaponry.
+&lt;br /&gt;If fate still protects the man, if he still enjoys the ethereal
+air,
+&lt;br /&gt;if he doesn’t yet rest among the cruel shades, there’s nothing
+&lt;br /&gt;to fear, and you’d not repent of vying with him first in kindness.
+&lt;br /&gt;Then there are cities and fields too in the region of Sicily,
+&lt;br /&gt;and famous Acestes, of Trojan blood. Allow us
+&lt;br /&gt;to beach our fleet, damaged by the storms,
+&lt;br /&gt;and cut planks from trees, and shape oars,
+&lt;br /&gt;so if our king’s restored and our friends are found
+&lt;br /&gt;we can head for Italy, gladly seek Italy and Latium:
+&lt;br /&gt;and if our saviour’s lost, and the Libyan seas hold you,
+&lt;br /&gt;Troy’s most virtuous father, if no hope now remains from Iulus,
+&lt;br /&gt;let us seek the Sicilian straits, from which we were driven,
+&lt;br /&gt;and the home prepared for us, and a king, Acestes.’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; Talibus Ilioneus; cuncti simul ore fremebant&lt;br /&gt; Dardanidae.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;So Ilioneus spoke: and the Trojans all shouted with one voice.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Tum breviter Dido, voltum demissa, profatur:&lt;br /&gt; 'Solvite corde
+metum, Teucri, secludite curas.&lt;br /&gt; Res dura et regni novitas me
+talia cogunt
+&lt;br /&gt; moliri, et late finis custode tueri.&lt;br /&gt; Quis genus Aeneadum,
+quis Troiae nesciat urbem,&lt;br /&gt; virtutesque virosque, aut tanti
+incendia belli?&lt;br /&gt; Non obtusa adeo gestamus pectora Poeni,
+&lt;br /&gt; nec tam aversus equos Tyria Sol iungit ab urbe.&lt;br /&gt; Seu vos
+Hesperiam magnam Saturniaque arva,&lt;br /&gt; sive Erycis finis regemque
+optatis Acesten,&lt;br /&gt; auxilio tutos dimittam, opibusque iuvabo.
+&lt;br /&gt; Voltis et his mecum pariter considere regnis;&lt;br /&gt; urbem quam
+statuo vestra est, subducite navis;&lt;br /&gt; Tros Tyriusque mihi nullo
+discrimine agetur.&lt;br /&gt; Atque utinam rex ipse Noto compulsus eodem
+&lt;br /&gt; adforet Aeneas! Equidem per litora certos&lt;br /&gt; dimittam et
+Libyae lustrare extrema iubebo,&lt;br /&gt; si quibus eiectus silvis aut
+urbibus errat.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Then, Dido, spoke briefly, with lowered eyes:
+&lt;br /&gt;‘Trojans, free your hearts of fear: dispel your cares.
+&lt;br /&gt;Harsh events and the newness of the kingdom force me to effect
+&lt;br /&gt;such things, and protect my borders with guards on all sides.
+&lt;br /&gt;Who doesn’t know of Aeneas’s race, and the city of Troy,
+&lt;br /&gt;the bravery, the men, or so great a blaze of warfare,
+&lt;br /&gt;indeed, we Phoenicians don’t possess unfeeling hearts,
+&lt;br /&gt;the sun doesn’t harness his horses that far from this Tyrian
+city.
+&lt;br /&gt;Whether you opt for mighty Hesperia, and Saturn’s fields,
+&lt;br /&gt;or the summit of Eryx, and Acestes for king,
+&lt;br /&gt;I’ll see you safely escorted, and help you with my wealth.
+&lt;br /&gt;Or do you wish to settle here with me, as equals in my kingdom?
+&lt;br /&gt;The city I build is yours: beach your ships:
+&lt;br /&gt;Trojans and Tyrians will be treated by me without distinction.
+&lt;br /&gt;I wish your king Aeneas himself were here, driven
+&lt;br /&gt;by that same storm! Indeed, I’ll send reliable men
+&lt;br /&gt;along the coast, and order them to travel the length of Libya,
+&lt;br /&gt;in case he’s driven aground, and wandering the woods and towns.’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;His animum arrecti dictis et fortis Achates&lt;br /&gt; et pater Aeneas
+iamdudum erumpere nubem&lt;br /&gt; ardebant. Prior Aenean compellat Achates:
+&lt;br /&gt; 'Nate dea, quae nunc animo sententia surgit?&lt;br /&gt; omnia tuta
+vides, classem sociosque receptos.&lt;br /&gt; Unus abest, medio in fluctu
+quem vidimus ipsi&lt;br /&gt; submersum; dictis respondent cetera matris.'
+&lt;/div&gt;
+
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;Brave Achetes, and our forefather Aeneas, their spirits raised
+&lt;br /&gt;by these words, had been burning to break free of the mist.
+&lt;br /&gt;Achates was first to speak, saying to Aeneas: ‘Son of the goddess,
+&lt;br /&gt;what intention springs to your mind? You see all’s safe,
+&lt;br /&gt;the fleet and our friends have been restored to us.
+&lt;br /&gt;Only one is missing, whom we saw plunged in the waves:
+&lt;br /&gt;all else is in accord with your mother’s words.’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Vix ea fatus erat, cum circumfusa repente&lt;br /&gt; scindit se nubes
+et in aethera purgat apertum.&lt;br /&gt; Restitit Aeneas claraque in luce
+refulsit,
+&lt;br /&gt; os umerosque deo similis; namque ipsa decoram&lt;br /&gt; caesariem
+nato genetrix lumenque iuventae&lt;br /&gt; purpureum et laetos oculis
+adflarat honores:
+&lt;br /&gt; quale manus addunt ebori decus, aut ubi flavo&lt;br /&gt; argentum
+Pariusve lapis circumdatur auro.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;He’d scarcely spoken when the mist surrounding them
+&lt;br /&gt;suddenly parted, and vanished in the clear air.
+&lt;br /&gt;Aeneas stood there, shining in the bright daylight,
+&lt;br /&gt;like a god in shoulders and face: since his mother
+&lt;br /&gt;had herself imparted to her son beauty to his hair,
+&lt;br /&gt;a glow of youth, and a joyful charm to his eyes:
+&lt;br /&gt;like the glory art can give to ivory, or as when silver,
+&lt;br /&gt;or Parian marble, is surrounded by gold.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Tum sic reginam adloquitur, cunctisque repente&lt;br /&gt; improvisus ait:
+'Coram, quem quaeritis, adsum,&lt;br /&gt; Troius Aeneas, Libycis ereptus
+ab undis.&lt;br /&gt; O sola infandos Troiae miserata labores,&lt;br /&gt; quae
+nos, reliquias Danaum, terraeque marisque&lt;br /&gt; omnibus exhaustos
+iam casibus, omnium egenos,&lt;br /&gt; urbe, domo, socias, grates persolvere
+dignas
+&lt;br /&gt; non opis est nostrae, Dido, nec quicquid ubique est&lt;br /&gt; gentis
+Dardaniae, magnum quae sparsa per orbem.&lt;br /&gt; Di tibi, si qua pios
+respectant numina, si quid&lt;br /&gt; usquam iustitia est et mens sibi
+conscia recti,&lt;br /&gt; praemia digna ferant. Quae te tam laeta tulerunt&lt;br /&gt;                saecula? Qui tanti talem genuere parentes?&lt;br /&gt; In freta dum fluvii
+current, dum montibus umbrae&lt;br /&gt; lustrabunt convexa, polus dum
+sidera pascet,&lt;br /&gt; semper honos nomenque tuum laudesque manebunt,&lt;br /&gt;                quae me cumque vocant terrae.' Sic fatus, amicum
+&lt;br /&gt; Ilionea petit dextra, laevaque Serestum,&lt;br /&gt; post alios, fortemque
+Gyan fortemque Cloanthum.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;Then he addressed the queen, suddenly, surprising them all,
+&lt;br /&gt;saying: ‘I am here in person, Aeneas the Trojan,
+&lt;br /&gt;him whom you seek, saved from the Libyan waves.
+&lt;br /&gt;O Dido, it is not in our power, nor those of our Trojan race,
+&lt;br /&gt;wherever they may be, scattered through the wide world,
+&lt;br /&gt;to pay you sufficient thanks, you who alone have pitied
+&lt;br /&gt;Troy’s unspeakable miseries, and share your city and home
+&lt;br /&gt;with us, the remnant left by the Greeks, wearied
+&lt;br /&gt;by every mischance, on land and sea, and lacking everything.
+&lt;br /&gt;May the gods, and the mind itself conscious of right,
+&lt;br /&gt;bring you a just reward, if the gods respect the virtuous,
+&lt;br /&gt;if there is justice anywhere. What happy age gave birth
+&lt;br /&gt;to you? What parents produced such a child?
+&lt;br /&gt;Your honour, name and praise will endure forever,
+&lt;br /&gt;whatever lands may summon me, while rivers run
+&lt;br /&gt;to the sea, while shadows cross mountain slopes,
+&lt;br /&gt;while the sky nourishes the stars.’ So saying he grasps
+&lt;br /&gt;his friend Iloneus by the right hand, Serestus with the left,
+&lt;br /&gt;then others, brave Gyus and brave Cloanthus.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Obstipuit primo aspectu Sidonia Dido,&lt;br /&gt; casu deinde viri tanto,
+et sic ore locuta est:&lt;br /&gt; 'Quis te, nate dea, per tanta pericula
+casus
+&lt;br /&gt; insequitur? Quae vis immanibus applicat oris?
+&lt;br /&gt; Tune ille Aeneas, quem Dardanio Anchisae&lt;br /&gt; alma Venus Phrygii
+genuit Simoentis ad undam?&lt;br /&gt; Atque equidem Teucrum memini Sidona
+venire
+&lt;br /&gt; finibus expulsum patriis, nova regna petentem&lt;br /&gt; auxilio
+Beli; genitor tum Belus opimam&lt;br /&gt; vastabat Cyprum, et victor dicione
+tenebat.
+&lt;br /&gt; Tempore iam ex illo casus mihi cognitus urbis
+&lt;br /&gt; Troianae nomenque tuum regesque Pelasgi.&lt;br /&gt; Ipse hostis Teucros
+insigni laude ferebat,&lt;br /&gt; seque ortum antiqua Teucrorum ab stirpe
+volebat.
+&lt;br /&gt; Quare agite, O tectis, iuvenes, succedite nostris.
+&lt;br /&gt; Me quoque per multos similis fortuna labores&lt;br /&gt; iactatam
+hac demum voluit consistere terra.&lt;br /&gt; Non ignara mali, miseris
+succurrere disco.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Sidonian Dido was first amazed at the hero’s looks
+&lt;br /&gt;then at his great misfortunes, and she spoke, saying:
+&lt;br /&gt;‘Son of a goddess, what fate pursues you through all
+&lt;br /&gt;these dangers? What force drives you to these barbarous shores?
+&lt;br /&gt;Are you truly that Aeneas whom kindly Venus bore
+&lt;br /&gt;to Trojan Anchises, by the waters of Phrygian Simois?
+&lt;br /&gt;Indeed, I myself remember Teucer coming to Sidon,
+&lt;br /&gt;exiled from his country’s borders, seeking a new kingdom
+&lt;br /&gt;with Belus’s help: Belus, my father, was laying waste
+&lt;br /&gt;rich Cyprus, and, as victor, held it by his authority.
+&lt;br /&gt;Since then the fall of the Trojan city is known to me,
+&lt;br /&gt;and your name, and those of the Greek kings.
+&lt;br /&gt;Even their enemy granted the Teucrians high praise,
+&lt;br /&gt;maintaining they were born of the ancient Teucrian stock.
+&lt;br /&gt;So come, young lords, and enter our palace.
+&lt;br /&gt;Fortune, pursuing me too, through many similar troubles,
+&lt;br /&gt;willed that I would find peace at last in this land.
+&lt;br /&gt;Not being unknown to evil, I’ve learned to aid the unhappy.’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Sic memorat; simul Aenean in regia ducit&lt;br /&gt; tecta, simul divom
+templis indicit honorem.&lt;br /&gt; Nec minus interea sociis ad litora
+mittit
+&lt;br /&gt; viginti tauros, magnorum horrentia centum&lt;br /&gt; terga suum,
+pinguis centum cum matribus agnos,&lt;br /&gt; munera laetitiamque dii.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;So she speaks, and leads Aeneas into the royal house,
+&lt;br /&gt;and proclaims, as well, offerings at the god’s temples.
+&lt;br /&gt;She sends no less than twenty bulls to his friends
+&lt;br /&gt;on the shore, and a hundred of her largest pigs with
+&lt;br /&gt;bristling backs, a hundred fat lambs with the ewes,
+&lt;br /&gt;and joyful gifts of wine,
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;At domus interior regali splendida luxu&lt;br /&gt; instruitur, mediisque
+parant convivia tectis:&lt;br /&gt; arte laboratae vestes ostroque superbo,
+&lt;br /&gt; ingens argentum mensis, caelataque in auro&lt;br /&gt; fortia facta
+patrum, series longissima rerum&lt;br /&gt; per tot ducta viros antiqua
+ab origine gentis.
+&lt;/div&gt;
+
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;but the interior of the palace
+&lt;br /&gt;is laid out with royal luxury, and they prepare
+&lt;br /&gt;a feast in the centre of the palace: covers worked
+&lt;br /&gt;skilfully in princely purple, massive silverware
+&lt;br /&gt;on the tables, and her forefathers’ heroic deeds
+&lt;br /&gt;engraved in gold, a long series of exploits traced
+&lt;br /&gt;through many heroes, since the ancient origins of her people.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Aeneas (neque enim patrius consistere mentem&lt;br /&gt; passus amor) rapidum
+ad navis praemittit Achaten,&lt;br /&gt; Ascanio ferat haec, ipsumque ad
+moenia ducat;&lt;br /&gt; omnis in Ascanio cari stat cura parentis.&lt;br /&gt;                Munera praeterea, Iliacis erepta ruinis,&lt;br /&gt; ferre iubet, pallam
+signis auroque rigentem,&lt;br /&gt; et circumtextum croceo velamen acantho,&lt;br /&gt;                ornatus Argivae Helenae, quos illa Mycenis,&lt;br /&gt; Pergama cum peteret
+inconcessosque hymenaeos,&lt;br /&gt; extulerat, matris Ledae mirabile
+donum:
+&lt;br /&gt; praeterea sceptrum, Ilione quod gesserat olim,&lt;br /&gt; maxima
+natarum Priami, colloque monile&lt;br /&gt; bacatum, et duplicem gemmis
+auroque coronam.&lt;br /&gt; Haec celerans ita ad naves tendebat Achates.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;Aeneas quickly sends Achates to the ships
+&lt;br /&gt;to carry the news to Ascanius (since a father’s love
+&lt;br /&gt;won’t let his mind rest) and bring him to the city:
+&lt;br /&gt;on Ascanius all the care of a fond parent is fixed.
+&lt;br /&gt;He commands him to bring gifts too, snatched
+&lt;br /&gt;from the ruins of Troy, a figured robe stiff with gold,
+&lt;br /&gt;and a cloak fringed with yellow acanthus,
+&lt;br /&gt;worn by Helen of Argos, brought from Mycenae
+&lt;br /&gt;when she sailed to Troy and her unlawful marriage,
+&lt;br /&gt;a wonderful gift from her mother Leda:
+&lt;br /&gt;and the sceptre that Ilione, Priam’s eldest daughter,
+&lt;br /&gt;once carried, and a necklace of pearls, and a double-coronet
+&lt;br /&gt;of jewels and gold. Achates, hastening to fulfil
+&lt;br /&gt;these commands, took his way towards the ships.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt;
+&lt;br /&gt;At Cytherea novas artes, nova pectore versat&lt;br /&gt; Consilia,
+ut faciem mutatus et ora Cupido&lt;br /&gt; pro dulci Ascanio veniat, donisque
+furentem
+&lt;br /&gt; incendat reginam, atque ossibus implicet ignem;&lt;br /&gt; quippe
+domum timet ambiguam Tyriosque bilinguis;&lt;br /&gt; urit atrox Iuno,
+et sub noctem cura recursat.&lt;br /&gt; Ergo his aligerum dictis adfatur
+Amorem:
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;But Venus was planning new wiles and stratagems
+&lt;br /&gt;in her heart: how Cupid, altered in looks, might arrive
+&lt;br /&gt;in place of sweet Ascanius, and arouse the passionate queen
+&lt;br /&gt;by his gifts, and entwine the fire in her bones: truly she
+fears
+&lt;br /&gt;the unreliability of this house, and the duplicitous Tyrians:
+&lt;br /&gt;unyielding Juno angers her, and her worries increase with nightfall.
+&lt;br /&gt;So she speaks these words to winged Cupid:
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;'Nate, meae vires, mea magna potentia solus,&lt;br /&gt; nate, patris summi
+qui tela Typhoia temnis,&lt;br /&gt; ad te confugio et supplex tua numina
+posco.
+&lt;br /&gt; Frater ut Aeneas pelago tuus omnia circum&lt;br /&gt; litora iactetur
+odiis Iunonis iniquae,&lt;br /&gt; nota tibi, et nostro doluisti saepe
+dolore.
+&lt;br /&gt; Hunc Phoenissa tenet Dido blandisque moratur
+&lt;br /&gt; vocibus; et vereor, quo se Iunonia vertant&lt;br /&gt; hospitia; haud
+tanto cessabit cardine rerum.&lt;br /&gt; Quocirca capere ante dolis et
+cingere flamma&lt;br /&gt; reginam meditor, ne quo se numine mutet,&lt;br /&gt;                sed magno Aeneae mecum teneatur amore.&lt;br /&gt; Qua facere id possis,
+nostram nunc accipe mentem.&lt;br /&gt; Regius accitu cari genitoris ad
+urbem
+&lt;br /&gt; Sidoniam puer ire parat, mea maxima cura,&lt;br /&gt; dona ferens,
+pelago et flammis restantia Troiae:&lt;br /&gt; hunc ego sopitum somno
+super alta Cythera&lt;br /&gt; aut super Idalium sacrata sede recondam,&lt;br /&gt;                ne qua scire dolos mediusve occurrere possit.&lt;br /&gt; Tu faciem illius
+noctem non amplius unam&lt;br /&gt; falle dolo, et notos pueri puer indue
+voltus,
+&lt;br /&gt; ut, cum te gremio accipiet laetissima Dido&lt;br /&gt; regalis inter
+mensas laticemque Lyaeum,&lt;br /&gt; cum dabit amplexus atque oscula dulcia
+figet,
+&lt;br /&gt; occultum inspires ignem fallasque veneno.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;‘My son, you who alone are my great strength, my power,
+&lt;br /&gt;a son who scorns mighty Jupiter’s Typhoean thunderbolts,
+&lt;br /&gt;I ask your help, and humbly call on your divine will.
+&lt;br /&gt;It’s known to you how Aeneas, your brother, is driven
+&lt;br /&gt;over the sea, round all the shores, by bitter Juno’s hatred,
+&lt;br /&gt;and you have often grieved with my grief.
+&lt;br /&gt;Phoenician Dido holds him there, delaying him with flattery,
+&lt;br /&gt;and I fear what may come of Juno’s hospitality:
+&lt;br /&gt;at such a critical turn of events she’ll not be idle.
+&lt;br /&gt;So I intend to deceive the queen with guile, and encircle
+&lt;br /&gt;her with passion, so that no divine will can rescue her,
+&lt;br /&gt;but she’ll be seized, with me, by deep love for Aeneas.
+&lt;br /&gt;Now listen to my thoughts on how you can achieve this.
+&lt;br /&gt;Summoned by his dear father, the royal child,
+&lt;br /&gt;my greatest concern, prepares to go to the Sidonian city,
+&lt;br /&gt;carrying gifts that survived the sea, and the flames of Troy.
+&lt;br /&gt;I’ll lull him to sleep and hide him in my sacred shrine
+&lt;br /&gt;on the heights of Cythera or Idalium, so he can know
+&lt;br /&gt;nothing of my deceptions, or interrupt them mid-way.
+&lt;br /&gt;For no more than a single night imitate his looks by art,
+&lt;br /&gt;and, a boy yourself, take on the known face of a boy,
+&lt;br /&gt;so that when Dido takes you to her breast, joyfully,
+&lt;br /&gt;amongst the royal feast, and the flowing wine,
+&lt;br /&gt;when she embraces you, and plants sweet kisses on you,
+&lt;br /&gt;you’ll breathe hidden fire into her, deceive her with your
+poison.’
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Paret Amor dictis carae genetricis, et alas&lt;br /&gt; exuit, et gressu
+gaudens incedit Iuli.&lt;br /&gt; At Venus Ascanio placidam per membra
+quietem
+&lt;br /&gt; inrigat, et fotum gremio dea tollit in altos&lt;br /&gt; Idaliae lucos,
+ubi mollis amaracus illum&lt;br /&gt; floribus et dulci adspirans complectitur
+umbra.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt;
+&lt;br /&gt;Cupid obeys his dear mother’s words, sets aside his wings,
+&lt;br /&gt;and laughingly trips along with Iulus’s step.
+&lt;br /&gt;But Venus pours gentle sleep over Ascanius’s limbs,
+&lt;br /&gt;and warming him in her breast, carries him, with divine power,
+&lt;br /&gt;to Idalia’s high groves, where soft marjoram smothers him
+&lt;br /&gt;in flowers, and the breath of its sweet shade.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Iamque ibat dicto parens et dona Cupido&lt;br /&gt; regia portabat Tyriis,
+duce laetus Achate.&lt;br /&gt; Cum venit, aulaeis iam se regina superbis
+&lt;br /&gt; aurea composuit sponda mediamque locavit.&lt;br /&gt; Iam pater Aeneas
+et iam Troiana iuventus&lt;br /&gt; conveniunt, stratoque super discumbitur
+ostro.
+&lt;br /&gt; Dant famuli manibus lymphas, Cereremque canistris
+&lt;br /&gt; expediunt, tonsisque ferunt mantelia villis.&lt;br /&gt; Quinquaginta
+intus famulae, quibus ordine longam&lt;br /&gt; cura penum struere, et
+flammis adolere Penatis;&lt;br /&gt; centum aliae totidemque pares aetate
+ministri,
+&lt;br /&gt; qui dapibus mensas onerent et pocula ponant.
+&lt;br /&gt; Nec non et Tyrii per limina laeta frequentes&lt;br /&gt; convenere,
+toris iussi discumbere pictis.&lt;br /&gt; Mirantur dona Aeneae, mirantur
+Iulum
+&lt;br /&gt; flagrantisque dei voltus simulataque verba,&lt;br /&gt; [pallamque
+et pictum croceo velamen acantho.]&lt;br /&gt; Praecipue infelix, pesti
+devota futurae,&lt;br /&gt; expleri mentem nequit ardescitque tuendo&lt;br /&gt;                Phoenissa, et pariter puero donisque movetur.&lt;br /&gt; Ille ubi complexu
+Aeneae colloque pependit&lt;br /&gt; et magnum falsi implevit genitoris
+amorem,
+&lt;br /&gt; reginam petit haec oculis, haec pectore toto&lt;br /&gt; haeret et
+interdum gremio fovet, inscia Dido,&lt;br /&gt; insidat quantus miserae
+deus; at memor ille&lt;br /&gt; matris Acidaliae paulatim abolere Sychaeum&lt;br /&gt;                incipit, et vivo temptat praevertere amore&lt;br /&gt; iam pridem resides
+animos desuetaque corda.
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;Now, obedient to her orders, delighting in Achetes as guide,
+&lt;br /&gt;Cupid goes off carrying royal gifts for the Tyrians.
+&lt;br /&gt;When he arrives the queen has already settled herself
+&lt;br /&gt;in the centre, on her golden couch under royal canopies.
+&lt;br /&gt;Now our forefather Aeneas and the youth of Troy
+&lt;br /&gt;gather there, and recline on cloths of purple.
+&lt;br /&gt;Servants pour water over their hands: serve bread
+&lt;br /&gt;from baskets: and bring napkins of smooth cloth.
+&lt;br /&gt;Inside there are fifty female servants, in a long line,
+&lt;br /&gt;whose task it is to prepare the meal, and tend the hearth fires:
+&lt;br /&gt;a hundred more, and as many pages of like age,
+&lt;br /&gt;to load the tables with food, and fill the cups.
+&lt;br /&gt;And the Tyrians too are gathered in crowds through the festive
+&lt;br /&gt;halls, summoned to recline on the embroidered couches.
+&lt;br /&gt;They marvel at Aeneas’s gifts, marvel at Iulus,
+&lt;br /&gt;the god’s brilliant appearance, and deceptive words,
+&lt;br /&gt;at the robe, and the cloak embroidered with yellow acanthus.
+&lt;br /&gt;The unfortunate Phoenician above all, doomed to future ruin,
+&lt;br /&gt;cannot pacify her feelings, and catches fire with gazing,
+&lt;br /&gt;stirred equally by the child and by the gifts.
+&lt;br /&gt;He, having hung in an embrace round Aeneas’s neck,
+&lt;br /&gt;and sated the deceived father’s great love,
+&lt;br /&gt;seeks out the queen. Dido, clings to him with her eyes
+&lt;br /&gt;and with her heart, taking him now and then on her lap,
+&lt;br /&gt;unaware how great a god is entering her, to her sorrow.
+&lt;br /&gt;But he, remembering his Cyprian mother’s wishes,
+&lt;br /&gt;begins gradually to erase all thought of Sychaeus,
+&lt;br /&gt;and works at seducing her mind, so long unstirred,
+&lt;br /&gt;and her heart unused to love, with living passion.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col latin&quot;&gt; &lt;br /&gt;Postquam prima quies epulis, mensaeque remotae,&lt;br /&gt; crateras magnos
+statuunt et vina coronant.&lt;br /&gt; Fit strepitus tectis, vocemque per
+ampla volutant&lt;br /&gt; atria; dependent lychni laquearibus aureis&lt;br /&gt;                incensi, et noctem flammis funalia vincunt.&lt;br /&gt; Hic regina gravem
+gemmis auroque poposcit&lt;br /&gt; implevitque mero pateram, quam Belus
+et omnes&lt;br /&gt; a Belo soliti; tum facta silentia tectis:&lt;br /&gt; 'Iuppiter,
+hospitibus nam te dare iura loquuntur,&lt;br /&gt; hunc laetum Tyriisque
+diem Troiaque profectis&lt;br /&gt; esse velis, nostrosque huius meminisse
+minores.
+&lt;br /&gt; Adsit laetitiae Bacchus dator, et bona Iuno;&lt;br /&gt; et vos, O,
+coetum, Tyrii, celebrate faventes.'&lt;br /&gt; Dixit, et in mensam laticum
+libavit honorem,&lt;br /&gt; primaque, libato, summo tenus attigit ore,
+&lt;br /&gt; tum Bitiae dedit increpitans; ille impiger hausit&lt;br /&gt; spumantem
+pateram, et pleno se proluit auro&lt;br /&gt; post alii proceres. Cithara
+crinitus Iopas&lt;br /&gt; personat aurata, docuit quem maximus Atlas.
+&lt;br /&gt; Hic canit errantem lunam solisque labores;&lt;br /&gt; unde hominum
+genus et pecudes; unde imber et ignes;&lt;br /&gt; Arcturum pluviasque
+Hyadas geminosque Triones;&lt;br /&gt; quid tantum Oceano properent se
+tinguere soles&lt;br /&gt; hiberni, vel quae tardis mora noctibus obstet.&lt;br /&gt;                Ingeminant plausu Tyrii, Troesque sequuntur.&lt;br /&gt; Nec non et vario
+noctem sermone trahebat&lt;br /&gt; infelix Dido, longumque bibebat amorem,&lt;br /&gt;                multa super Priamo rogitans, super Hectore multa;&lt;br /&gt; nunc quibus
+Aurorae venisset filius armis,&lt;br /&gt; nunc quales Diomedis equi, nunc
+quantus Achilles.&lt;br /&gt; 'Immo age, et a prima dic, hospes, origine
+nobis
+&lt;br /&gt; insidias,' inquit, 'Danaum, casusque tuorum,&lt;br /&gt; erroresque
+tuos; nam te iam septima portat&lt;br /&gt; omnibus errantem terris et
+fluctibus aestas.'
+&lt;/div&gt;
+&lt;div class=&quot;col english&quot;&gt; &lt;br /&gt;At the first lull in the feasting, the tables were cleared,
+&lt;br /&gt;and they set out vast bowls, and wreathed the wine with garlands.
+&lt;br /&gt;Noise filled the palace, and voices rolled out across the wide
+halls:
+&lt;br /&gt;bright lamps hung from the golden ceilings,
+&lt;br /&gt;and blazing candles dispelled the night.
+&lt;br /&gt;Then the queen asked for a drinking-cup, heavy
+&lt;br /&gt;with gold and jewels, that Belus and all Belus’s line
+&lt;br /&gt;were accustomed to use, and filled it
+&lt;br /&gt;with wine. Then the halls were silent. She spoke:
+&lt;br /&gt;‘Jupiter, since they say you’re the one who creates
+&lt;br /&gt;the laws of hospitality, let this be a happy day
+&lt;br /&gt;for the Tyrians and those from Troy,
+&lt;br /&gt;and let it be remembered by our children.
+&lt;br /&gt;Let Bacchus, the joy-bringer, and kind Juno be present,
+&lt;br /&gt;and you, O Phoenicians, make this gathering festive.’
+&lt;br /&gt;She spoke and poured an offering of wine onto the table,
+&lt;br /&gt;and after the libation was the first to touch the bowl to her
+lips,
+&lt;br /&gt;then she gave it to Bitias, challenging him: he briskly drained
+&lt;br /&gt;the brimming cup, drenching himself in its golden fullness,
+&lt;br /&gt;then other princes drank. Iolas, the long-haired, made
+&lt;br /&gt;his golden lyre resound, he whom great Atlas taught.
+&lt;br /&gt;He sang of the wandering moon and the sun’s labours,
+&lt;br /&gt;where men and beasts came from, and rain and fire,
+&lt;br /&gt;of Arcturus, the rainy Hyades, the two Bears:
+&lt;br /&gt;why the winter suns rush to dip themselves in the sea,
+&lt;br /&gt;and what delay makes the slow nights linger.
+&lt;br /&gt;The Tyrians redoubled their applause, the Trojans too.
+&lt;br /&gt;And unfortunate Dido, she too spent the night
+&lt;br /&gt;in conversation, and drank deep of her passion,
+&lt;br /&gt;asking endlessly about Priam and Hector:
+&lt;br /&gt;now about the armour that Memnon, son of the Dawn,
+&lt;br /&gt;came with to Troy, what kind were Diomed’s horses,
+&lt;br /&gt;how great was Achilles. ‘But come, my guest, tell us
+&lt;br /&gt;from the start all the Greek trickery, your men’s mishaps,
+&lt;br /&gt;and your wanderings: since it’s the seventh summer now
+&lt;br /&gt;that brings you here, in your journey, over every land and
+sea.’
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;fixed-bottom&quot;&gt;
+&lt;div id=&quot;collapseExample&quot; class=&quot;container collapse&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col col-11&quot;&gt;
+&lt;iframe id=&quot;dictionary&quot; src=&quot;https://en.wiktionary.org/wiki/Aeneas#Latin&quot; style=&quot;width:100%; height:300px;margin:0px;border:0px&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-1&quot;&gt;
+&lt;a class=&quot;btn btn-danger&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapseExample&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+x
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+function sanitized(word)
+{
+// https://stackoverflow.com/questions/4328500/how-can-i-strip-all-punctuation-from-a-string-in-javascript-using-regex
+const punctuationless = word.replace(
+/[.,\/#!$%\^&amp;\*;:{}=\-_`~()]/g, &quot;&quot;);
+// https://stackoverflow.com/questions/863800/replacing-diacritics-in-javascript
+return punctuationless.normalize('NFKD').replace(
+/[^\w\s.-_\/]/g,
+'');
+}
+
+function lookup(word)
+{
+console.log(&quot;looking up &quot; + word);
+document.getElementById(&quot;dictionary&quot;).src =
+&quot;https://en.wiktionary.org/wiki/&quot; + sanitized(
+word) +
+&quot;#Latin&quot;;
+$('#collapseExample').collapse('show');
+}
+
+function createLookup(text)
+{
+return text.replace(
+/([a-zA-Z\u00C0-\u017F]+)(?!\w*&gt;)/g,
+'&lt;span onclick=\'lookup(&quot;$1&quot;)\'&gt;$1&lt;/span&gt;');
+}
+
+
+var latinElements =
+document.getElementsByClassName(&quot;latin&quot;);
+for (var i = 0; i &lt; latinElements.length; ++i)
+{
+latinElements[i].innerHTML = createLookup(latinElements[i].innerHTML);
+}
+
+
+&lt;/script&gt;</content><author><name></name></author><summary type="html">Translated by A. S. Kline. Formatting in progress.</summary></entry><entry><title type="html">Exponential Dynamic Programming</title><link href="alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp/" rel="alternate" type="text/html" title="Exponential Dynamic Programming" /><published>2017-12-28T04:50:00+04:00</published><updated>2017-12-28T04:50:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp/">&lt;p&gt;Dynamic programming can turn exponential solutions into polynomial solutions,
 but it can also help turn factorial solutions into exponential. Problems where
 the bound on $n$ is 20, for example, signal that an exponential solution is the
 one required. Consider &lt;a href=&quot;http://usaco.org/index.php?page=viewproblem2&amp;amp;cpid=494&quot;&gt;the following
@@ -133,7 +1891,7 @@ easily.&lt;/p&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; is the bitwise and function, while &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt; is the left shift operator.&lt;/p&gt;</content><author><name></name></author><summary type="html">Dynamic programming can turn exponential solutions into polynomial solutions, but it can also help turn factorial solutions into exponential. Problems where the bound on $n$ is 20, for example, signal that an exponential solution is the one required. Consider the following problem:</summary></entry><entry><title type="html">Zhuangzi, Catan, and Classes</title><link href="alwayswimmin.github.io/jekyll/posts/2017/11/22/zhuangzi-catan-classes/" rel="alternate" type="text/html" title="Zhuangzi, Catan, and Classes" /><published>2017-11-23T01:30:00+07:00</published><updated>2017-11-23T01:30:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/11/22/zhuangzi-catan-classes</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/11/22/zhuangzi-catan-classes/">&lt;p&gt;Thanksgiving provides me with some well-needed rest before I jump back in to
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; is the bitwise and function, while &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt; is the left shift operator.&lt;/p&gt;</content><author><name></name></author><summary type="html">Dynamic programming can turn exponential solutions into polynomial solutions, but it can also help turn factorial solutions into exponential. Problems where the bound on $n$ is 20, for example, signal that an exponential solution is the one required. Consider the following problem:</summary></entry><entry><title type="html">Zhuangzi, Catan, and Classes</title><link href="alwayswimmin.github.io/jekyll/posts/2017/11/22/zhuangzi-catan-classes/" rel="alternate" type="text/html" title="Zhuangzi, Catan, and Classes" /><published>2017-11-22T22:30:00+04:00</published><updated>2017-11-22T22:30:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/11/22/zhuangzi-catan-classes</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/11/22/zhuangzi-catan-classes/">&lt;p&gt;Thanksgiving provides me with some well-needed rest before I jump back in to
 finish the semester, giving me time to reflect a little bit and collect some
 random thoughts.&lt;/p&gt;
 
@@ -174,7 +1932,7 @@ is covering the Central Limit Theorem in more rigor; ER 18 is synthesizing all
 of the thinkers we'd covered in the class; USW 35 is now proposing and
 discussing solutions to the problems in our education system. Everything is
 coming together, but it's difficult to keep track of everything, and truly,
-&lt;em&gt;tempus fugit&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Thanksgiving provides me with some well-needed rest before I jump back in to finish the semester, giving me time to reflect a little bit and collect some random thoughts.</summary></entry><entry><title type="html">sicut cor ita cervus</title><link href="alwayswimmin.github.io/jekyll/posts/2017/10/30/cervus/" rel="alternate" type="text/html" title="sicut cor ita cervus" /><published>2017-10-31T09:30:00+07:00</published><updated>2017-10-31T09:30:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/10/30/cervus</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/10/30/cervus/">&lt;p&gt;I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of
+&lt;em&gt;tempus fugit&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Thanksgiving provides me with some well-needed rest before I jump back in to finish the semester, giving me time to reflect a little bit and collect some random thoughts.</summary></entry><entry><title type="html">sicut cor ita cervus</title><link href="alwayswimmin.github.io/jekyll/posts/2017/10/30/cervus/" rel="alternate" type="text/html" title="sicut cor ita cervus" /><published>2017-10-31T06:30:00+04:00</published><updated>2017-10-31T06:30:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/10/30/cervus</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/10/30/cervus/">&lt;p&gt;I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of
 Palestrina's &lt;em&gt;Sicut cervus&lt;/em&gt; at the first rehearsal freshman year. The text is
 an adaptation of Psalm 42:&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;em&gt;Sicut cervus desiderat ad fontes aquarum, ita
 desiderat anima mea ad te, Deus&lt;/em&gt;. The sheet music we were using had a typo in
@@ -199,25 +1957,25 @@ English translation of &lt;em&gt;Sicut cervus&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Psalm 41:2 in the Vulgate.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Psalm 41:2 in the Vulgate. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;hart &lt;em&gt;n&lt;/em&gt;. An adult male deer, especially a red deer over five years old. &lt;a href=&quot;https://en.oxforddictionaries.com/definition/hart&quot;&gt;Oxford English Dictionary&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;hart &lt;em&gt;n&lt;/em&gt;. An adult male deer, especially a red deer over five years old. &lt;a href=&quot;https://en.oxforddictionaries.com/definition/hart&quot;&gt;Oxford English Dictionary&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;&lt;em&gt;cor&lt;/em&gt;, &lt;em&gt;cordis&lt;/em&gt;. From which we derive the words &lt;em&gt;core&lt;/em&gt;, &lt;em&gt;accord&lt;/em&gt;, &lt;em&gt;cordial&lt;/em&gt;, etc. via French.&amp;nbsp;&lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;cor&lt;/em&gt;, &lt;em&gt;cordis&lt;/em&gt;. From which we derive the words &lt;em&gt;core&lt;/em&gt;, &lt;em&gt;accord&lt;/em&gt;, &lt;em&gt;cordial&lt;/em&gt;, etc. via French. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:4&quot;&gt;
-      &lt;p&gt;&lt;em&gt;καρδιά&lt;/em&gt; (&lt;em&gt;kardiá&lt;/em&gt;). From which we derive the root &lt;em&gt;cardio-&lt;/em&gt; and therefore words like &lt;em&gt;cardiology&lt;/em&gt; and &lt;em&gt;cardiovascular&lt;/em&gt;, and other words like &lt;em&gt;tachycardia&lt;/em&gt;.&amp;nbsp;&lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;καρδιά&lt;/em&gt; (&lt;em&gt;kardiá&lt;/em&gt;). From which we derive the root &lt;em&gt;cardio-&lt;/em&gt; and therefore words like &lt;em&gt;cardiology&lt;/em&gt; and &lt;em&gt;cardiovascular&lt;/em&gt;, and other words like &lt;em&gt;tachycardia&lt;/em&gt;. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:5&quot;&gt;
-      &lt;p&gt;&lt;em&gt;*ḱerh₂-&lt;/em&gt; (&quot;horn&quot;). From which we also derive the English words &lt;em&gt;horn&lt;/em&gt;; &lt;em&gt;flugelhorn&lt;/em&gt; from German; &lt;em&gt;cornucopia&lt;/em&gt;, &lt;em&gt;cornea&lt;/em&gt;, &lt;em&gt;cervix&lt;/em&gt; from Latin and &lt;em&gt;unicorn&lt;/em&gt;, &lt;em&gt;carrot&lt;/em&gt;, &lt;em&gt;cerebral&lt;/em&gt;, &lt;em&gt;corner&lt;/em&gt; from Latin via French; &lt;em&gt;keratin&lt;/em&gt;, &lt;em&gt;rhinoceros&lt;/em&gt;, &lt;em&gt;triceratops&lt;/em&gt; from Greek and &lt;em&gt;cranium&lt;/em&gt; from Greek via Latin.  &lt;a href=&quot;https://www.etymonline.com/word/*ker-&quot;&gt;Online Etymology Dictionary&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;*ḱerh₂-&lt;/em&gt; (&quot;horn&quot;). From which we also derive the English words &lt;em&gt;horn&lt;/em&gt;; &lt;em&gt;flugelhorn&lt;/em&gt; from German; &lt;em&gt;cornucopia&lt;/em&gt;, &lt;em&gt;cornea&lt;/em&gt;, &lt;em&gt;cervix&lt;/em&gt; from Latin and &lt;em&gt;unicorn&lt;/em&gt;, &lt;em&gt;carrot&lt;/em&gt;, &lt;em&gt;cerebral&lt;/em&gt;, &lt;em&gt;corner&lt;/em&gt; from Latin via French; &lt;em&gt;keratin&lt;/em&gt;, &lt;em&gt;rhinoceros&lt;/em&gt;, &lt;em&gt;triceratops&lt;/em&gt; from Greek and &lt;em&gt;cranium&lt;/em&gt; from Greek via Latin.  &lt;a href=&quot;https://www.etymonline.com/word/*ker-&quot;&gt;Online Etymology Dictionary&lt;/a&gt; &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:6&quot;&gt;
-      &lt;p&gt;The notable sound changes here are PIE &lt;em&gt;*ḱ&lt;/em&gt; resulting in English &lt;em&gt;h&lt;/em&gt; and Latin &lt;em&gt;k&lt;/em&gt;, often spelled &lt;em&gt;c&lt;/em&gt;, which later palatalized before the front vowels &lt;em&gt;i&lt;/em&gt; and &lt;em&gt;e&lt;/em&gt;. Another sound change is PIE &lt;em&gt;*d&lt;/em&gt; resulting in English &lt;em&gt;t&lt;/em&gt; and Latin &lt;em&gt;d&lt;/em&gt;.&amp;nbsp;&lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;The notable sound changes here are PIE &lt;em&gt;*ḱ&lt;/em&gt; resulting in English &lt;em&gt;h&lt;/em&gt; and Latin &lt;em&gt;k&lt;/em&gt;, often spelled &lt;em&gt;c&lt;/em&gt;, which later palatalized before the front vowels &lt;em&gt;i&lt;/em&gt; and &lt;em&gt;e&lt;/em&gt;. Another sound change is PIE &lt;em&gt;*d&lt;/em&gt; resulting in English &lt;em&gt;t&lt;/em&gt; and Latin &lt;em&gt;d&lt;/em&gt;. &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of Palestrina's Sicut cervus at the first rehearsal freshman year. The text is an adaptation of Psalm 42:1 Sicut cervus desiderat ad fontes aquarum, ita desiderat anima mea ad te, Deus. The sheet music we were using had a typo in the English translation, using heart instead of hart2 as the translation for cervus. Interestingly, just as hart and heart sound similar, so do cervus and the Latin word for heart, cor,3 and even more interestingly, this is not a coincidence. Psalm 41:2 in the Vulgate.&amp;nbsp;&amp;#8617; hart n. An adult male deer, especially a red deer over five years old. Oxford English Dictionary&amp;nbsp;&amp;#8617; cor, cordis. From which we derive the words core, accord, cordial, etc. via French.&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Skinny Repeal</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/27/skinny-repeal/" rel="alternate" type="text/html" title="Skinny Repeal" /><published>2017-07-28T11:00:00+07:00</published><updated>2017-07-28T11:00:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/27/skinny-repeal</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/27/skinny-repeal/">&lt;p&gt;Today, Republicans announced the Health Care Freedom Act, notably removing the
+&lt;/div&gt;</content><author><name></name></author><summary type="html">I knew I belonged in Harvard Glee Club when we sang a TTBB arrangement of Palestrina's Sicut cervus at the first rehearsal freshman year. The text is an adaptation of Psalm 42:1 Sicut cervus desiderat ad fontes aquarum, ita desiderat anima mea ad te, Deus. The sheet music we were using had a typo in the English translation, using heart instead of hart2 as the translation for cervus. Interestingly, just as hart and heart sound similar, so do cervus and the Latin word for heart, cor,3 and even more interestingly, this is not a coincidence. Psalm 41:2 in the Vulgate. &amp;#8617; hart n. An adult male deer, especially a red deer over five years old. Oxford English Dictionary &amp;#8617; cor, cordis. From which we derive the words core, accord, cordial, etc. via French. &amp;#8617;</summary></entry><entry><title type="html">Skinny Repeal</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/27/skinny-repeal/" rel="alternate" type="text/html" title="Skinny Repeal" /><published>2017-07-28T08:00:00+04:00</published><updated>2017-07-28T08:00:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/27/skinny-repeal</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/27/skinny-repeal/">&lt;p&gt;Today, Republicans announced the Health Care Freedom Act, notably removing the
 individual and employer mandates from the Affordable Care Act. By removing the
 requirement for people to have insurance, Republicans tout this bill as
 restoring choice to the American consumer, thereby reducing healthcare prices.
@@ -303,7 +2061,7 @@ and more people are left without access to insurance.&lt;/p&gt;
 essentially a ban on health care insurance entirely. Despite making for a great
 sound bite, skinny repeal is an incredibly irresponsible and damaging political
 maneuver, and if it is enacted, skinny repeal is far, far worse for the
-American people than full repeal.&lt;/p&gt;</content><author><name></name></author><summary type="html">Today, Republicans announced the Health Care Freedom Act, notably removing the individual and employer mandates from the Affordable Care Act. By removing the requirement for people to have insurance, Republicans tout this bill as restoring choice to the American consumer, thereby reducing healthcare prices. This sounds like music in a speech: health insurance providers still can't discriminate against people with pre-existing conditions, but now consumers are not forced to pay for insurance they don't want! This seems like a double-win for the American people. Here's the catch: not only will a skinny repeal not lower costs, it's actually much worse than having Obamacare repealed entirely.</summary></entry><entry><title type="html">End-of-Life Agency</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/26/eol-agency/" rel="alternate" type="text/html" title="End-of-Life Agency" /><published>2017-07-27T10:00:00+07:00</published><updated>2017-07-27T10:00:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/26/eol-agency</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/26/eol-agency/">&lt;p&gt;To what extent should people be able to control their futures, and to what
+American people than full repeal.&lt;/p&gt;</content><author><name></name></author><summary type="html">Today, Republicans announced the Health Care Freedom Act, notably removing the individual and employer mandates from the Affordable Care Act. By removing the requirement for people to have insurance, Republicans tout this bill as restoring choice to the American consumer, thereby reducing healthcare prices. This sounds like music in a speech: health insurance providers still can't discriminate against people with pre-existing conditions, but now consumers are not forced to pay for insurance they don't want! This seems like a double-win for the American people. Here's the catch: not only will a skinny repeal not lower costs, it's actually much worse than having Obamacare repealed entirely.</summary></entry><entry><title type="html">End-of-Life Agency</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/26/eol-agency/" rel="alternate" type="text/html" title="End-of-Life Agency" /><published>2017-07-27T07:00:00+04:00</published><updated>2017-07-27T07:00:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/26/eol-agency</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/26/eol-agency/">&lt;p&gt;To what extent should people be able to control their futures, and to what
 extent can the government take that away? Last week, Jacob and I were
 discussing whether the government has done too little or too much in shaping
 our life decisions. The United States gives its citizens plenty of agency in
@@ -501,13 +2259,13 @@ laws must err on the side of patient protection.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I think it's worth contrasting legislation meant strictly to protect your future self from your current self from most legislation, whose primary purpose is to restrict your actions to benefit other people. Seat belt laws are meant mostly to restrain you to keep you safe, as wearing a seat belt has minimal positive externalities of the safety of other drivers. Social Security is less clear, since it can be seen as a redistribution of income from the young to the old, but over a lifetime it largely does not redistribute income from the rich to the poor, so I think it's better to classify Social Security as a compulsory retirement plan rather than income redistribution. On the other hand, while Obamacare forces us to buy health insurance, the primary purpose of this is not to babysit us. The individual mandate's main purpose is to spread the cost of healthcare across the entire country to make the other key provision, banning price discrimination based on pre-existing conditions, feasible.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I think it's worth contrasting legislation meant strictly to protect your future self from your current self from most legislation, whose primary purpose is to restrict your actions to benefit other people. Seat belt laws are meant mostly to restrain you to keep you safe, as wearing a seat belt has minimal positive externalities of the safety of other drivers. Social Security is less clear, since it can be seen as a redistribution of income from the young to the old, but over a lifetime it largely does not redistribute income from the rich to the poor, so I think it's better to classify Social Security as a compulsory retirement plan rather than income redistribution. On the other hand, while Obamacare forces us to buy health insurance, the primary purpose of this is not to babysit us. The individual mandate's main purpose is to spread the cost of healthcare across the entire country to make the other key provision, banning price discrimination based on pre-existing conditions, feasible. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;At the time of writing, the five states with legislation allowing death with dignity are &lt;a href=&quot;https://www.deathwithdignity.org/learn/death-with-dignity-acts/&quot;&gt;Oregon since 1998, Vermont since 2013, Washington since 2009, and California and Colorado since 2016&lt;/a&gt;. Montana allows for death with dignity via a &lt;a href=&quot;https://en.wikipedia.org/wiki/Baxter_v._Montana&quot;&gt;court ruling in 2009&lt;/a&gt;.&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;At the time of writing, the five states with legislation allowing death with dignity are &lt;a href=&quot;https://www.deathwithdignity.org/learn/death-with-dignity-acts/&quot;&gt;Oregon since 1998, Vermont since 2013, Washington since 2009, and California and Colorado since 2016&lt;/a&gt;. Montana allows for death with dignity via a &lt;a href=&quot;https://en.wikipedia.org/wiki/Baxter_v._Montana&quot;&gt;court ruling in 2009&lt;/a&gt;. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">To what extent should people be able to control their futures, and to what extent can the government take that away? Last week, Jacob and I were discussing whether the government has done too little or too much in shaping our life decisions. The United States gives its citizens plenty of agency in weighing the short and long term. I can choose what food I eat and how much I exercise, as it's entirely my decision whether having a satisfying but unhealthy lifestyle is worth shaving years off the end of my life. I assess risk constantly, from inching closer to the edge of a cliff for that perfect photo to simply biking to and from work, internalizing the probability that I get into an accident. I can choose my career: some jobs are more financially risky while some are physically more dangerous, some better fit my skill set while others I find more intrinsically appealling, but the government leaves all of these factors up to the market to set prices and wages, and from there I make my own choice.</summary></entry><entry><title type="html">Egorychev, Part 2</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/15/egorychev-2/" rel="alternate" type="text/html" title="Egorychev, Part 2" /><published>2017-07-16T11:30:00+07:00</published><updated>2017-07-16T11:30:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/15/egorychev-2</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/15/egorychev-2/">&lt;p&gt;Ross sent me an interesting math problem last month, and I detailed my attempt
+&lt;/div&gt;</content><author><name></name></author><summary type="html">To what extent should people be able to control their futures, and to what extent can the government take that away? Last week, Jacob and I were discussing whether the government has done too little or too much in shaping our life decisions. The United States gives its citizens plenty of agency in weighing the short and long term. I can choose what food I eat and how much I exercise, as it's entirely my decision whether having a satisfying but unhealthy lifestyle is worth shaving years off the end of my life. I assess risk constantly, from inching closer to the edge of a cliff for that perfect photo to simply biking to and from work, internalizing the probability that I get into an accident. I can choose my career: some jobs are more financially risky while some are physically more dangerous, some better fit my skill set while others I find more intrinsically appealling, but the government leaves all of these factors up to the market to set prices and wages, and from there I make my own choice.</summary></entry><entry><title type="html">Egorychev, Part 2</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/15/egorychev-2/" rel="alternate" type="text/html" title="Egorychev, Part 2" /><published>2017-07-16T08:30:00+04:00</published><updated>2017-07-16T08:30:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/15/egorychev-2</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/15/egorychev-2/">&lt;p&gt;Ross sent me an interesting math problem last month, and I detailed my attempt
 at a solution in a &lt;a href=&quot;/jekyll/posts/2017/07/06/egorychev/&quot;&gt;blog post&lt;/a&gt; a little
 more than a week ago. With his substantial help, I was finally able to make
 some headway, and the following solution is much more a recreation of his
@@ -652,7 +2410,7 @@ method, using more than just one integral at a time.&lt;/p&gt;
 &lt;p&gt;Finally, Ross noted to me that this integral actually has applications in
 physics: &quot;this integral actually comes out of computing the time averages
 \(\left\langle r^n \right\rangle\) of a Kepler orbit 
-\(r = r_0/(1+a\cos(\theta))\).&quot;&lt;/p&gt;</content><author><name></name></author><summary type="html">Ross sent me an interesting math problem last month, and I detailed my attempt at a solution in a blog post a little more than a week ago. With his substantial help, I was finally able to make some headway, and the following solution is much more a recreation of his rather than my own.</summary></entry><entry><title type="html">Prius</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/11/prius/" rel="alternate" type="text/html" title="Prius" /><published>2017-07-12T11:30:00+07:00</published><updated>2017-07-12T11:30:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/11/prius</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/11/prius/">&lt;p&gt;I landed in Seattle for the first time, and I have never seen so many
+\(r = r_0/(1+a\cos(\theta))\).&quot;&lt;/p&gt;</content><author><name></name></author><summary type="html">Ross sent me an interesting math problem last month, and I detailed my attempt at a solution in a blog post a little more than a week ago. With his substantial help, I was finally able to make some headway, and the following solution is much more a recreation of his rather than my own.</summary></entry><entry><title type="html">Prius</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/11/prius/" rel="alternate" type="text/html" title="Prius" /><published>2017-07-12T08:30:00+04:00</published><updated>2017-07-12T08:30:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/11/prius</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/11/prius/">&lt;p&gt;I landed in Seattle for the first time, and I have never seen so many
 Priuses&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; in one place as in the Lyft pickup line. Apparently drivers using
 ride-sharing apps, in order to use the pickup queue at the airport, need to
 drive cars with at least 40 MPG. Go figure.&lt;/p&gt;
@@ -660,10 +2418,10 @@ drive cars with at least 40 MPG. Go figure.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Apparently the public voted the plural of &quot;Prius&quot; to be &quot;Prii,&quot; which Toyota then made official, but I think the term is silly.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Apparently the public voted the plural of &quot;Prius&quot; to be &quot;Prii,&quot; which Toyota then made official, but I think the term is silly. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">I landed in Seattle for the first time, and I have never seen so many Priuses1 in one place as in the Lyft pickup line. Apparently drivers using ride-sharing apps, in order to use the pickup queue at the airport, need to drive cars with at least 40 MPG. Go figure. Apparently the public voted the plural of &quot;Prius&quot; to be &quot;Prii,&quot; which Toyota then made official, but I think the term is silly.&amp;nbsp;&amp;#8617;</summary></entry><entry><title type="html">Egorychev</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/06/egorychev/" rel="alternate" type="text/html" title="Egorychev" /><published>2017-07-07T09:30:00+07:00</published><updated>2017-07-07T09:30:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/06/egorychev</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/06/egorychev/">&lt;p&gt;A couple weeks ago my friend Ross sent me an interesting integral involving a
+&lt;/div&gt;</content><author><name></name></author><summary type="html">I landed in Seattle for the first time, and I have never seen so many Priuses1 in one place as in the Lyft pickup line. Apparently drivers using ride-sharing apps, in order to use the pickup queue at the airport, need to drive cars with at least 40 MPG. Go figure. Apparently the public voted the plural of &quot;Prius&quot; to be &quot;Prii,&quot; which Toyota then made official, but I think the term is silly. &amp;#8617;</summary></entry><entry><title type="html">Egorychev</title><link href="alwayswimmin.github.io/jekyll/posts/2017/07/06/egorychev/" rel="alternate" type="text/html" title="Egorychev" /><published>2017-07-07T06:30:00+04:00</published><updated>2017-07-07T06:30:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/07/06/egorychev</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/07/06/egorychev/">&lt;p&gt;A couple weeks ago my friend Ross sent me an interesting integral involving a
 neat trick called the &lt;a href=&quot;https://en.wikipedia.org/wiki/Egorychev_method&quot;&gt;Egorychev method&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Let \(0 \le a &amp;lt; 1\) and \(n \in \mathbb{Z}^+\), and define
@@ -784,7 +2542,7 @@ means, since as much of a nuisance exponentials are, \(2\) is still a very
 nice number. Whether or not the Egorychev method is necessary for this problem
 specifically, I felt that this problem served as a neat introduction to its
 concept and set me up to explore more substantive applications of the Egorychev
-method in the future.&lt;/p&gt;</content><author><name></name></author><summary type="html">A couple weeks ago my friend Ross sent me an interesting integral involving a neat trick called the Egorychev method.</summary></entry><entry><title type="html">A N G E R Y</title><link href="alwayswimmin.github.io/jekyll/posts/2017/06/28/angery/" rel="alternate" type="text/html" title="A N G E R Y" /><published>2017-06-29T10:50:00+07:00</published><updated>2017-06-29T10:50:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/06/28/angery</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/06/28/angery/">&lt;p&gt;angery &amp;gt;:(&lt;/p&gt;
+method in the future.&lt;/p&gt;</content><author><name></name></author><summary type="html">A couple weeks ago my friend Ross sent me an interesting integral involving a neat trick called the Egorychev method.</summary></entry><entry><title type="html">A N G E R Y</title><link href="alwayswimmin.github.io/jekyll/posts/2017/06/28/angery/" rel="alternate" type="text/html" title="A N G E R Y" /><published>2017-06-29T07:50:00+04:00</published><updated>2017-06-29T07:50:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/06/28/angery</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/06/28/angery/">&lt;p&gt;angery &amp;gt;:(&lt;/p&gt;
 
 &lt;textarea id=&quot;angery-input&quot; rows=&quot;4&quot; cols=&quot;50&quot; placeholder=&quot;angery reaccs only&quot; autofocus=&quot;&quot;&gt;
 &lt;/textarea&gt;
@@ -883,18 +2641,4 @@ function convert() {
     var output = output_arr.join(&quot;&quot;);
     output_area.value = output;
 }
-&lt;/script&gt;</content><author><name></name></author><summary type="html">angery &amp;gt;:(</summary></entry><entry><title type="html">Money in Pride</title><link href="alwayswimmin.github.io/jekyll/posts/2017/06/27/pride/" rel="alternate" type="text/html" title="Money in Pride" /><published>2017-06-27T22:50:00+07:00</published><updated>2017-06-27T22:50:00+07:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/06/27/pride</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/06/27/pride/">&lt;p&gt;As part of the Resist Movement, someone in the second group of the SF Pride
-Parade held up a sign reading &quot;Get cops and corporations out of our parade.&quot;
-Initially, I felt apprehensive about this sentiment; I knew a good number of
-interns marching in the Facebook contingent, and I had trouble reasoning why
-allies with good intent ought not march.&lt;/p&gt;
-
-&lt;p&gt;I still feel that we are moving in the right direction when police officers,
-politicians, and other members of government demonstrate their solidarity with
-the pride movement. But towards the end of the parade, the corparate presence
-in particular was very noticable. Most corporations were fairly innocuous,
-simply passing out rainbow stickers, but some companies were advertising quite
-blatantly: my friends and I were collecting Clif bars and Chipotle
-buy-one-get-one-free coupons. Is that what we came out to the parade for?
-Corporate representation at pride should be in support of employees and the
-community at large, not for a business promotion.&lt;/p&gt;</content><author><name></name></author><summary type="html">As part of the Resist Movement, someone in the second group of the SF Pride Parade held up a sign reading &quot;Get cops and corporations out of our parade.&quot; Initially, I felt apprehensive about this sentiment; I knew a good number of interns marching in the Facebook contingent, and I had trouble reasoning why allies with good intent ought not march.</summary></entry></feed>
+&lt;/script&gt;</content><author><name></name></author><summary type="html">angery &amp;gt;:(</summary></entry></feed>
