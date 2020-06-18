@@ -1,16 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="alwayswimmin.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="alwayswimmin.github.io/" rel="alternate" type="text/html" /><updated>2020-06-14T10:34:26+04:00</updated><id>alwayswimmin.github.io/feed.xml</id><title type="html">Samuel Hsiang</title><subtitle>My little corner of the web.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="alwayswimmin.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="alwayswimmin.github.io/" rel="alternate" type="text/html" /><updated>2020-06-18T06:04:32+04:00</updated><id>alwayswimmin.github.io/feed.xml</id><title type="html">Samuel Hsiang</title><subtitle>My little corner of the web.
 </subtitle><entry><title type="html">The Aeneid, Book I</title><link href="alwayswimmin.github.io/jekyll/posts/2020/06/13/aeneid/" rel="alternate" type="text/html" title="The Aeneid, Book I" /><published>2020-06-14T07:50:00+04:00</published><updated>2020-06-14T07:50:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2020/06/13/aeneid</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2020/06/13/aeneid/">&lt;p&gt;Translated by A. S. Kline. Formatting in progress.&lt;/p&gt;
 
-&lt;!-- Bootstrap CSS --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&quot; integrity=&quot;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&quot; crossorigin=&quot;anonymous&quot; /&gt;
-
-&lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot; integrity=&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&quot; integrity=&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&quot; integrity=&quot;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;container&quot; style=&quot;font-size:8px;&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col latin&quot;&gt;
 &lt;br /&gt; Arma virumque canō, Trōiae quī prīmus ab ōrīs&lt;br /&gt; Ītaliam,
@@ -1702,16 +1692,15 @@ lips,
 sea.’
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class=&quot;fixed-bottom&quot;&gt;
-&lt;div id=&quot;collapseExample&quot; class=&quot;container collapse&quot;&gt;
+&lt;div id=&quot;collapsibleDictionary&quot; class=&quot;container collapse&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col col-11&quot;&gt;
 &lt;iframe id=&quot;dictionary&quot; src=&quot;https://en.wiktionary.org/wiki/Aeneas#Latin&quot; style=&quot;width:100%; height:300px;margin:0px;border:0px&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col col-1&quot;&gt;
-&lt;a class=&quot;btn btn-danger&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapseExample&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseExample&quot;&gt;
+&lt;a class=&quot;btn btn-danger&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapsibleDictionary&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapsibleDictionary&quot;&gt;
 x
 &lt;/a&gt;
 &lt;/div&gt;
@@ -1738,7 +1727,7 @@ document.getElementById(&quot;dictionary&quot;).src =
 &quot;https://en.wiktionary.org/wiki/&quot; + sanitized(
 word) +
 &quot;#Latin&quot;;
-$('#collapseExample').collapse('show');
+$('#collapsibleDictionary').collapse('show');
 }
 
 function createLookup(text)
@@ -1748,15 +1737,12 @@ return text.replace(
 '&lt;span onclick=\'lookup(&quot;$1&quot;)\'&gt;$1&lt;/span&gt;');
 }
 
-
 var latinElements =
 document.getElementsByClassName(&quot;latin&quot;);
 for (var i = 0; i &lt; latinElements.length; ++i)
 {
 latinElements[i].innerHTML = createLookup(latinElements[i].innerHTML);
 }
-
-
 &lt;/script&gt;</content><author><name></name></author><summary type="html">Translated by A. S. Kline. Formatting in progress.</summary></entry><entry><title type="html">Exponential Dynamic Programming</title><link href="alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp/" rel="alternate" type="text/html" title="Exponential Dynamic Programming" /><published>2017-12-28T04:50:00+04:00</published><updated>2017-12-28T04:50:00+04:00</updated><id>alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp</id><content type="html" xml:base="alwayswimmin.github.io/jekyll/posts/2017/12/27/expdp/">&lt;p&gt;Dynamic programming can turn exponential solutions into polynomial solutions,
 but it can also help turn factorial solutions into exponential. Problems where
 the bound on $n$ is 20, for example, signal that an exponential solution is the
